@@ -1,0 +1,91 @@
+// ════════════════════════════════════════════════════════
+//  SECTIONS — seções da landing page
+// ════════════════════════════════════════════════════════
+
+// Pills
+.pills-section {
+  padding: 110px 80px; background: var(--bg2); position: relative; overflow: hidden;
+}
+.pills-grid {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; position: relative; z-index: 2;
+}
+.pill {
+  padding: 44px 38px; background: var(--bg);
+  border-top: 3px solid transparent; cursor: default;
+  position: relative; overflow: hidden;
+  transition: transform .3s, border-color .3s, box-shadow .3s;
+  &::after {
+    content:''; position:absolute; inset:0;
+    background: radial-gradient(circle at 50% 0%, rgba(232,80,91,.08), transparent 70%);
+    opacity:0; transition: opacity .3s;
+  }
+  &:hover { transform: translateY(-6px); border-top-color: var(--rose); box-shadow: 0 20px 40px rgba(0,0,0,.4); }
+  &:hover::after { opacity: 1; }
+  &:nth-child(2):hover { border-top-color: var(--amber); }
+  &:nth-child(3):hover { border-top-color: var(--violet); }
+}
+.pill-icon {
+  font-size: 34px; margin-bottom: 22px; display: block; line-height: 1;
+  transition: transform .4s;
+}
+.pill:hover .pill-icon { transform: scale(1.15) rotate(-6deg); }
+.pill-title { font-size: 21px; font-weight: bold; margin-bottom: 12px; }
+.pill-text { font-size: 14px; color: var(--muted); line-height: 1.75; }
+.pill-cta {
+  display: inline-flex; align-items:center; gap:6px; margin-top: 22px;
+  font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--rose); text-decoration: none;
+  border-bottom: 1px solid var(--rose); padding-bottom: 3px;
+  transition: gap .25s;
+  &:hover { gap: 12px; }
+}
+
+// Quote strip
+.quote-strip {
+  padding: 120px 80px; position: relative; overflow: hidden;
+  background: linear-gradient(135deg, var(--bg3), rgba(107,15,34,.55));
+}
+.quote-inner { position: relative; z-index: 3; max-width: 760px; }
+.quote-mark {
+  font-size: 140px; line-height: .6; color: var(--rose); opacity: .25;
+  font-family: Georgia, serif;
+}
+.quote-text {
+  font-size: clamp(24px, 3.6vw, 46px); font-style: italic;
+  line-height: 1.28; margin: 8px 0 30px;
+  span { color: var(--rose); }
+}
+.quote-attr {
+  font-size: 12px; letter-spacing: .25em; text-transform: uppercase; color: var(--muted);
+}
+
+// Blog preview
+.blog-preview { padding: 110px 80px; background: var(--bg); }
+.posts-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; }
+.post-card {
+  background: var(--bg2); padding: 34px;
+  border-bottom: 2px solid var(--border); cursor: pointer;
+  position: relative; overflow: hidden;
+  transition: transform .3s, border-color .3s;
+  &::before {
+    content:'♪'; position:absolute; right:24px; top:24px; font-size:20px;
+    color: var(--rose); opacity:0; transform: translateY(-8px); transition: all .3s;
+  }
+  &:hover { transform: translateY(-5px); border-bottom-color: var(--rose); }
+  &:hover::before { opacity:.7; transform: translateY(0); }
+}
+.post-cat { font-size: 10px; letter-spacing: .3em; text-transform: uppercase; color: var(--rose); margin-bottom: 14px; }
+.post-title { font-size: 17px; line-height: 1.35; margin-bottom: 12px; }
+.post-date { font-size: 12px; color: var(--muted); }
+
+// Channels
+.channels-section { padding: 110px 80px; background: var(--bg2); }
+.channels-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 2px; }
+.channel-card {
+  padding: 38px 32px; background: var(--bg);
+  border-left: 3px solid var(--border);
+  transition: border-color .25s, transform .25s;
+  &:hover { border-left-color: var(--rose); transform: translateX(4px); }
+}
+.channel-name { font-size: 13px; letter-spacing: .2em; text-transform: uppercase; color: var(--rose); margin-bottom: 12px; }
+.channel-desc { font-size: 14px; color: var(--muted); line-height: 1.65; }

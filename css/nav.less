@@ -1,0 +1,39 @@
+// ════════════════════════════════════════════════════════
+//  NAV — barra de navegação principal
+// ════════════════════════════════════════════════════════
+
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 400;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 48px;
+  background: rgba(8,8,12,0.7);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  transition: padding .3s;
+}
+.nav-logo {
+  font-size: 14px; letter-spacing: .28em; text-transform: uppercase;
+  color: var(--rose); font-weight: bold;
+  display: flex; align-items: center; gap: 10px;
+  text-decoration: none;
+}
+.nav-logo .clef-mini {
+  font-size: 22px; line-height: 1;
+  animation: pulse 3s ease-in-out infinite;
+}
+.nav-links {
+  display: flex; gap: 30px; list-style: none;
+}
+.nav-links a {
+  color: var(--muted); text-decoration: none;
+  font-size: 12px; letter-spacing: .12em; text-transform: uppercase;
+  position: relative; transition: color .2s;
+  &::after {
+    content:''; position:absolute; left:0; bottom:-4px; width:0; height:1px;
+    background: var(--rose); transition: width .25s;
+  }
+  &:hover { color: var(--rose); }
+  &:hover::after { width:100%; }
+  &.active { color: var(--rose); }
+  &.active::after { width:100%; }
+}

@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# LESS compiled output (manter main.css versionado, ignorar outros builds)
+css/*.css.map
+
+# Build tools
+.cache/
+dist/
+.parcel-cache/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Claude Code internals
+.claude/worktrees/

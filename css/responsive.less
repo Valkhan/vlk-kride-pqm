@@ -1,0 +1,42 @@
+// ════════════════════════════════════════════════════════
+//  RESPONSIVE — ajustes para mobile (max-width: 860px)
+// ════════════════════════════════════════════════════════
+
+@media (max-width: 860px) {
+  nav { padding: 14px 22px; }
+  .nav-links { display: none; }
+
+  .hero,
+  .pills-section,
+  .quote-strip,
+  .blog-preview,
+  .channels-section,
+  footer,
+  .manifesto-hero,
+  .manifesto-content,
+  .gallery-hero,
+  .gallery-filters,
+  .gallery-featured,
+  .gallery-section,
+  .gallery-end {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .pills-grid,
+  .posts-row,
+  .channels-row,
+  .netflix-row { grid-template-columns: 1fr; }
+
+  .flags-grid,
+  .leg-compare,
+  .featured-card { grid-template-columns: 1fr; }
+
+  // Clave no mobile: desloca para esquerda (evita overflow)
+  .hero-clef { font-size: 220px; right: auto; left: -15px; opacity: .08; }
+
+  .manifesto-layout { grid-template-columns: 1fr; }
+  .manifesto-nav { display: none; }
+
+  .gallery-filters { position: static; }
+}

@@ -1,0 +1,121 @@
+// ════════════════════════════════════════════════════════
+//  BASE — reset, body, global utilities
+// ════════════════════════════════════════════════════════
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+::selection { background: var(--rose); color: #fff; }
+
+// Ambient layer
+.ambient {
+  position: fixed; inset: 0; z-index: 1;
+  pointer-events: none; overflow: hidden;
+}
+.float-note {
+  position: absolute;
+  color: var(--rose);
+  opacity: 0;
+  font-size: 28px;
+  animation: floatUp linear infinite;
+  text-shadow: 0 0 18px var(--glow);
+  user-select: none;
+}
+
+// Pages container
+.page { display: none; position: relative; z-index: 2; }
+.page.active { display: block; }
+
+// Reveal on scroll
+.reveal {
+  opacity: 0;
+  transform: translateY(34px);
+  transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1);
+}
+.reveal.in { opacity: 1; transform: none; }
+.reveal.d1 { transition-delay: .08s; }
+.reveal.d2 { transition-delay: .16s; }
+.reveal.d3 { transition-delay: .24s; }
+.reveal.d4 { transition-delay: .32s; }
+
+// Animated staff (pentagrama SVG)
+.staff-svg {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  pointer-events: none; z-index: 0;
+}
+.staff-line {
+  stroke: var(--rose); stroke-width: 1; fill: none;
+  stroke-dasharray: 2000; stroke-dashoffset: 2000;
+  opacity: 0.13;
+  animation: drawStaff 3s ease forwards;
+}
+.staff-line.l2 { animation-delay: .2s; }
+.staff-line.l3 { animation-delay: .4s; }
+.staff-line.l4 { animation-delay: .6s; }
+.staff-line.l5 { animation-delay: .8s; }
+
+.staff-note-svg {
+  fill: var(--rose); opacity: 0;
+  animation: notePop .5s ease forwards;
+}
+.staff-note-svg.pulsing {
+  animation: notePulse .75s ease forwards;
+}
+
+// Buttons
+.btn-primary {
+  padding: 15px 34px; background: var(--rose); color: #fff;
+  border: none; cursor: pointer; font-family: Georgia, serif;
+  font-size: 13px; letter-spacing: .15em; text-transform: uppercase;
+  text-decoration: none; display: inline-flex; align-items: center; gap: 10px;
+  position: relative; overflow: hidden;
+  transition: transform .2s, box-shadow .3s;
+  box-shadow: 0 0 0 rgba(232,80,91,0);
+  &::before {
+    content:''; position:absolute; inset:0;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,.25), transparent);
+    transform: translateX(-120%); transition: transform .5s;
+  }
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 34px rgba(232,80,91,.4);
+    &::before { transform: translateX(120%); }
+  }
+}
+.btn-ghost {
+  padding: 15px 34px; background: transparent; color: var(--text);
+  border: 1px solid var(--border); cursor: pointer;
+  font-family: Georgia, serif; font-size: 13px; letter-spacing: .15em;
+  text-transform: uppercase; text-decoration: none;
+  display: inline-flex; align-items:center; gap: 8px;
+  transition: border-color .25s, color .25s, background .25s;
+  &:hover { border-color: var(--rose); color: var(--rose); background: rgba(232,80,91,.05); }
+}
+
+// Section shell label
+.section-label {
+  font-size: 11px; letter-spacing: .35em; text-transform: uppercase;
+  color: var(--rose); margin-bottom: 52px;
+  display: flex; align-items: center; gap: 16px;
+  &::after { content:''; flex:1; height:1px; background: var(--border); }
+  .num { color: var(--muted); }
+}
+
+// Footer
+footer {
+  padding: 64px 80px; background: #000; border-top: 1px solid var(--border);
+  display: flex; justify-content: space-between; align-items: center;
+  position: relative; overflow: hidden;
+}
+.footer-logo {
+  font-size: 18px; letter-spacing: .2em; color: var(--rose);
+  font-weight: bold; display:flex; align-items:center; gap:10px;
+}
+.footer-copy { font-size: 12px; color: var(--muted); }
