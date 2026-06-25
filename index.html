@@ -53,18 +53,20 @@
     user-select: none;
   }
   @keyframes floatUp {
-    0%   { transform: translateY(110vh) rotate(-8deg) scale(.7); opacity: 0; }
+    0%   { transform: translateX(110vw); opacity: 0; }
     8%   { opacity: .55; }
-    50%  { opacity: .4; }
     92%  { opacity: .3; }
-    100% { transform: translateY(-15vh) rotate(12deg) scale(1.1); opacity: 0; }
+    100% { transform: translateX(-10vw); opacity: 0; }
   }
 
   /* respect reduced motion */
   @media (prefers-reduced-motion: reduce) {
     .float-note, .clef-draw path, .staff-line,
+    .hero-note-group, .hero-note-circle,
     .reveal { animation: none !important; transition: none !important; }
     .reveal { opacity: 1 !important; transform: none !important; }
+    .hero-note-group { opacity: 1 !important; }
+    .hero-note-circle { opacity: .5 !important; }
   }
 
   /* ════════════════════════════════════════════════════════
@@ -170,6 +172,65 @@
     0% { opacity: 0; transform: scale(0); }
     60% { opacity: .7; transform: scale(1.3); }
     100% { opacity: .5; transform: scale(1); }
+  }
+  @keyframes notePulse {
+    0%   { transform: scale(1);   opacity: .5; }
+    35%  { transform: scale(1.7); opacity: 1;  filter: drop-shadow(0 0 6px var(--rose)); }
+    70%  { transform: scale(1);   opacity: .5; filter: none; }
+    100% { transform: scale(1);   opacity: .5; }
+  }
+  .staff-note-svg.pulsing {
+    animation: notePulse .75s ease forwards;
+  }
+
+  /* ── Hero notes: slide-in + sequential infinite pulse ── */
+  .hero-note-group {
+    opacity: 0;
+    animation: heroNoteEnter .9s cubic-bezier(.16,1,.3,1) forwards;
+  }
+  .hero-note-group.hn1 { animation-delay: .2s; }
+  .hero-note-group.hn2 { animation-delay: .55s; }
+  .hero-note-group.hn3 { animation-delay: .9s; }
+  .hero-note-group.hn4 { animation-delay: 1.25s; }
+  @keyframes heroNoteEnter {
+    from { transform: translateX(110vw); opacity: 0; }
+    to   { transform: translateX(0);    opacity: 1; }
+  }
+
+  /* Cycle = 4s: each note pulses 0.75s then 0.25s gap → next note */
+  .hero-note-circle {
+    fill: var(--rose); opacity: .5;
+    transform-box: fill-box; transform-origin: center;
+  }
+  /* all start at 2.4s — after last note finishes entering (1.25+.9=2.15s + buffer) */
+  .hero-note-circle.hn1 { animation: heroNotePulse1 4s ease 2.4s infinite; }
+  .hero-note-circle.hn2 { animation: heroNotePulse2 4s ease 2.4s infinite; }
+  .hero-note-circle.hn3 { animation: heroNotePulse3 4s ease 2.4s infinite; }
+  .hero-note-circle.hn4 { animation: heroNotePulse4 4s ease 2.4s infinite; }
+
+  /* note1: pulse at 0%–18.75% of 4s cycle (0s–0.75s) */
+  @keyframes heroNotePulse1 {
+    0%      { transform: scale(1);   opacity: .5; filter: none; }
+    9.375%  { transform: scale(1.7); opacity: 1;  filter: drop-shadow(0 0 8px var(--rose)); }
+    18.75%, 100% { transform: scale(1); opacity: .5; filter: none; }
+  }
+  /* note2: pulse at 25%–43.75% (1s–1.75s) */
+  @keyframes heroNotePulse2 {
+    0%, 25%   { transform: scale(1);   opacity: .5; filter: none; }
+    34.375%   { transform: scale(1.7); opacity: 1;  filter: drop-shadow(0 0 8px var(--rose)); }
+    43.75%, 100% { transform: scale(1); opacity: .5; filter: none; }
+  }
+  /* note3: pulse at 50%–68.75% (2s–2.75s) */
+  @keyframes heroNotePulse3 {
+    0%, 50%   { transform: scale(1);   opacity: .5; filter: none; }
+    59.375%   { transform: scale(1.7); opacity: 1;  filter: drop-shadow(0 0 8px var(--rose)); }
+    68.75%, 100% { transform: scale(1); opacity: .5; filter: none; }
+  }
+  /* note4: pulse at 75%–93.75% (3s–3.75s) */
+  @keyframes heroNotePulse4 {
+    0%, 75%   { transform: scale(1);   opacity: .5; filter: none; }
+    84.375%   { transform: scale(1.7); opacity: 1;  filter: drop-shadow(0 0 8px var(--rose)); }
+    93.75%, 100% { transform: scale(1); opacity: .5; filter: none; }
   }
 
   /* ════════════════════════════════════════════════════════
@@ -594,11 +655,10 @@
       <line class="staff-line l3" x1="0" y1="380" x2="1440" y2="380"/>
       <line class="staff-line l4" x1="0" y1="420" x2="1440" y2="420"/>
       <line class="staff-line l5" x1="0" y1="460" x2="1440" y2="460"/>
-      <circle class="staff-note-svg" cx="300" cy="380" r="9" style="animation-delay:1.1s"/>
-      <circle class="staff-note-svg" cx="520" cy="340" r="9" style="animation-delay:1.3s"/>
-      <circle class="staff-note-svg" cx="760" cy="420" r="9" style="animation-delay:1.5s"/>
-      <circle class="staff-note-svg" cx="980" cy="300" r="9" style="animation-delay:1.7s"/>
-      <circle class="staff-note-svg" cx="1180" cy="380" r="9" style="animation-delay:1.9s"/>
+      <g class="hero-note-group hn1"><circle class="hero-note-circle hn1" cx="680" cy="340" r="9"/></g>
+      <g class="hero-note-group hn2"><circle class="hero-note-circle hn2" cx="850" cy="420" r="9"/></g>
+      <g class="hero-note-group hn3"><circle class="hero-note-circle hn3" cx="1020" cy="300" r="9"/></g>
+      <g class="hero-note-group hn4"><circle class="hero-note-circle hn4" cx="1180" cy="380" r="9"/></g>
     </svg>
     <div class="hero-clef">𝄞</div>
 
@@ -778,8 +838,9 @@
         <div class="msec-body"><p>O manifesto propõe duas reformas estruturais que atacam o coração da desigualdade cultural brasileira.</p></div>
         <div class="flags-grid">
           <div class="flag-card"><div class="flag-num">I</div><div class="flag-title">Estatuto do Artista Trabalhador</div><div class="flag-desc">Inspirado no L'intermittent du spectacle francês. Garante subsídio contínuo nos períodos sem produção e reconhece ensaio e pesquisa como trabalho efetivo — diferenciando o artista humano da produção automatizada por IA.</div></div>
-          <div class="flag-card"><div class="flag-num">II</div><div class="flag-title">Prazo de 70 para 30 Anos</div><div class="flag-desc">Questionamento constitucional do prazo de exploração comercial após a morte do artista. Objetivo: libertar o patrimônio cultural brasileiro do monopólio rentista de grandes editoras e herdeiros ausentes.</div></div>
+          <div class="flag-card"><div class="flag-num">II</div><div class="flag-title">Prazo de 70 para 30 Anos</div><div class="flag-desc">Questionamento constitucional do prazo de exploração comercial após a morte do artista. A defesa dos 70 anos invoca o herdeiro apaixonado pela obra do antepassado — mas esse perfil é minoria. Na prática, a esmagadora maioria dos herdeiros vende os direitos à indústria, tornando as grandes editoras as verdadeiras monopolizadoras do patrimônio cultural, não as famílias. Reduzir o prazo para 30 anos não agride os herdeiros: agride o rentismo corporativo que se esconde atrás deles.</div></div>
         </div>
+        <div class="msec-highlight">"O argumento do herdeiro apaixonado é a fantasia que a indústria usa para manter o monopólio. Na realidade, o herdeiro vende. Quem compra é a Warner. Quem paga é o artista independente que quer samplear."</div>
       </div>
 
       <div class="manifesto-section reveal" id="m-embasamento">
@@ -800,19 +861,24 @@
       <div class="manifesto-section reveal" id="m-legislacao">
         <div class="msec-number">06</div>
         <h2 class="msec-title">Legislação Comparada</h2>
-        <div class="msec-body"><p>O contraste entre o modelo brasileiro e o francês revela o abismo entre a precariedade imposta e a proteção possível.</p></div>
+        <div class="msec-body">
+          <p>O contraste entre o modelo brasileiro e o francês revela o abismo entre a precariedade imposta e a proteção possível.</p>
+          <p>A justificativa oficial para os 70 anos é sempre a mesma: "proteger os herdeiros do artista." É uma narrativa sedutora — e estatisticamente falsa. Pesquisas de transferência de direitos autorais mostram que a maioria das cessões pós-morte ocorre em favor de editoras e gravadoras, não de descendentes diretos. O herdeiro apaixonado que guarda com devoção o legado do avô existe — mas é exceção. A regra é o herdeiro que assina o contrato de cessão em troca de liquidez imediata, e a indústria que passa a ditar o que pode ou não ser feito com aquela obra pelos próximos décadas.</p>
+        </div>
+        <div class="msec-highlight">"Você não está defendendo os filhos de Noel Rosa. Você está defendendo a Warner Music, que comprou esses direitos há décadas e hoje cobra pedágio sobre o patrimônio cultural do Brasil."</div>
         <div class="leg-compare">
           <div class="leg-col">
             <div class="leg-col-title">Brasil — Lei 9.610/98</div>
-            <div class="leg-item"><div class="leg-item-title">Prazo de proteção</div><div class="leg-item-desc">70 anos após a morte do autor — um dos mais longos do mundo</div></div>
+            <div class="leg-item"><div class="leg-item-title">Prazo de proteção</div><div class="leg-item-desc">70 anos após a morte do autor — um dos mais longos do mundo, estendido por pressão da indústria fonográfica</div></div>
+            <div class="leg-item"><div class="leg-item-title">Titular real</div><div class="leg-item-desc">Na prática: editoras e gravadoras que adquiriram os direitos dos herdeiros — os "herdeiros apaixonados" são minoria estatística</div></div>
             <div class="leg-item"><div class="leg-item-title">Artista independente</div><div class="leg-item-desc">Sem estatuto ou proteção trabalhista específica</div></div>
-            <div class="leg-item"><div class="leg-item-title">Uso transformativo</div><div class="leg-item-desc">Zona cinzenta jurídica — sujeito ao poder da parte contrária</div></div>
+            <div class="leg-item"><div class="leg-item-title">Uso transformativo</div><div class="leg-item-desc">Zona cinzenta jurídica — sujeito ao poder econômico da parte contrária</div></div>
           </div>
           <div class="leg-col">
             <div class="leg-col-title">França — Code du Travail</div>
             <div class="leg-item"><div class="leg-item-title">L'intermittent du spectacle</div><div class="leg-item-desc">Sistema de 1936 — subsídio entre projetos, ensaio reconhecido como trabalho</div></div>
             <div class="leg-item"><div class="leg-item-title">Proteção social</div><div class="leg-item-desc">Artista e técnico têm seguro-desemprego específico da categoria</div></div>
-            <div class="leg-item"><div class="leg-item-title">Domínio público</div><div class="leg-item-desc">Debate ativo sobre redução de prazos para ampliar acesso cultural</div></div>
+            <div class="leg-item"><div class="leg-item-title">Domínio público</div><div class="leg-item-desc">Debate ativo sobre redução de prazos para ampliar acesso cultural — o patrimônio pertence à sociedade, não à corporação</div></div>
           </div>
         </div>
       </div>
@@ -951,7 +1017,8 @@
     n.className = 'float-note';
     n.textContent = glyphs[Math.floor(Math.random()*glyphs.length)];
     const size = 16 + Math.random()*30;
-    n.style.left = Math.random()*100 + 'vw';
+    n.style.left = '0';
+    n.style.top = Math.random()*100 + 'vh';
     n.style.fontSize = size + 'px';
     n.style.animationDuration = (10 + Math.random()*12) + 's';
     // tint variety
@@ -965,6 +1032,36 @@
     for (let i=0;i<6;i++) setTimeout(spawnNote, i*1400);
     setInterval(spawnNote, 2200);
   }
+
+  /* ── Staff note sequential pulse ── */
+  (function() {
+    const PULSE_DUR  = 750;  // ms — duração do pulse de cada bolinha
+    const INTERVAL   = 250;  // ms — delay entre início de cada pulse
+    const END_DELAY  = 500;  // ms — pausa após o último pulse antes de reiniciar
+    const notes = Array.from(document.querySelectorAll('.staff-svg .staff-note-svg'));
+    if (!notes.length || reduced) return;
+
+    const lastPopEnd = 1900 + 500; // última animation-delay (1.9s) + notePop (0.5s)
+    let cycleTimer;
+
+    function runCycle() {
+      // limpa estado anterior
+      notes.forEach(n => { n.classList.remove('pulsing'); void n.offsetWidth; });
+
+      // dispara cada pulse com INTERVAL de diferença, sem esconder a anterior
+      notes.forEach((note, i) => {
+        setTimeout(() => {
+          note.classList.add('pulsing');
+        }, i * INTERVAL);
+      });
+
+      // próximo ciclo: último pulse começa em (n-1)*INTERVAL, dura PULSE_DUR, + END_DELAY
+      const cycleLen = (notes.length - 1) * INTERVAL + PULSE_DUR + END_DELAY;
+      cycleTimer = setTimeout(runCycle, cycleLen);
+    }
+
+    setTimeout(runCycle, lastPopEnd);
+  })();
 
   /* ── Scroll reveals ── */
   let observer;
