@@ -1,0 +1,123 @@
+// ════════════════════════════════════════════════════════
+//  TEXTURES — papel rasgado, partitura, amassado
+// ════════════════════════════════════════════════════════
+
+// ── Variáveis de textura ──────────────────────────────────
+
+// Partitura: 5 linhas horizontais repetindo a cada 120px
+@sheet-music: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='120'%3E%3Cline x1='0' y1='20' x2='1' y2='20' stroke='%231A1208' stroke-width='0.5' opacity='0.12'/%3E%3Cline x1='0' y1='30' x2='1' y2='30' stroke='%231A1208' stroke-width='0.5' opacity='0.12'/%3E%3Cline x1='0' y1='40' x2='1' y2='40' stroke='%231A1208' stroke-width='0.5' opacity='0.12'/%3E%3Cline x1='0' y1='50' x2='1' y2='50' stroke='%231A1208' stroke-width='0.5' opacity='0.12'/%3E%3Cline x1='0' y1='60' x2='1' y2='60' stroke='%231A1208' stroke-width='0.5' opacity='0.12'/%3E%3C/svg%3E");
+
+// Papel amassado: noise mais grosso + leve diferença de luminosidade
+@crumpled-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.04' numOctaves='5' seed='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='0.09'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23c)' fill='%231A1208'/%3E%3C/svg%3E");
+
+// ── Mixin: fundo de partitura ─────────────────────────────
+.bg-sheet-music() {
+  background-color: var(--bg3);
+  background-image: @sheet-music;
+  background-repeat: repeat;
+  background-size: 1px 120px;
+}
+
+// ── Mixin: fundo de papel amassado ────────────────────────
+.bg-crumpled() {
+  background-color: #D8CCBA;
+  background-image: @crumpled-light;
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+
+// ── Mixin: fundo de papel amassado mais escuro ────────────
+.bg-crumpled-dark() {
+  background-color: #B0A088;
+  background-image: @crumpled-light;
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+
+// ════════════════════════════════════════════════════════
+//  PAPEL RASGADO — bordas irregulares entre seções
+// ════════════════════════════════════════════════════════
+
+// Wrapper que adiciona a borda rasgada. Uso:
+// <div class="torn-edge-bottom"> ... </div>
+// A borda rasgada aparece na BORDA INFERIOR do elemento.
+
+.torn-edge-bottom {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; left: 0; width: 100%;
+    height: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 40' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L0,22 C18,14 36,32 60,28 C84,24 96,8 120,12 C144,16 156,34 180,30 C204,26 210,10 240,14 C270,18 276,36 300,32 C324,28 336,8 360,12 C384,16 396,34 420,30 C444,26 456,6 480,10 C504,14 516,32 540,28 C564,24 576,4 600,8 C624,12 636,30 660,26 C684,22 696,4 720,8 C744,12 756,34 780,30 C804,26 816,8 840,12 C864,16 876,38 900,34 C924,30 936,10 960,14 C984,18 996,36 1020,32 C1044,28 1056,6 1080,10 C1104,14 1116,32 1140,28 C1164,24 1176,6 1200,10 C1224,14 1236,34 1260,30 C1284,26 1296,8 1320,12 C1344,16 1356,38 1380,34 C1404,30 1422,16 1440,20 L1440,40 L0,40 Z' fill='%23C4B49A'/%3E%3C/svg%3E");
+    background-size: 100% 100%;
+    z-index: 10;
+    pointer-events: none;
+  }
+}
+
+// Borda rasgada na BORDA SUPERIOR do elemento
+.torn-edge-top {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -1px; left: 0; width: 100%;
+    height: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 40' preserveAspectRatio='none'%3E%3Cpath d='M0,40 L0,18 C18,26 36,8 60,12 C84,16 96,32 120,28 C144,24 156,6 180,10 C204,14 210,30 240,26 C270,22 276,4 300,8 C324,12 336,30 360,26 C384,22 396,4 420,8 C444,12 456,34 480,30 C504,26 516,8 540,12 C564,16 576,36 600,32 C624,28 636,10 660,14 C684,18 696,36 720,32 C744,28 756,6 780,10 C804,14 816,32 840,28 C864,24 876,2 900,6 C924,10 936,30 960,26 C984,22 996,4 1020,8 C1044,12 1056,34 1080,30 C1104,26 1116,8 1140,12 C1164,16 1176,34 1200,30 C1224,26 1236,6 1260,10 C1284,14 1296,32 1320,28 C1344,24 1356,2 1380,6 C1404,10 1422,24 1440,20 L1440,0 L0,0 Z' fill='%23C4B49A'/%3E%3C/svg%3E");
+    background-size: 100% 100%;
+    z-index: 10;
+    pointer-events: none;
+  }
+}
+
+// Versão do rasgado que usa a cor escura (para seção escura abaixo)
+.torn-edge-bottom-dark {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; left: 0; width: 100%;
+    height: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 40' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L0,22 C18,14 36,32 60,28 C84,24 96,8 120,12 C144,16 156,34 180,30 C204,26 210,10 240,14 C270,18 276,36 300,32 C324,28 336,8 360,12 C384,16 396,34 420,30 C444,26 456,6 480,10 C504,14 516,32 540,28 C564,24 576,4 600,8 C624,12 636,30 660,26 C684,22 696,4 720,8 C744,12 756,34 780,30 C804,26 816,8 840,12 C864,16 876,38 900,34 C924,30 936,10 960,14 C984,18 996,36 1020,32 C1044,28 1056,6 1080,10 C1104,14 1116,32 1140,28 C1164,24 1176,6 1200,10 C1224,14 1236,34 1260,30 C1284,26 1296,8 1320,12 C1344,16 1356,38 1380,34 C1404,30 1422,16 1440,20 L1440,40 L0,40 Z' fill='%231A1208'/%3E%3C/svg%3E");
+    background-size: 100% 100%;
+    z-index: 10;
+    pointer-events: none;
+  }
+}
+
+// Versão do rasgado que usa bg2 (partitura / strips)
+.torn-edge-bottom-bg2 {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; left: 0; width: 100%;
+    height: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 40' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L0,22 C18,14 36,32 60,28 C84,24 96,8 120,12 C144,16 156,34 180,30 C204,26 210,10 240,14 C270,18 276,36 300,32 C324,28 336,8 360,12 C384,16 396,34 420,30 C444,26 456,6 480,10 C504,14 516,32 540,28 C564,24 576,4 600,8 C624,12 636,30 660,26 C684,22 696,4 720,8 C744,12 756,34 780,30 C804,26 816,8 840,12 C864,16 876,38 900,34 C924,30 936,10 960,14 C984,18 996,36 1020,32 C1044,28 1056,6 1080,10 C1104,14 1116,32 1140,28 C1164,24 1176,6 1200,10 C1224,14 1236,34 1260,30 C1284,26 1296,8 1320,12 C1344,16 1356,38 1380,34 C1404,30 1422,16 1440,20 L1440,40 L0,40 Z' fill='%23B8A88E'/%3E%3C/svg%3E");
+    background-size: 100% 100%;
+    z-index: 10;
+    pointer-events: none;
+  }
+}
+
+// ── Decoração: faixa de partitura horizontal (visual) ─────
+// Pequeno fragmento de partitura colado como elemento decorativo
+.sheet-music-fragment {
+  display: inline-block;
+  width: 100%; height: 80px;
+  .bg-sheet-music();
+  border: 1px solid rgba(26,18,8,0.1);
+  box-shadow: var(--paper-shadow);
+  position: relative;
+  overflow: hidden;
+  // Clave de sol fantasma
+  &::before {
+    content: '𝄞';
+    position: absolute; left: 12px; top: 50%;
+    transform: translateY(-50%);
+    font-size: 64px; line-height: 1;
+    color: var(--text); opacity: 0.06;
+    font-family: serif;
+  }
+}

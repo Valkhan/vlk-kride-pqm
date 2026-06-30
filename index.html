@@ -15,6 +15,9 @@
 <link rel="dns-prefetch" href="//www.youtube.com">
 <link rel="dns-prefetch" href="//open.spotify.com">
 <link rel="preload" href="css/main.css" as="style">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
 
 <!-- Google Analytics 4 — substitua G-XXXXXXXXXX pelo Measurement ID real -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -90,37 +93,342 @@
   </ul>
 </nav>
 
+<!-- ═══════════════════════════════════════════════════════
+     HERO — duas colunas: tipografia + zona de colagem
+════════════════════════════════════════════════════════ -->
 <section class="hero">
-  <!-- animated staff -->
+  <!-- Pentagrama sutil de fundo -->
   <svg class="staff-svg" preserveAspectRatio="none" viewBox="0 0 1440 900">
-    <line class="staff-line l1" x1="0" y1="300" x2="1440" y2="300"/>
-    <line class="staff-line l2" x1="0" y1="340" x2="1440" y2="340"/>
-    <line class="staff-line l3" x1="0" y1="380" x2="1440" y2="380"/>
-    <line class="staff-line l4" x1="0" y1="420" x2="1440" y2="420"/>
+    <line class="staff-line l1" x1="0" y1="260" x2="1440" y2="260"/>
+    <line class="staff-line l2" x1="0" y1="310" x2="1440" y2="310"/>
+    <line class="staff-line l3" x1="0" y1="360" x2="1440" y2="360"/>
+    <line class="staff-line l4" x1="0" y1="410" x2="1440" y2="410"/>
     <line class="staff-line l5" x1="0" y1="460" x2="1440" y2="460"/>
   </svg>
-  <div class="hero-clef">𝄞</div>
 
-  <!-- hero notes: posicionadas via CSS (top/left definidos em hero.less) -->
-  <div class="hero-note-group hn1"><div class="hero-note-circle hn1"></div></div>
-  <div class="hero-note-group hn2"><div class="hero-note-circle hn2"></div></div>
-  <div class="hero-note-group hn3"><div class="hero-note-circle hn3"></div></div>
-  <div class="hero-note-group hn4"><div class="hero-note-circle hn4"></div></div>
+  <!-- Interrogação gigante de fundo -->
+  <div class="hero-question-bg" aria-hidden="true">?</div>
 
-  <div class="hero-eyebrow">São Paulo · 2024 · Manifesto Cultural e Legislativo</div>
-  <h1 class="hero-title">
-    <span class="l1"><span>Pra que</span></span>
-    <span class="l2"><span><em>Mentir?</em></span></span>
-  </h1>
-  <p class="hero-sub">Uma faixa nascida do luto. Um manifesto que questiona quem lucra com os mortos, quem financia a alienação e o que o Brasil deve ao artista independente.</p>
-  <div class="hero-actions">
-    <a href="manifesto.html" class="btn-primary" data-vlk-click="cta_hero_manifesto" data-vlk-category="hero">Leia o Manifesto <span>♪</span></a>
-    <a href="#" class="btn-ghost" data-vlk-click="cta_hero_ouvir_faixa" data-vlk-category="hero">Ouça a Faixa ↗</a>
+  <!-- Lado esquerdo: tipografia -->
+  <div class="hero-left">
+    <div class="hero-eyebrow">São Paulo · 1937 → 2026 · Manifesto Cultural e Legislativo</div>
+    <h1 class="hero-title">
+      <span class="word-pra"><span>Pra</span></span>
+      <span class="word-que"><span>que</span></span>
+      <span class="word-mentir"><span>Mentir?</span></span>
+    </h1>
+    <p class="hero-sub">Uma faixa nascida do luto. Um manifesto que questiona quem lucra com os mortos, quem financia a alienação e o que o Brasil deve ao artista independente.</p>
+    <div class="hero-actions">
+      <a href="manifesto.html" class="btn-primary" data-vlk-click="cta_hero_manifesto" data-vlk-category="hero">Leia o Manifesto §</a>
+      <a href="#" class="btn-ghost" data-vlk-click="cta_hero_ouvir_faixa" data-vlk-category="hero">Ouça a Faixa ↗</a>
+    </div>
   </div>
+
+  <!-- Lado direito: collage de cards colados -->
+  <div class="hero-right" aria-hidden="true">
+
+    <!-- Card principal: linha do tempo 1937→2026 -->
+    <div class="collage-card hero-timeline-card">
+      <div>
+        <div class="htc-label mono">Música composta em</div>
+        <div class="htc-year">1937</div>
+      </div>
+      <div class="htc-divider"><div class="htc-arrow">→</div></div>
+      <div>
+        <div class="htc-label mono">Ecoa em</div>
+        <div class="htc-bottom-year">2026</div>
+      </div>
+    </div>
+
+    <!-- Fragmento de partitura rasgada 1 — canto superior direito -->
+    <!-- Unsplash: busca "sheet music vintage paper" — substituir src por download local em assets/ -->
+    <div class="hero-sheet-music sm1">
+      <img
+        src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=400&q=70"
+        alt=""
+        loading="lazy"
+        onerror="this.parentElement.style.display='none'"
+      >
+    </div>
+
+    <!-- Card da interrogação -->
+    <div class="collage-card hero-stamp-card">
+      <div class="hero-stamp-q">?</div>
+    </div>
+
+    <!-- Fragmento de partitura rasgada 2 — pequeno, entre cards -->
+    <!-- Unsplash: busca "sheet music score old parchment" -->
+    <div class="hero-sheet-music sm2">
+      <img
+        src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?auto=format&fit=crop&w=300&q=70"
+        alt=""
+        loading="lazy"
+        onerror="this.parentElement.style.display='none'"
+      >
+    </div>
+
+    <!-- Card da lavanderia -->
+    <div class="collage-card hero-lavanderia-card">
+      <div class="hlc-tag">Produção</div>
+      <div class="hlc-text">Gravada artesanalmente<br>numa lavanderia de casa</div>
+    </div>
+
+  </div>
+
   <div class="scroll-cue">⌄</div>
   <div class="hero-stripe"></div>
+
+  <!-- Papel rasgado na saída do hero (transição para fundo escuro das strips) -->
+  <div style="position:absolute;bottom:-1px;left:0;width:100%;height:48px;z-index:4;pointer-events:none">
+    <svg viewBox="0 0 1440 48" preserveAspectRatio="none" style="width:100%;height:100%">
+      <path d="M0,0 L0,26 C30,16 62,40 96,36 C130,32 138,8 174,12 C210,16 218,44 254,40 C290,36 298,8 336,12 C374,16 382,44 418,40 C454,36 462,8 500,12 C538,16 546,46 582,42 C618,38 626,10 664,14 C702,18 710,46 746,42 C782,38 790,10 828,14 C866,18 874,48 910,44 C946,40 954,10 992,14 C1030,18 1038,46 1074,42 C1110,38 1118,10 1156,14 C1194,18 1202,48 1238,44 C1274,40 1282,12 1320,16 C1358,20 1368,46 1440,42 L1440,48 L0,48 Z" fill="#1A1208"/>
+    </svg>
+  </div>
 </section>
 
+<!-- ═══════════════════════════════════════════════════════
+     FAIXAS NARRATIVAS (strips)
+════════════════════════════════════════════════════════ -->
+<div class="strips-section">
+  <div class="strips-section-header reveal">
+    <p class="strips-section-sub">A história em faixas</p>
+    <h2 class="strips-section-title">Da lavanderia ao manifesto — quase 100 anos depois</h2>
+  </div>
+
+  <!-- ── FAIXA 1: A Gênese ─────────────────────────── -->
+  <div class="story-strip-section">
+    <div class="story-strip-label">
+      <span>Faixa 01 — A Gênese</span>
+      <span class="strip-scroll-hint"><span>→</span> arraste para explorar</span>
+    </div>
+    <div class="story-strip" id="strip1">
+      <div class="strip-track">
+
+        <div class="strip-block dark narrow">
+          <div class="strip-text xs c-inv-m">E se eu te dissesse que...</div>
+          <div class="strip-text lg c-inv">Uma música de 2026</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block dark">
+          <div class="strip-text xs c-inv-m">começou a ser escrita</div>
+          <div class="strip-text xl c-inv">Há quase<br>100 anos?</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block accent-red">
+          <div class="strip-symbol-bg">?</div>
+          <div class="strip-text xl">Pra<br>Que<br>Mentir</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block wide">
+          <div class="strip-year-bg">37</div>
+          <div class="strip-cat">Música original</div>
+          <div class="strip-text md">Noel Rosa<br>&amp; Vadico</div>
+          <div class="strip-text xs c-muted" style="margin-top:6px">Composição de 1937</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block">
+          <div class="strip-cat">Recriação</div>
+          <div class="strip-text sm">Adaptação transformativa — novo estilo, nova mensagem, nova época</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block dark narrow">
+          <div class="strip-symbol-bg" style="font-size:80px;color:#FF2D6B;opacity:0.15">!</div>
+          <div class="strip-text xl c-inv" style="color:#C41E1E">MENTIRA</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block wide">
+          <div class="strip-cat">Produção</div>
+          <div class="strip-text md">Escrita na<br>lavanderia<br>de casa</div>
+          <div class="strip-text hand c-muted" style="margin-top:8px">São Paulo, 2024</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block">
+          <div class="strip-cat">Ao vivo</div>
+          <div class="strip-text md c-violet">Chinela<br>Voadora</div>
+          <div class="strip-text xs c-muted" style="margin-top:6px">Blue Note · Bourbon Street</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block">
+          <div class="strip-cat">Audiovisual</div>
+          <div class="strip-text md">Um<br>videoclipe<br>animado</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block dark wide">
+          <div class="strip-text xs c-inv-m" style="margin-bottom:8px">E por isso...</div>
+          <div class="strip-text lg c-inv">E muitas<br>histórias</div>
+          <a href="manifesto.html" class="strip-text xs" style="color:#C41E1E;margin-top:12px;display:block">Ler o manifesto →</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FAIXA 2: O Processo ───────────────────────── -->
+  <div class="story-strip-section">
+    <div class="story-strip-label">
+      <span>Faixa 02 — O Processo</span>
+      <span class="strip-scroll-hint"><span>→</span> arraste para explorar</span>
+    </div>
+    <div class="story-strip" id="strip2">
+      <div class="strip-track">
+
+        <div class="strip-block wide">
+          <div class="strip-cat">O espírito circulante</div>
+          <div class="strip-text lg">Noel Rosa</div>
+          <div class="strip-text sm c-muted">perambulou pela Lapa de São Paulo</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block">
+          <div class="strip-symbol-bg" style="font-size:80px">SP</div>
+          <div class="strip-text xs c-muted" style="margin-bottom:6px">Estava em</div>
+          <div class="strip-text xl">São<br>Paulo</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block wide">
+          <div class="strip-cat">Na época</div>
+          <div class="strip-text md">Estávamos<br>fazendo<br>alguns beats</div>
+          <div class="strip-text hand c-muted" style="margin-top:8px">Kride Jr. + Fus-k Beats</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block">
+          <div class="strip-cat">Marcos Braga</div>
+          <div class="strip-text sm">Produtor, Arranjador e Trompetista</div>
+          <div class="strip-text md c-amber" style="margin-top:8px">Encomendou<br>uma música</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block dark">
+          <div class="strip-cat" style="color:#FF2D6B">Endereço da encomenda</div>
+          <div class="strip-text md c-inv">Crítica<br>ao<br>Sistema</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block wide">
+          <div class="strip-cat">Pesquisa</div>
+          <div class="strip-text sm c-muted">Entre músicas, pesquisas e rascunhos...</div>
+          <div class="strip-text lg" style="margin-top:8px">Me deparei<br>com a frase:</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block accent-red">
+          <div class="strip-symbol-bg">?</div>
+          <div class="strip-text xl">Pra<br>Que<br>Mentir</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block">
+          <div class="strip-cat">Dezembro 2024</div>
+          <div class="strip-text sm c-muted">Era véspera de Natal.</div>
+          <div class="strip-text md" style="margin-top:6px">Papai Noel<br>chegando.</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block dark wide">
+          <div class="strip-text xs c-inv-m" style="margin-bottom:8px">Eu procurava uma música.</div>
+          <div class="strip-text lg c-inv">Encontrei<br>um propósito.</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FAIXA 3: O Manifesto ──────────────────────── -->
+  <div class="story-strip-section">
+    <div class="story-strip-label">
+      <span>Faixa 03 — O Manifesto</span>
+      <span class="strip-scroll-hint"><span>→</span> arraste para explorar</span>
+    </div>
+    <div class="story-strip" id="strip3">
+      <div class="strip-track">
+
+        <div class="strip-block wide">
+          <div class="strip-year-bg">37</div>
+          <div class="strip-cat">Em 1937</div>
+          <div class="strip-text md">Era sobre<br>AMOR</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block wide">
+          <div class="strip-year-bg">26</div>
+          <div class="strip-cat">Em 2026</div>
+          <div class="strip-text md c-red">É sobre<br>CONSTITUIÇÃO</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block dark">
+          <div class="strip-text xs c-inv-m" style="margin-bottom:8px">A pergunta permanece:</div>
+          <div class="strip-text xl c-inv">Pra<br>Que<br>Mentir?</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block wide">
+          <div class="strip-symbol-bg">§</div>
+          <div class="strip-cat">Bandeira 1</div>
+          <div class="strip-text md">Estatuto do<br>Artista<br>Trabalhador</div>
+          <div class="strip-text xs c-muted" style="margin-top:6px">Inspirado no modelo francês</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block wide">
+          <div class="strip-cat">Bandeira 2</div>
+          <div class="strip-text md">70 → 30<br>anos pós-morte</div>
+          <div class="strip-text xs c-muted" style="margin-top:6px">Redução do prazo de proteção autoral</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block">
+          <div class="strip-cat">Tese jurídica</div>
+          <div class="strip-text sm">Dr. Daniel Arbix — USP. Uso transformativo como direito constitucional.</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block">
+          <div class="strip-cat">Aliados</div>
+          <div class="strip-text xs c-muted" style="margin-bottom:6px">InternetLab · CC Brasil · CEPI-FGV</div>
+          <div class="strip-text md c-teal">Juridistas<br>aliados</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block dark">
+          <div class="strip-cat" style="color:#B8920A">Destino final</div>
+          <div class="strip-text md c-inv">Comissões<br>do Senado<br>Federal</div>
+          <span class="strip-arrow">→</span>
+        </div>
+
+        <div class="strip-block accent-red xwide">
+          <div class="strip-text xl">Assine<br>o Manifesto</div>
+          <a href="manifesto.html" class="strip-text xs" style="color:rgba(255,255,255,0.8);margin-top:12px;display:block;border-bottom:1px solid rgba(255,255,255,0.4);padding-bottom:4px;display:inline-block">Ler e assinar →</a>
+          <span class="strip-arrow" style="color:rgba(255,255,255,0.6)">→</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Papel rasgado: strips escuras → pills claras -->
+<div style="height:48px;background:var(--bg-dark);position:relative;z-index:3;margin-bottom:-1px">
+  <svg viewBox="0 0 1440 48" preserveAspectRatio="none" style="width:100%;height:100%;display:block">
+    <path d="M0,48 L0,22 C34,32 70,8 108,12 C146,16 154,42 192,38 C230,34 238,8 278,12 C318,16 326,44 364,40 C402,36 410,8 450,12 C490,16 498,46 536,42 C574,38 582,10 622,14 C662,18 670,48 708,44 C746,40 754,10 794,14 C834,18 842,46 880,42 C918,38 926,8 966,12 C1006,16 1014,44 1052,40 C1090,36 1098,8 1138,12 C1178,16 1186,46 1224,42 C1262,38 1270,10 1310,14 C1350,18 1370,44 1440,40 L1440,0 L0,0 Z" fill="#D4C8B0"/>
+  </svg>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     TRÊS FRENTES
+════════════════════════════════════════════════════════ -->
 <section class="pills-section">
   <div class="section-label reveal"><span class="num">01</span> O projeto em três frentes</div>
   <div class="pills-grid">
@@ -145,6 +453,9 @@
   </div>
 </section>
 
+<!-- ═══════════════════════════════════════════════════════
+     QUOTE — bloco escuro de contraste
+════════════════════════════════════════════════════════ -->
 <section class="quote-strip">
   <svg class="staff-svg" preserveAspectRatio="none" viewBox="0 0 1440 600">
     <line class="staff-line l1" x1="0" y1="180" x2="1440" y2="180"/>
@@ -157,36 +468,69 @@
     <div class="quote-mark">"</div>
     <p class="quote-text">Não nasceu de uma sacada de marketing.<br>Nasceu do <span>luto e da indignação.</span></p>
     <p class="quote-attr">Kride Jr. — Gênese do projeto, Dezembro 2024</p>
-    <div style="margin-top:38px;"><a href="manifesto.html" class="btn-primary" data-vlk-click="cta_quote_manifesto" data-vlk-category="quote">Ver o manifesto completo <span>♬</span></a></div>
+    <div style="margin-top:38px">
+      <a href="manifesto.html" class="btn-primary" data-vlk-click="cta_quote_manifesto" data-vlk-category="quote">Ver o manifesto completo ♬</a>
+    </div>
   </div>
 </section>
 
+<!-- ═══════════════════════════════════════════════════════
+     BLOG PREVIEW
+════════════════════════════════════════════════════════ -->
 <section class="blog-preview">
   <div class="section-label reveal"><span class="num">02</span> Últimas do blog</div>
   <div class="posts-row">
-    <div class="post-card reveal d1"><div class="post-cat">Kride &amp; Noel</div><div class="post-title">A primeira vez que ouvi Noel Rosa e não sabia que era ele</div><div class="post-date">Semana 1</div></div>
-    <div class="post-card reveal d2"><div class="post-cat">Dentro do Manifesto</div><div class="post-title">70 anos após a morte: a quem serve este prazo?</div><div class="post-date">Semana 5</div></div>
-    <div class="post-card reveal d3"><div class="post-cat">Ataques e Contrapontos</div><div class="post-title">ECAD e UBC: proteção ou pedágio sobre o patrimônio cultural?</div><div class="post-date">Semana 7</div></div>
+    <div class="post-card reveal d1">
+      <div class="post-cat">Kride &amp; Noel</div>
+      <div class="post-title">A primeira vez que ouvi Noel Rosa e não sabia que era ele</div>
+      <div class="post-date">Semana 1</div>
+    </div>
+    <div class="post-card reveal d2">
+      <div class="post-cat">Dentro do Manifesto</div>
+      <div class="post-title">70 anos após a morte: a quem serve este prazo?</div>
+      <div class="post-date">Semana 5</div>
+    </div>
+    <div class="post-card reveal d3">
+      <div class="post-cat">Ataques e Contrapontos</div>
+      <div class="post-title">ECAD e UBC: proteção ou pedágio sobre o patrimônio cultural?</div>
+      <div class="post-date">Semana 7</div>
+    </div>
   </div>
 </section>
 
+<!-- ═══════════════════════════════════════════════════════
+     CANAIS
+════════════════════════════════════════════════════════ -->
 <section class="channels-section">
   <div class="section-label reveal"><span class="num">03</span> Acompanhe em cada canal</div>
   <div class="channels-row">
-    <div class="channel-card reveal d1" data-vlk-click="social_instagram" data-vlk-category="social" data-vlk-label="Instagram @praquementiroficial"><div class="channel-name">Instagram</div><div class="channel-desc">@praquementiroficial — storytelling visual, bastidores e expansão da narrativa.</div></div>
-    <div class="channel-card reveal d2" data-vlk-click="social_youtube" data-vlk-category="social" data-vlk-label="YouTube Kride Jr."><div class="channel-name">YouTube</div><div class="channel-desc">Making-of, registros da produção e aprofundamento em vídeo dos temas do manifesto.</div></div>
-    <div class="channel-card reveal d3" data-vlk-click="social_substack" data-vlk-category="social" data-vlk-label="Substack Pra que Mentir"><div class="channel-name">Substack</div><div class="channel-desc">Ensaios, teses e análises com a densidade que o projeto merece.</div></div>
-    <div class="channel-card reveal d4" data-vlk-click="social_site" data-vlk-category="social" data-vlk-label="Site praquementir.com.br"><div class="channel-name">Este site</div><div class="channel-desc">O bunker. Destino final do tráfego, repositório jurídico e base do manifesto.</div></div>
+    <div class="channel-card reveal d1" data-vlk-click="social_instagram" data-vlk-category="social">
+      <div class="channel-name">Instagram</div>
+      <div class="channel-desc">@praquementiroficial — storytelling visual, bastidores e expansão da narrativa.</div>
+    </div>
+    <div class="channel-card reveal d2" data-vlk-click="social_youtube" data-vlk-category="social">
+      <div class="channel-name">YouTube</div>
+      <div class="channel-desc">Making-of, registros da produção e aprofundamento em vídeo dos temas do manifesto.</div>
+    </div>
+    <div class="channel-card reveal d3" data-vlk-click="social_substack" data-vlk-category="social">
+      <div class="channel-name">Substack</div>
+      <div class="channel-desc">Ensaios, teses e análises com a densidade que o projeto merece.</div>
+    </div>
+    <div class="channel-card reveal d4" data-vlk-click="social_site" data-vlk-category="social">
+      <div class="channel-name">Este site</div>
+      <div class="channel-desc">O bunker. Destino final do tráfego, repositório jurídico e base do manifesto.</div>
+    </div>
   </div>
 </section>
 
 <footer>
-  <div class="footer-logo"><span style="font-size:24px">𝄞</span> Pra que Mentir</div>
-  <div class="footer-copy">© 2024 Kride Jr. · Tecnologia: Valkhan Tech</div>
+  <div class="footer-logo"><span style="font-size:22px">𝄞</span> Pra que Mentir</div>
+  <div class="footer-copy">© 2026 Kride Jr. · Tecnologia: Valkhan Tech</div>
 </footer>
 
 <script src="js/ambient.js"></script>
 <script src="js/reveals.js"></script>
+<script src="js/strips.js" defer></script>
 <script src="js/analytics.js" defer></script>
 </body>
 </html>

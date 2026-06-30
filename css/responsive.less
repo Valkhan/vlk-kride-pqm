@@ -1,11 +1,12 @@
 // ════════════════════════════════════════════════════════
-//  RESPONSIVE — ajustes para mobile (max-width: 860px)
+//  RESPONSIVE — mobile (max-width: 860px)
 // ════════════════════════════════════════════════════════
 
 @media (max-width: 860px) {
-  nav { padding: 14px 22px; }
+  nav { padding: 0 22px; height: 52px; }
   .nav-links { display: none; }
 
+  // Padding global
   .hero,
   .pills-section,
   .quote-strip,
@@ -18,25 +19,62 @@
   .gallery-filters,
   .gallery-featured,
   .gallery-section,
-  .gallery-end {
+  .gallery-end,
+  .strips-section-header,
+  .story-strip-label {
     padding-left: 22px;
     padding-right: 22px;
   }
 
+  // Hero: coluna única no mobile
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: 90px;
+    padding-bottom: 60px;
+  }
+  .hero-right { display: none; } // collage só em desktop
+  .hero-question-bg { display: none; }
+  .hero-title { font-size: clamp(56px, 16vw, 88px); }
+
+  // Grids para coluna única
   .pills-grid,
   .posts-row,
-  .channels-row,
   .netflix-row { grid-template-columns: 1fr; }
+
+  .channels-row { grid-template-columns: repeat(2, 1fr); }
 
   .flags-grid,
   .leg-compare,
   .featured-card { grid-template-columns: 1fr; }
 
-  // Clave no mobile: desloca para esquerda (evita overflow)
-  .hero-clef { font-size: 220px; right: auto; left: -15px; opacity: .08; }
+  // Strips: altura reduzida no mobile, blocos menores
+  .strip-track { height: 160px; }
+  .strip-block { width: 150px; padding: 14px 16px; }
+  .strip-block.wide  { width: 200px; }
+  .strip-block.xwide { width: 250px; }
+  .strip-block.narrow { width: 110px; }
+  .strip-text.xl { font-size: 28px; }
+  .strip-text.lg { font-size: 20px; }
 
+  // Manifesto: sem sidebar
   .manifesto-layout { grid-template-columns: 1fr; }
   .manifesto-nav { display: none; }
 
+  // Galeria: filtros não sticky
   .gallery-filters { position: static; }
+
+  // Cards sem rotação no mobile (evita overlap)
+  .pill, .post-card, .netflix-card, .featured-card { transform: none !important; }
+}
+
+@media (max-width: 520px) {
+  .channels-row { grid-template-columns: 1fr; }
+
+  .hero-title { font-size: clamp(48px, 18vw, 72px); }
+
+  .strip-track { height: 140px; }
+  .strip-block { width: 140px; }
+  .strip-text.xl { font-size: 24px; }
+  .strip-text.lg { font-size: 18px; }
 }

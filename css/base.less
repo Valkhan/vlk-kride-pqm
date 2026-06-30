@@ -1,43 +1,76 @@
 // ════════════════════════════════════════════════════════
-//  BASE — reset, body, global utilities
+//  BASE — reset, body, tipografia global, utilitários
 // ════════════════════════════════════════════════════════
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
+
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Lora', Georgia, serif;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.8;
   overflow-x: hidden;
+  // Grain de papel via pseudo-element
+  &::after {
+    content: '';
+    position: fixed; inset: 0; z-index: 0;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+    opacity: 1;
+    animation: grainShift 0.8s steps(1) infinite;
+  }
 }
-::selection { background: var(--rose); color: #fff; }
 
-// Ambient layer
+::selection { background: var(--red); color: #fff; }
+
+// ── Hierarquia tipográfica ────────────────────────────────
+h1, h2, .title-impact {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 0.92;
+}
+h3, h4, .title-narrative {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+}
+h5, h6 { font-family: 'Lora', Georgia, serif; font-weight: 600; }
+
+.mono, .date, .article-ref {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.82em;
+  letter-spacing: 0.15em;
+}
+.handwritten, .aside-kride {
+  font-family: 'Caveat', cursive;
+  font-size: 1.05em;
+}
+
+// ── Ambient layer ─────────────────────────────────────────
 .ambient {
   position: fixed; inset: 0; z-index: 1;
   pointer-events: none; overflow: hidden;
 }
 .float-note {
   position: absolute;
-  color: var(--rose);
+  color: var(--red);
   opacity: 0;
-  font-size: 28px;
+  font-size: 24px;
   animation: floatUp linear infinite;
-  text-shadow: 0 0 18px var(--glow);
   user-select: none;
 }
 
-// Pages container
+// ── Pages ──────────────────────────────────────────────────
 .page { display: none; position: relative; z-index: 2; }
 .page.active { display: block; }
 
-// Reveal on scroll
+// ── Reveal on scroll ──────────────────────────────────────
 .reveal {
   opacity: 0;
-  transform: translateY(34px);
-  transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1);
+  transform: translateY(28px);
+  transition: opacity .85s cubic-bezier(.2,.7,.2,1), transform .85s cubic-bezier(.2,.7,.2,1);
 }
 .reveal.in { opacity: 1; transform: none; }
 .reveal.d1 { transition-delay: .08s; }
@@ -45,15 +78,15 @@ body {
 .reveal.d3 { transition-delay: .24s; }
 .reveal.d4 { transition-delay: .32s; }
 
-// Animated staff (pentagrama SVG)
+// ── Pentagrama SVG ────────────────────────────────────────
 .staff-svg {
   position: absolute; inset: 0; width: 100%; height: 100%;
   pointer-events: none; z-index: 0;
 }
 .staff-line {
-  stroke: var(--rose); stroke-width: 1; fill: none;
+  stroke: var(--red); stroke-width: 1; fill: none;
   stroke-dasharray: 2000; stroke-dashoffset: 2000;
-  opacity: 0.13;
+  opacity: 0.07;
   animation: drawStaff 3s ease forwards;
 }
 .staff-line.l2 { animation-delay: .2s; }
@@ -61,61 +94,98 @@ body {
 .staff-line.l4 { animation-delay: .6s; }
 .staff-line.l5 { animation-delay: .8s; }
 
-.staff-note-svg {
-  fill: var(--rose); opacity: 0;
-  animation: notePop .5s ease forwards;
+// ── Utilitários de recorte ────────────────────────────────
+.cutout {
+  box-shadow: var(--paper-shadow);
+  position: relative;
 }
-.staff-note-svg.pulsing {
-  animation: notePulse .75s ease forwards;
+.cutout-r1 { transform: rotate(-1.5deg); }
+.cutout-r2 { transform: rotate(0.8deg); }
+.cutout-r3 { transform: rotate(-0.5deg); }
+.cutout-r4 { transform: rotate(1.2deg); }
+.cutout-hover {
+  transition: transform .25s, box-shadow .25s;
+  &:hover {
+    transform: rotate(0deg) translateY(-4px);
+    box-shadow: var(--paper-shadow-lg);
+  }
 }
 
-// Buttons
+// ── Botões ────────────────────────────────────────────────
 .btn-primary {
-  padding: 15px 34px; background: var(--rose); color: #fff;
-  border: none; cursor: pointer; font-family: Georgia, serif;
-  font-size: 13px; letter-spacing: .15em; text-transform: uppercase;
-  text-decoration: none; display: inline-flex; align-items: center; gap: 10px;
+  padding: 14px 32px;
+  background: var(--red);
+  color: #fff;
+  border: none; cursor: pointer;
+  font-family: 'Anton', sans-serif;
+  font-size: 14px; letter-spacing: .12em; text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 10px;
   position: relative; overflow: hidden;
-  transition: transform .2s, box-shadow .3s;
-  box-shadow: 0 0 0 rgba(232,80,91,0);
+  transition: transform .2s, box-shadow .25s;
+  box-shadow: 3px 3px 0 rgba(0,0,0,0.2);
   &::before {
-    content:''; position:absolute; inset:0;
-    background: linear-gradient(120deg, transparent, rgba(255,255,255,.25), transparent);
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,.2), transparent);
     transform: translateX(-120%); transition: transform .5s;
   }
   &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 34px rgba(232,80,91,.4);
+    transform: translateY(-2px);
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.25);
     &::before { transform: translateX(120%); }
   }
 }
 .btn-ghost {
-  padding: 15px 34px; background: transparent; color: var(--text);
-  border: 1px solid var(--border); cursor: pointer;
-  font-family: Georgia, serif; font-size: 13px; letter-spacing: .15em;
-  text-transform: uppercase; text-decoration: none;
-  display: inline-flex; align-items:center; gap: 8px;
+  padding: 14px 32px;
+  background: transparent;
+  color: var(--text);
+  border: 2px solid var(--text);
+  cursor: pointer;
+  font-family: 'Anton', sans-serif;
+  font-size: 14px; letter-spacing: .12em; text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 8px;
   transition: border-color .25s, color .25s, background .25s;
-  &:hover { border-color: var(--rose); color: var(--rose); background: rgba(232,80,91,.05); }
+  &:hover { border-color: var(--red); color: var(--red); background: rgba(196,30,30,.06); }
 }
 
-// Section shell label
+// ── Section label ─────────────────────────────────────────
 .section-label {
-  font-size: 11px; letter-spacing: .35em; text-transform: uppercase;
-  color: var(--rose); margin-bottom: 52px;
-  display: flex; align-items: center; gap: 16px;
-  &::after { content:''; flex:1; height:1px; background: var(--border); }
-  .num { color: var(--muted); }
+  font-family: 'Space Mono', monospace;
+  font-size: 10px; letter-spacing: .35em; text-transform: uppercase;
+  color: var(--red); margin-bottom: 48px;
+  display: flex; align-items: center; gap: 14px;
+  &::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+  .num { color: var(--muted); margin-right: 4px; }
 }
 
-// Footer
+// ── Linha divisória de papel ──────────────────────────────
+.paper-rule {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
+}
+.paper-rule-red {
+  border: none;
+  border-top: 3px solid var(--red);
+}
+
+// ── Footer ────────────────────────────────────────────────
 footer {
-  padding: 64px 80px; background: #000; border-top: 1px solid var(--border);
+  padding: 56px 80px;
+  background: var(--bg-dark);
+  border-top: 3px solid var(--red);
   display: flex; justify-content: space-between; align-items: center;
   position: relative; overflow: hidden;
 }
 .footer-logo {
-  font-size: 18px; letter-spacing: .2em; color: var(--rose);
-  font-weight: bold; display:flex; align-items:center; gap:10px;
+  font-family: 'Anton', sans-serif;
+  font-size: 20px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--text-inv);
+  display: flex; align-items: center; gap: 10px;
 }
-.footer-copy { font-size: 12px; color: var(--muted); }
+.footer-copy {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px; color: var(--muted-inv);
+  letter-spacing: .08em;
+}

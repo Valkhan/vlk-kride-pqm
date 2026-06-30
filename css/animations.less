@@ -1,97 +1,117 @@
 // ════════════════════════════════════════════════════════
-//  ANIMATIONS — todas as @keyframes do projeto
+//  ANIMATIONS — @keyframes do projeto
 // ════════════════════════════════════════════════════════
 
+// Notas flutuantes (ambient)
 @keyframes floatUp {
-  0%   { transform: translateX(110vw); opacity: 0; }
-  8%   { opacity: .55; }
-  92%  { opacity: .3; }
-  100% { transform: translateX(-10vw); opacity: 0; }
+  0%   { transform: translateX(-10vw) rotate(0deg); opacity: 0; }
+  8%   { opacity: .35; }
+  92%  { opacity: .2; }
+  100% { transform: translateX(110vw) rotate(15deg); opacity: 0; }
 }
 
 @keyframes pulse {
   0%,100% { opacity: .8; transform: scale(1); }
-  50%     { opacity: 1; transform: scale(1.08); text-shadow: 0 0 12px var(--glow); }
+  50%     { opacity: 1; transform: scale(1.08); }
 }
 
+// Pentagrama
 @keyframes drawStaff {
   to { stroke-dashoffset: 0; }
 }
 
-@keyframes notePop {
-  0%   { opacity: 0; transform: scale(0); }
-  60%  { opacity: .7; transform: scale(1.3); }
-  100% { opacity: .5; transform: scale(1); }
+// Glitch no título
+@keyframes glitchTitle {
+  0%, 90%, 100% { text-shadow: none; transform: none; }
+  91%  { text-shadow: 2px 0 0 var(--red), -2px 0 0 var(--neon-cyan); transform: skewX(1deg); }
+  92%  { text-shadow: -3px 0 0 var(--red), 3px 0 0 var(--neon-cyan); transform: skewX(-1.5deg); }
+  93%  { text-shadow: 2px 0 0 var(--neon-pink); transform: skewX(0.5deg); }
+  94%  { text-shadow: none; transform: none; }
 }
 
-@keyframes notePulse {
-  0%   { transform: scale(1);   opacity: .5; }
-  35%  { transform: scale(1.7); opacity: 1;  filter: drop-shadow(0 0 6px var(--rose)); }
-  70%  { transform: scale(1);   opacity: .5; filter: none; }
-  100% { transform: scale(1);   opacity: .5; }
+// Entrada de reveal
+@keyframes riseIn {
+  to { transform: translateY(0); opacity: 1; }
 }
 
-// Hero notes slide-in
-@keyframes heroNoteEnter {
-  from { transform: translateX(110vw); opacity: 0; }
-  to   { transform: translateX(0);    opacity: 1; }
+// Carimbo chegando
+@keyframes stampIn {
+  0%   { transform: scale(1.5) rotate(-8deg); opacity: 0; }
+  60%  { transform: scale(0.95) rotate(-1deg); opacity: 1; }
+  80%  { transform: scale(1.02) rotate(-2deg); }
+  100% { transform: scale(1) rotate(-2deg); opacity: 1; }
 }
 
-// Hero note sequential pulse (cycle = 4s)
-// note1: pulse at 0%–18.75% (0s–0.75s)
-@keyframes heroNotePulse1 {
-  0%                { transform: scale(1);   opacity: .5; filter: none; }
-  9.375%            { transform: scale(1.7); opacity: 1;  filter: drop-shadow(0 0 8px var(--rose)); }
-  18.75%, 100%      { transform: scale(1);   opacity: .5; filter: none; }
-}
-// note2: pulse at 25%–43.75% (1s–1.75s)
-@keyframes heroNotePulse2 {
-  0%, 25%           { transform: scale(1);   opacity: .5; filter: none; }
-  34.375%           { transform: scale(1.7); opacity: 1;  filter: drop-shadow(0 0 8px var(--rose)); }
-  43.75%, 100%      { transform: scale(1);   opacity: .5; filter: none; }
-}
-// note3: pulse at 50%–68.75% (2s–2.75s)
-@keyframes heroNotePulse3 {
-  0%, 50%           { transform: scale(1);   opacity: .5; filter: none; }
-  59.375%           { transform: scale(1.7); opacity: 1;  filter: drop-shadow(0 0 8px var(--rose)); }
-  68.75%, 100%      { transform: scale(1);   opacity: .5; filter: none; }
-}
-// note4: pulse at 75%–93.75% (3s–3.75s)
-@keyframes heroNotePulse4 {
-  0%, 75%           { transform: scale(1);   opacity: .5; filter: none; }
-  84.375%           { transform: scale(1.7); opacity: 1;  filter: drop-shadow(0 0 8px var(--rose)); }
-  93.75%, 100%      { transform: scale(1);   opacity: .5; filter: none; }
-}
-
-@keyframes clefFloat {
-  0%,100% { transform: translateY(-50%) rotate(-1deg); }
-  50%     { transform: translateY(-54%) rotate(1.5deg); }
-}
-
+// Linha crescendo
 @keyframes lineGrow {
   from { transform: scaleX(0); }
   to   { transform: scaleX(1); }
 }
 
-@keyframes riseIn {
-  to { transform: translateY(0); }
-}
-
+// Listras deslizando
 @keyframes stripeShift {
   to { background-position: 200% 0; }
 }
 
+// Scroll cue bob
 @keyframes bob {
-  0%,100% { transform: translate(-50%,0); }
-  50%     { transform: translate(-50%,10px); }
+  0%,100% { transform: translate(-50%, 0); }
+  50%     { transform: translate(-50%, 8px); }
+}
+
+// Flutuar suave (clave, etc.)
+@keyframes clefFloat {
+  0%,100% { transform: translateY(-50%) rotate(-1deg); }
+  50%     { transform: translateY(-54%) rotate(1.5deg); }
+}
+
+// Grain de papel
+@keyframes grainShift {
+  0%   { transform: translate(0, 0); }
+  20%  { transform: translate(-1px, 1px); }
+  40%  { transform: translate(1px, -1px); }
+  60%  { transform: translate(-1px, -1px); }
+  80%  { transform: translate(1px, 1px); }
+  100% { transform: translate(0, 0); }
+}
+
+// Strip scroll hint
+@keyframes stripHint {
+  0%   { transform: translateX(0); opacity: 1; }
+  50%  { transform: translateX(12px); opacity: 0.5; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+// Hero note pulses (4 notas sequenciais, ciclo 4s)
+@keyframes heroNotePulse1 {
+  0%           { transform: scale(1);   opacity: .5; }
+  9.375%       { transform: scale(1.7); opacity: 1;  filter: drop-shadow(0 0 6px var(--red)); }
+  18.75%, 100% { transform: scale(1);   opacity: .5; filter: none; }
+}
+@keyframes heroNotePulse2 {
+  0%, 25%      { transform: scale(1);   opacity: .5; }
+  34.375%      { transform: scale(1.7); opacity: 1;  filter: drop-shadow(0 0 6px var(--red)); }
+  43.75%, 100% { transform: scale(1);   opacity: .5; filter: none; }
+}
+@keyframes heroNotePulse3 {
+  0%, 50%      { transform: scale(1);   opacity: .5; }
+  59.375%      { transform: scale(1.7); opacity: 1;  filter: drop-shadow(0 0 6px var(--red)); }
+  68.75%, 100% { transform: scale(1);   opacity: .5; filter: none; }
+}
+@keyframes heroNotePulse4 {
+  0%, 75%      { transform: scale(1);   opacity: .5; }
+  84.375%      { transform: scale(1.7); opacity: 1;  filter: drop-shadow(0 0 6px var(--red)); }
+  93.75%, 100% { transform: scale(1);   opacity: .5; filter: none; }
+}
+@keyframes heroNoteEnter {
+  from { transform: translateX(60px); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
 }
 
 // Respect reduced motion
 @media (prefers-reduced-motion: reduce) {
-  .float-note, .clef-draw path, .staff-line,
-  .hero-note-group, .hero-note-circle,
-  .reveal { animation: none !important; transition: none !important; }
+  .float-note, .staff-line, .hero-note-group, .hero-note-circle,
+  .reveal, .hero-title .word-mentir { animation: none !important; transition: none !important; }
   .reveal { opacity: 1 !important; transform: none !important; }
   .hero-note-group { opacity: 1 !important; }
-  .hero-note-circle { opacity: .5 !important; }
 }

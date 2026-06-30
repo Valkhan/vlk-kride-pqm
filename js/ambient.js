@@ -4,7 +4,7 @@
 ════════════════════════════════════════════════════════ */
 (function () {
   const glyphs = ['♪','♫','♬','♩','𝄞','♭','♯'];
-  const tints  = ['#E8505B','#F4A261','#7D3C98','#C0392B'];
+  const tints  = ['#C41E1E','#D4620A','#6B2FA0','#B8920A','#1A3A6B'];
   const ambient = document.getElementById('ambient');
   if (!ambient) return;
 

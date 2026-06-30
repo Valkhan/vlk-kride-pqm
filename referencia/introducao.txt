@@ -1,0 +1,95 @@
+Fala, PV ... beleza?
+Cara, estou te procurando para apresentar o projeto mais importante e maduro da minha trajetória até aqui, e quero te fazer um convite para entrar comigo nessa não apenas como meu primo, mas como talvez o parceiro tecnológico oficial dessa engrenagem.
+
+O projeto se chama "Pra que Mentir". Ele nasceu de uma experiência pessoal profunda, passou por meses de gravação em estúdio com a banda Chinela Voadora (que já levou essa sonoridade para os palcos do Blue Note e do Bourbon Street), e agora está se desdobrando em um Manifesto Cultural e Legislativo de alcance nacional.
+
+Nós não estamos criando um site comercial para vender um produto ou um curso (pode ser que no futuro aconteça mas não agora). Estamos construindo uma plataforma de impacto social e interesse público. O objetivo do site é ser o "bunker" de uma comunidade colaborativa, um espaço que vai agregar teses jurídicas de grandes institutos de direitos digitais (como o InternetLab e o Creative Commons) e impulsionar uma proposta de reforma na lei trabalhista do artista independente no Brasil — inspirada no modelo que já funciona com sucesso na França (L'intermittent du spectacle) … Utopia, mas não vou morrer sem tentar!
+
+Como você é focado em desenvolvimento e tecnologia, enxergo aqui uma oportunidade de ganho de visibilidade para você:
+
+1. Vitrine de Portfólio: O site será o destino final de todo o tráfego orgânico gerado pelo canal do YouTube, Substack e pelo perfil do insta @praquementiroficial. Juristas, pesquisadores, acadêmicos da USP e da FGV, e futuramente grandes nomes da MPB (nossa meta é alcançar a assinatura de nomes como Caetano, Gil e Chico) vão navegar e interagir dentro da plataforma que você construir
+2. Responsabilidade Social e Tecnologia Humanizada: No debate atual sobre Inteligência Artificial, o nosso manifesto defende o trabalhador humano. Ter a sua empresa assinando a infraestrutura de um projeto que luta pela sustentabilidade e valorização do ecossistema cultural brasileiro, eu penso que rola uma reputação e valor ético interessante. E fora que quando o manifesto ganhar corpo político e chegar ao Senado (20 milhões de assinaturas), a tecnologia que viabilizou essa rede terá o selo da sua marca.
+
+Quero te apresentar o escopo do projeto e o desenho de dados que estou estruturando. Não quero que você veja isso como um "favor" ou um trabalho sem propósito, mas sim como a oportunidade de colocarmos as nossas habilidades (a minha na música/TI e a sua no desenvolvimento) a serviço de uma causa real, limpa e íntegra, que vai bater de frente com o monopólio da indústria tradicional... e obviamente eu sei que tudo tem um custo então eu sei que nada é de graça. E você me conhece então ...é isso. 
+
+Esse é um texto introdutório para você se inteirar sobre o que eu venho fazendo antes-durante-pós Techserv ... kkkk - e também pra gente sentar na sexta feira e agilizar nossa conversa ….
+
+
+
+Nasceu do luto e da indignação. Unir música, narrativa no Instagram, profundidade no Substack/YouTube e uma base de dados própria (o site) tira o poder das mãos do algoritmo da industria fonografica ... bem assim eu acho, ao menos inicialmente.
+
+Qual é o projeto? 
+O Alvo: (1) Questionar a coleta de receita das obras dos artistas mortos até 70 anos após-morte (quebrar de 70 para 30), (2) propor a desoneração/estatuto do artista aos moldes da França 
+
+As Leis Francesas de Referência
+Para fundamentar a tese com os juristas e também popular o site, vamos pegar por exemplo a França. Eles utilizam o sistema do L'intermittent du spectacle (criado originalmente em 1936 e integrado ao Code du Travail). Funciona através dos anexos VIII e X do regulamento do seguro-desemprego deles, garantindo um subsídio financeiro contínuo para artistas e técnicos nos períodos em que não estão em cartaz ou gravando, reconhecendo o tempo de ensaio e pesquisa como trabalho efetivo.
+
+PROJETO PRA QUE MENTIR: DA GÊNESE AO MANIFESTO LEGISLATIVO
+1. A Linha do Tempo
+A Encomenda (Dezembro/2024)
+O projeto nasce em 24 de dezembro de 2024, a partir de uma demanda de Marcos Braga. Ao receber a proposta enxerguei a oportunidade de um resgate cultural com a utilização da clássica composição "Pra que Mentir" (Noel Rosa / Vadico, 1937) como o sample central da faixa.
+
+A Evolução da Letra: A Realidade x A Sociedade
+A composição ganha contornos de manifesto ao contrastar a evolução pessoal do autor com as cicatrizes de sua origem: a favela esquecida pelo poder público, a fome material e a falta de perspectiva que ceifou a vida de amigos ainda jovens. Esse cenário de abandono é costurado assim:
+
+1. A Falha do Estado: A negativa do Ministério Público diante do pedido de liberação do benefício de Arthur, em vida, quando o benefício foi cortado - dentre outros motivos que posso citar depois … 
+2. A Polarização Desumanizada: O choque de receber cobranças de posicionamento político-partidário por telefone quando estávamos com o Tutu no leito de morte - e isso me deixou perplexo como que o Sistema age na cabeça e nas atitudes das pessoas
+
+A Crítica à "Gaiola Social" e as Bets em 2026
+A obra evolui como uma denúncia direta à alienação programada, ao observar mentiras (na gondola do supermercado, na educação, nas bombas de combustível e tantos outros lugares cabe a frase “Pra que Mentir”…) e ao entretenimento de massa utilizado como ferramenta de controle e na proliferação dos jogos de azar patrocinados e na normalização da desigualdade exposta nos comerciais das "Bets" no horário nobre da Copa do Mundo de 2026 — ao meu ver o maior engodo contemporâneo.
+
+
+
+2. O Território Hostil dos Direitos Autorais e a Produção Artesanal
+O Varal Jurídico
+A criação da nova versão de "Pra que Mentir" ocorreu sob a tensão constante da retaliação jurídica. O autor operou em uma linha tênue, equilibrando-se psicologicamente entre os conceitos de "Direito Moral", "Direito Autoral", as travas do ECAD/UBC e o medo do esmagamento pela indústria fonográfica majoritária, que ainda detém os direitos da melodia “Pra que Mentir” original por conta do Vadico ser co-autor e ainda não entrou em domínio público.
+
+A Lavanderia Musical
+Ignorando as barreiras financeiras e o pedágio cobrado pelas editoras detentoras do catálogo original (E. M. Mangione - Detentora dos direitos de Vadico), a faixa foi lapidada de forma artesanal. Utilizando a força humana de Kride Jr. (violão, contrabaixo e voz) e o suporte técnico de Fuskera - amigo DJ Fus-k Beats, a música ganhou vida em uma lavanderia improvisada, fundindo a textura de 1937 com recortes rítmicos modernos inspirados em Marcelo D2 e outros samples.
+
+A Conexão Noel Rosa: Sincronicidades Psicológicas e Biográficas
+Durante o processo, uma série de coincidências biográficas com a figura de Noel Rosa alimentaram a convicção do projeto:
+Geografia e Boemia: O trânsito forte pelas Vilas, pelas Lapas e o mergulho profundo e destrutivo na noite e na bohemia, que moldaram minha identidade musical à custa de rupturas pessoais - São várias!
+A Relação com o Instrumento: O violão como principal ferramenta de tradução do mundo.
+A Personalidade: O nomadismo urbano, a facilidade de trânsito em todos os núcleos, o temperamento irônico, o humor ácido na composição crônica.
+O Sinal Biológico: As complicações na gestação de ambas as mães de Kride e Noel como o elo definitivo de força para o enfrentamento do medo e o lançamento da faixa "Pra que Mentir" por Kride Jr.- Pensei assim: É muita coincidência pro meu gosto… Vou seguir! 
+Família: O resgate do avô Manuel, também violonista e fã de Dilermando e Noel (segundo minha mãe). 
+Curiosidade --> Esse final de semana fui na vó, e descobri que nossa vovó tem um livro de Noel Rosa que ela gosta de ler ... ué.... ???????????????? Pirei agora! 
+Se ela me dissesse que tem uma bíblia do século passado que veio da Itália pertencente a familia do ancião Franciscon, iria ser até tranquilo pra mim. Mas um livro de Noel ??? kkkkkkk - Coincidência? hunn
+
+3. O Próximo Passo: Infraestrutura e Estratégia de Combate a Indústria fonográfica
+O projeto deixou de ser apenas um fonograma e passou a ser uma plataforma de intervenção política e jurídica, dividida em três pilares digitais:
+Instagram (@praquementiroficial): Storytelling e expansão da narrativa.
+YouTube/Substack: Densidade conceitual, registro dos bastidores e defesa das teses.
+O Site Oficial (Infraestrutura de Comunidade): O porto seguro do projeto. Lugar para agregar os dados da auditoria, as teses coletadas nos institutos de direitos digitais (InternetLab, CC Brasil, CEPI-FGV) e o ponto de encontro para a formação de uma comunidade colaborativa e de juristas aliados.
+
+As Duas Bandeiras do Manifesto Legislativo:
+1. O Estatuto do Artista Trabalhador (Inspiração Francesa): Proposição de reforma trabalhista inspirada no sistema francês do L'intermittent du spectacle. O objetivo é garantir o reconhecimento e a sustentabilidade financeira do artista independente genuíno por suas frentes de trabalho humano, diferenciando-o explicitamente da produção automatizada por Inteligência Artificial.
+
+2. A Redução do Prazo de Proteção Patrimonial: Questionamento constitucional e lobby para a redução do prazo de exploração comercial das obras após a morte do artista, de 70 para 30 anos. O objetivo é libertar o patrimônio cultural brasileiro do monopólio rentista de grandes editoras e herdeiros ausentes, devolvendo as obras à base produtiva e garantindo a sobrevivência da memória de nossos cronistas através do uso transformativo livre.
+
+A Ofensiva Política de Longo Prazo
+Com a plataforma estabelecida, a comunidade engajada e o respaldo dos juristas de vanguarda, o passo final consistirá na busca pelo apoio institucional e assinatura de grandes da MPB (Caetano Veloso, Gilberto Gil, Chico Buarque e Ney Matogrosso) - e eu tenho contatos - para fazer o projeto de lei protocolar e adentrar diretamente as comissões do Senado Federal, quebrando o monopólio da indústria fonográfica, com muita elegância é claro, por que esse projeto também pode afetar/ofender os grandes.
+
+A tese de doutorado do Daniel Arbix ("Direito Autoral e Inovação Tecnológica", defendida na USP) é o pilar intelectual que sustenta esse projeto. É o argumento de autoridade que tira o projeto da gaveta da "pirataria ou desobediência ingênua" e o joga no debate jurídico.
+
+Daniel Arbix - hoje diretor no Google - analisa justamente como a rigidez das leis de propriedade intelectual bloqueia a inovação e o fluxo cultural na era digital. Pontos principais da tese do Arbix que estruturam o seu argumento:
+1. O Conceito de "Uso Transformativo" (A Recombinação Livre)
+O ponto mais central que conecta a tese dele ao Manifesto é a defesa de que a cultura avança por amostragem e recombinação.
+O argumento do Arbix: Ele demonstra que o direito autoral não pode ser interpretado de forma tão cega a ponto de proibir que novas obras sejam criadas a partir de fragmentos de obras antigas, desde que o resultado final seja um produto novo, crítico e transformativo.
+Como eu usei: O meu fonograma não é uma cópia da música de 1937. É uma obra completamente nova. Usei a textura da música de Noel Rosa, vóz de Silvio Caldas, e o piano de Vadico e inseri em um contexto de hip-hop, e de crítica política de 2026. Houve transformação. O fragmento original virou matéria-prima para uma nova mensagem social.
+2. A Crítica ao Abuso do Direito de Exclusividade (Anti-Anticommon)
+Arbix aborda o fenômeno econômico e jurídico conhecido como a "tragédia dos anticomuns" (tragedy of the anticommons), que ocorre quando o excesso de direitos de propriedade sobre um recurso impede que ele seja utilizado.
+O argumento do Arbix: Quando uma lei dá poder absoluto para herdeiros e editoras trancarem uma obra sob chaves burocráticas por 70 anos pós-morte, a lei deixa de incentivar a cultura e passa a gerar o esquecimento. O custo de transação (achar os herdeiros, negociar valores abusivos) mata a criação e a re-criação na base.
+Como vamos usá-la: É a justificativa perfeita para o Manifesto. Com base na tese dele, vamos provar que o sistema atual prefere ver Noel Rosa e Vadico apodrecer no esquecimento digital a permitir que a periferia e o artista independente o resgate de forma livre e humana.
+3. A Assimetria entre as Majoritárias e o Produtor de Base
+A tese de Arbix expõe como as regras atuais do jogo foram desenhadas pelos grandes conglomerados de mídia.
+O argumento do Arbix: A legislação de propriedade intelectual foi capturada por interesses corporativos que transformaram o direito autoral em um mecanismo de proteção de grandes catálogos financeiros (rent-seeking), sufocando o ambiente de inovação aberta e o pequeno criador.
+Como usar: Validar a narrativa da "lavanderia musical contra a grande engrenagem". Vamos mostrar ao juiz, ao estudante e ao público que a recusa da Mangione ou da Warner - detentoras - em liberar a faixa não é zelo artístico, mas a manutenção de um monopólio econômico sufocante que a própria academia do Direito já denuncia.
+4. A Função Social da Propriedade Intelectual
+Nenhum direito no Brasil é absoluto; a Constituição Federal exige que toda propriedade (inclusive a intelectual) cumpra uma Função Social.
+O argumento do Arbix: O direito do autor deve coexistir e ser equilibrado com outros direitos fundamentais de igual peso, como o direito ao acesso à cultura, a liberdade de expressão e o desenvolvimento tecnológico.
+Como eu uso: No meu post, no seu site e na conversa com juristas, vou alegar que o meu uso da frase "Pra que Mentir" cumpre uma função social urgente: debater a alienação das Bets na Copa de 2026, denunciar o descaso do Ministério Público, as mentiras que vemos circulando diariamente em todos os setores da vida publica e privada, e propor o Estatuto do Artista Trabalhador. Trancar essa discussão por conta de uma taxa de editora é violar a função social da obra de Noel.
+O Resumo
+Com a tese do Arbix, a linha de defesa jurídica deixa de ser defensiva e passa a ser uma ofensiva conceitual:
+"Nós não infringimos a lei; nós exercemos o Direito Transformativo teorizado na Academia. Estamos libertando Noel Rosa e Vadico do aprisionamento corporativo para que ele cumpra a sua função social e constitucional em 2026, exatamente como o Dr. Daniel Arbix demonstra ser necessário para que a cultura não morra sufocada pela burocracia."
