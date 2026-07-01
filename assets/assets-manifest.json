@@ -1,7 +1,17 @@
 {
-  "version": "1.0",
-  "generated": "2026-07-01T00:21:58Z",
+  "version": "2.0",
+  "generated": "2026-07-01T01:19:06Z",
   "basePath": "./img/recortes/",
+  "schema": {
+    "placement_values": {
+      "scatter": "Elemento flutuante pequeno (hero, seções). max ~90px display.",
+      "strip": "Faixa horizontal animada. altura ~78px display.",
+      "collage": "Colagem de fotos em seção. Adequado para cards até ~300px.",
+      "section-bg": "Background de seção inteira (tile ou blur).",
+      "logo": "Logo em tamanho fixo pequeno (~36px altura).",
+      "standalone": "Pode ser exibido em destaque sem upscale (≥300px nativa)."
+    }
+  },
   "categories": {
     "tex": {
       "label": "Texturas",
@@ -11,32 +21,32 @@
     "hist": {
       "label": "Histórico",
       "role": "mid",
-      "parallax": 0.12
-    },
-    "art": {
-      "label": "Artistas",
-      "role": "mid",
-      "parallax": 0.12
-    },
-    "ins": {
-      "label": "Instrumentos",
-      "role": "mid",
       "parallax": 0.1
     },
-    "ilu": {
-      "label": "Ilustrações",
+    "art": {
+      "label": "Arte / Fotografia",
       "role": "mid",
-      "parallax": 0.14
+      "parallax": 0.08
+    },
+    "ins": {
+      "label": "Instrumento",
+      "role": "mid",
+      "parallax": 0.08
+    },
+    "ilu": {
+      "label": "Ilustração",
+      "role": "mid",
+      "parallax": 0.08
     },
     "den": {
       "label": "Denúncia",
       "role": "mid",
-      "parallax": 0.14
+      "parallax": 0.06
     },
     "ref": {
-      "label": "Referências",
+      "label": "Referência",
       "role": "mid",
-      "parallax": 0.1
+      "parallax": 0.07
     },
     "jur": {
       "label": "Jurídico",
@@ -44,14 +54,24 @@
       "parallax": 0.0
     },
     "ui": {
-      "label": "UI",
+      "label": "Interface / UI",
       "role": "foreground",
       "parallax": 0.0
     },
     "logo": {
-      "label": "Logos",
+      "label": "Logotipos",
       "role": "foreground",
       "parallax": 0.0
+    },
+    "anim": {
+      "label": "Animação (GIF)",
+      "role": "mid",
+      "parallax": 0.04
+    },
+    "spare": {
+      "label": "Reserva",
+      "role": "mid",
+      "parallax": 0.06
     }
   },
   "assets": [
@@ -60,6 +80,14 @@
       "file": "art_artista-retrato-colorido_01.png",
       "category": "art",
       "role": "mid",
+      "w": 50,
+      "h": 50,
+      "ratio": 1.0,
+      "size_kb": 5.3,
+      "maxDisplayPx": 50,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Retrato colorido de músico contemporâneo",
       "tags": [
         "musico",
@@ -86,6 +114,18 @@
       "file": "art_banda-apresentacao_01.png",
       "category": "art",
       "role": "mid",
+      "w": 798,
+      "h": 309,
+      "ratio": 2.583,
+      "size_kb": 149.1,
+      "maxDisplayPx": 798,
+      "placement": [
+        "standalone",
+        "collage",
+        "section-bg",
+        "strip",
+        "scatter"
+      ],
       "subject": "Banda em apresentação ao vivo — Blue Note ou Bourbon Street",
       "tags": [
         "banda",
@@ -111,6 +151,14 @@
       "file": "art_banda-palco_01.png",
       "category": "art",
       "role": "mid",
+      "w": 67,
+      "h": 74,
+      "ratio": 0.905,
+      "size_kb": 12.4,
+      "maxDisplayPx": 74,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Grupo ou banda em palco — Chinela Voadora",
       "tags": [
         "banda",
@@ -137,6 +185,15 @@
       "file": "art_dancarino-acrobata_01.png",
       "category": "art",
       "role": "mid",
+      "w": 86,
+      "h": 149,
+      "ratio": 0.577,
+      "size_kb": 28.4,
+      "maxDisplayPx": 149,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Figura em movimento acrobático — elemento dinâmico",
       "tags": [
         "dancarino",
@@ -163,6 +220,14 @@
       "file": "art_dialogo-dois-homens_01.png",
       "category": "art",
       "role": "mid",
+      "w": 50,
+      "h": 50,
+      "ratio": 1.0,
+      "size_kb": 6.8,
+      "maxDisplayPx": 50,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Diálogo entre dois homens — a encomenda e o papo reto",
       "tags": [
         "dialogo",
@@ -188,6 +253,14 @@
       "file": "art_figura-contemplando_01.png",
       "category": "art",
       "role": "mid",
+      "w": 41,
+      "h": 73,
+      "ratio": 0.562,
+      "size_kb": 4.9,
+      "maxDisplayPx": 73,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Figura humana contemplando — cena de pesquisa e criação",
       "tags": [
         "figura",
@@ -213,6 +286,15 @@
       "file": "art_figura-esforco_01.png",
       "category": "art",
       "role": "mid",
+      "w": 67,
+      "h": 149,
+      "ratio": 0.45,
+      "size_kb": 16.1,
+      "maxDisplayPx": 149,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Figura em posição de esforço e luta — desafio aceito",
       "tags": [
         "figura",
@@ -239,6 +321,14 @@
       "file": "art_figura-gritando-alt_01.png",
       "category": "art",
       "role": "mid",
+      "w": 37,
+      "h": 49,
+      "ratio": 0.755,
+      "size_kb": 6.8,
+      "maxDisplayPx": 49,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Figura gritando — variante para denúncia e emoção",
       "tags": [
         "figura",
@@ -265,6 +355,14 @@
       "file": "art_figura-gritando-poderosa_01.png",
       "category": "art",
       "role": "mid",
+      "w": 56,
+      "h": 74,
+      "ratio": 0.757,
+      "size_kb": 8.1,
+      "maxDisplayPx": 74,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Figura humana gritando com força — potência vocal e denúncia",
       "tags": [
         "figura",
@@ -291,6 +389,16 @@
       "file": "art_fotografo-retrato-obra_01.png",
       "category": "art",
       "role": "mid",
+      "w": 200,
+      "h": 180,
+      "ratio": 1.111,
+      "size_kb": 24.0,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Fotógrafo ou artista próximo a obra gráfica",
       "tags": [
         "fotografo",
@@ -316,6 +424,15 @@
       "file": "art_homem-espelho-reflexao_01.png",
       "category": "art",
       "role": "mid",
+      "w": 83,
+      "h": 149,
+      "ratio": 0.557,
+      "size_kb": 19.4,
+      "maxDisplayPx": 149,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Homem olhando para espelho — seção procurando ideias",
       "tags": [
         "homem",
@@ -341,6 +458,16 @@
       "file": "art_homem-pensativo_01.png",
       "category": "art",
       "role": "mid",
+      "w": 199,
+      "h": 149,
+      "ratio": 1.336,
+      "size_kb": 28.2,
+      "maxDisplayPx": 199,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Homem pensativo — seção eu precisava de ideias",
       "tags": [
         "homem",
@@ -366,6 +493,16 @@
       "file": "art_kride-escrevendo_01.png",
       "category": "art",
       "role": "mid",
+      "w": 150,
+      "h": 100,
+      "ratio": 1.5,
+      "size_kb": 14.0,
+      "maxDisplayPx": 150,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Kride Jr escrevendo ou compondo — processo criativo",
       "tags": [
         "kride",
@@ -391,6 +528,16 @@
       "file": "art_kride-lavanderia_01.png",
       "category": "art",
       "role": "mid",
+      "w": 150,
+      "h": 150,
+      "ratio": 1.0,
+      "size_kb": 25.2,
+      "maxDisplayPx": 150,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Kride Jr na lavanderia musical — foto-chave do projeto",
       "tags": [
         "kride",
@@ -417,6 +564,15 @@
       "file": "art_kride-marcos-braga-dupla_01.png",
       "category": "art",
       "role": "mid",
+      "w": 149,
+      "h": 84,
+      "ratio": 1.774,
+      "size_kb": 14.0,
+      "maxDisplayPx": 149,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Kride Jr e Marcos Braga juntos — a parceria do projeto",
       "tags": [
         "kride",
@@ -442,6 +598,16 @@
       "file": "art_kride-retrato_01.png",
       "category": "art",
       "role": "mid",
+      "w": 199,
+      "h": 112,
+      "ratio": 1.777,
+      "size_kb": 22.4,
+      "maxDisplayPx": 199,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Retrato de Kride Jr — criador do projeto",
       "tags": [
         "kride",
@@ -468,6 +634,16 @@
       "file": "art_menino-sentado_01.png",
       "category": "art",
       "role": "mid",
+      "w": 100,
+      "h": 150,
+      "ratio": 0.667,
+      "size_kb": 18.9,
+      "maxDisplayPx": 150,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Menino sentado pensativo — ilustração conceitual",
       "tags": [
         "menino",
@@ -493,6 +669,14 @@
       "file": "art_musico-vintage-colorido_01.png",
       "category": "art",
       "role": "mid",
+      "w": 50,
+      "h": 50,
+      "ratio": 1.0,
+      "size_kb": 8.3,
+      "maxDisplayPx": 50,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Músico em contexto vintage colorido",
       "tags": [
         "musico",
@@ -519,6 +703,14 @@
       "file": "art_trompetista-silhueta_01.png",
       "category": "art",
       "role": "mid",
+      "w": 42,
+      "h": 75,
+      "ratio": 0.56,
+      "size_kb": 6.1,
+      "maxDisplayPx": 75,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Silhueta de trompetista — Marcos Braga",
       "tags": [
         "trompetista",
@@ -545,6 +737,16 @@
       "file": "den_carimbo-fake-news_01.png",
       "category": "den",
       "role": "mid",
+      "w": 200,
+      "h": 44,
+      "ratio": 4.545,
+      "size_kb": 5.8,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Carimbo FAKE NEWS vermelho — denúncia à desinformação",
       "tags": [
         "carimbo",
@@ -571,6 +773,14 @@
       "file": "den_cidade-conglomerado_01.png",
       "category": "den",
       "role": "mid",
+      "w": 43,
+      "h": 49,
+      "ratio": 0.878,
+      "size_kb": 8.9,
+      "maxDisplayPx": 49,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Conglomerado urbano denso — alienação e gaiola social",
       "tags": [
         "cidade",
@@ -597,6 +807,14 @@
       "file": "den_cidade-dystopica_01.png",
       "category": "den",
       "role": "mid",
+      "w": 43,
+      "h": 49,
+      "ratio": 0.878,
+      "size_kb": 6.0,
+      "maxDisplayPx": 49,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Cidade distópica superlotada — crítica ao sistema urbano",
       "tags": [
         "cidade",
@@ -623,6 +841,16 @@
       "file": "den_diabinho-sistema_01.png",
       "category": "den",
       "role": "mid",
+      "w": 150,
+      "h": 200,
+      "ratio": 0.75,
+      "size_kb": 7.8,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Diabinho vermelho com tridente — o inimigo, o Sistema",
       "tags": [
         "diabinho",
@@ -649,6 +877,14 @@
       "file": "den_fantoches-manipulados_01.png",
       "category": "den",
       "role": "mid",
+      "w": 49,
+      "h": 74,
+      "ratio": 0.662,
+      "size_kb": 9.1,
+      "maxDisplayPx": 74,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Fantoches sendo manipulados — o sistema controlando",
       "tags": [
         "fantoches",
@@ -675,6 +911,14 @@
       "file": "den_figura-encurralada_01.png",
       "category": "den",
       "role": "mid",
+      "w": 50,
+      "h": 50,
+      "ratio": 1.0,
+      "size_kb": 3.8,
+      "maxDisplayPx": 50,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Personagem encurralado pelo sistema — o artista contra o sistema",
       "tags": [
         "encurralado",
@@ -701,6 +945,14 @@
       "file": "den_figura-sombria-vento_01.png",
       "category": "den",
       "role": "mid",
+      "w": 74,
+      "h": 74,
+      "ratio": 1.0,
+      "size_kb": 7.8,
+      "maxDisplayPx": 74,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Figura sombria no vento — seção denúncia overlay cyberpunk",
       "tags": [
         "figura",
@@ -727,6 +979,14 @@
       "file": "den_figura-sombria_01.png",
       "category": "den",
       "role": "mid",
+      "w": 49,
+      "h": 39,
+      "ratio": 1.256,
+      "size_kb": 2.1,
+      "maxDisplayPx": 49,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Figura sombria abstrata — elemento glitch cyberpunk",
       "tags": [
         "figura",
@@ -753,6 +1013,15 @@
       "file": "den_mochileiro-fuga_01.png",
       "category": "den",
       "role": "mid",
+      "w": 83,
+      "h": 149,
+      "ratio": 0.557,
+      "size_kb": 18.7,
+      "maxDisplayPx": 149,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Figura em fuga com mochila — seção desafio aceito",
       "tags": [
         "mochileiro",
@@ -779,6 +1048,14 @@
       "file": "den_multidao-historica_01.png",
       "category": "den",
       "role": "mid",
+      "w": 43,
+      "h": 49,
+      "ratio": 0.878,
+      "size_kb": 6.0,
+      "maxDisplayPx": 49,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Multidão histórica comprimida — alienação programada",
       "tags": [
         "multidao",
@@ -804,6 +1081,15 @@
       "file": "den_paisagem-apocaliptica_01.png",
       "category": "den",
       "role": "mid",
+      "w": 100,
+      "h": 149,
+      "ratio": 0.671,
+      "size_kb": 33.0,
+      "maxDisplayPx": 149,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Paisagem apocalíptica com figura solitária — seção Bets e alienação",
       "tags": [
         "paisagem",
@@ -830,6 +1116,14 @@
       "file": "den_politico-corrupto-alegorico_01.png",
       "category": "den",
       "role": "mid",
+      "w": 50,
+      "h": 50,
+      "ratio": 1.0,
+      "size_kb": 5.4,
+      "maxDisplayPx": 50,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Cena alegórica de político corrupto brasileiro",
       "tags": [
         "politico",
@@ -855,6 +1149,14 @@
       "file": "den_sombra-cabelo_01.png",
       "category": "den",
       "role": "mid",
+      "w": 49,
+      "h": 49,
+      "ratio": 1.0,
+      "size_kb": 4.0,
+      "maxDisplayPx": 49,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Silhueta sombria de cabelo — elemento de tensão e overlay",
       "tags": [
         "silhueta",
@@ -881,6 +1183,14 @@
       "file": "hist_casal-vintage-1937_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 50,
+      "h": 50,
+      "ratio": 1.0,
+      "size_kb": 5.4,
+      "maxDisplayPx": 50,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Casal vintage de 1937 — amor em preto e branco",
       "tags": [
         "casal",
@@ -907,6 +1217,14 @@
       "file": "hist_cena-historica-sepia_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 74,
+      "h": 67,
+      "ratio": 1.104,
+      "size_kb": 10.4,
+      "maxDisplayPx": 74,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Cena histórica em sépia — paisagem ou personagens dos anos 1930",
       "tags": [
         "historico",
@@ -932,6 +1250,14 @@
       "file": "hist_cena-urbana-vintage_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 49,
+      "h": 44,
+      "ratio": 1.114,
+      "size_kb": 4.7,
+      "maxDisplayPx": 49,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Cena urbana vintage em sépia — referência à Lapa carioca",
       "tags": [
         "cidade",
@@ -957,6 +1283,15 @@
       "file": "hist_disco-vinil-pb_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 84,
+      "h": 149,
+      "ratio": 0.564,
+      "size_kb": 11.1,
+      "maxDisplayPx": 149,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Disco de vinil em preto e branco com personagem",
       "tags": [
         "disco",
@@ -983,6 +1318,14 @@
       "file": "hist_disco-vinil-vintage_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 49,
+      "h": 50,
+      "ratio": 0.98,
+      "size_kb": 5.2,
+      "maxDisplayPx": 50,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Capa de disco de vinil vintage",
       "tags": [
         "disco",
@@ -1009,6 +1352,14 @@
       "file": "hist_dupla-retrato-kride-vadico_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 74,
+      "h": 42,
+      "ratio": 1.762,
+      "size_kb": 6.3,
+      "maxDisplayPx": 74,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Retrato duplo histórico — dois rostos em preto e branco",
       "tags": [
         "dupla",
@@ -1034,6 +1385,14 @@
       "file": "hist_jornal-extra-extra_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 50,
+      "h": 45,
+      "ratio": 1.111,
+      "size_kb": 2.6,
+      "maxDisplayPx": 50,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Jornal histórico com manchete EXTRA! EXTRA!",
       "tags": [
         "jornal",
@@ -1060,6 +1419,14 @@
       "file": "hist_mulher-vintage-elegante_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 56,
+      "h": 75,
+      "ratio": 0.747,
+      "size_kb": 6.8,
+      "maxDisplayPx": 75,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Mulher elegante vintage dos anos 1930",
       "tags": [
         "mulher",
@@ -1086,6 +1453,14 @@
       "file": "hist_noel-rosa-capa-disco_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 46,
+      "h": 49,
+      "ratio": 0.939,
+      "size_kb": 5.1,
+      "maxDisplayPx": 49,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Capa de disco com cartaz tipográfico NOEL ROSA",
       "tags": [
         "noel-rosa",
@@ -1112,6 +1487,14 @@
       "file": "hist_noel-rosa-cartaz-epoca_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 70,
+      "h": 75,
+      "ratio": 0.933,
+      "size_kb": 10.8,
+      "maxDisplayPx": 75,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Cartaz tipográfico histórico com o nome Noel Rosa",
       "tags": [
         "noel-rosa",
@@ -1138,6 +1521,14 @@
       "file": "hist_noel-rosa-chapeu_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 75,
+      "h": 42,
+      "ratio": 1.786,
+      "size_kb": 4.6,
+      "maxDisplayPx": 75,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Noel Rosa de chapéu — ilustração histórica",
       "tags": [
         "noel-rosa",
@@ -1164,6 +1555,14 @@
       "file": "hist_noel-rosa-retrato-adulto_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 75,
+      "h": 73,
+      "ratio": 1.027,
+      "size_kb": 8.1,
+      "maxDisplayPx": 75,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Rosto frontal de Noel Rosa",
       "tags": [
         "noel-rosa",
@@ -1190,6 +1589,14 @@
       "file": "hist_noel-rosa-retrato-jovem_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 74,
+      "h": 65,
+      "ratio": 1.138,
+      "size_kb": 13.7,
+      "maxDisplayPx": 74,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Retrato jovem de Noel Rosa em preto e branco",
       "tags": [
         "noel-rosa",
@@ -1216,6 +1623,14 @@
       "file": "hist_noel-rosa-retrato-sepias_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 47,
+      "h": 74,
+      "ratio": 0.635,
+      "size_kb": 6.6,
+      "maxDisplayPx": 74,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Retrato de Noel Rosa com violão em sépia",
       "tags": [
         "noel-rosa",
@@ -1242,6 +1657,14 @@
       "file": "hist_noel-rosa-retrato-vintage_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 45,
+      "h": 49,
+      "ratio": 0.918,
+      "size_kb": 3.5,
+      "maxDisplayPx": 49,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Retrato vintage de Noel Rosa para fundo do herói",
       "tags": [
         "noel-rosa",
@@ -1267,6 +1690,16 @@
       "file": "hist_partitura-rasgada_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 141,
+      "h": 200,
+      "ratio": 0.705,
+      "size_kb": 31.4,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Papel de partitura rasgado em triângulo",
       "tags": [
         "partitura",
@@ -1293,6 +1726,16 @@
       "file": "hist_retrato-feminino-epoca_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 150,
+      "h": 100,
+      "ratio": 1.5,
+      "size_kb": 19.4,
+      "maxDisplayPx": 150,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Retrato feminino histórico em sépia da época de 1937",
       "tags": [
         "retrato",
@@ -1319,6 +1762,15 @@
       "file": "hist_rua-cidade-antiga_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 149,
+      "h": 111,
+      "ratio": 1.342,
+      "size_kb": 25.5,
+      "maxDisplayPx": 149,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Vista urbana antiga em preto e branco — Lapa carioca",
       "tags": [
         "cidade",
@@ -1344,6 +1796,16 @@
       "file": "hist_trenó-papai-noel_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 200,
+      "h": 94,
+      "ratio": 2.128,
+      "size_kb": 6.9,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Trenó com renas — referência ao Natal de dezembro de 2024",
       "tags": [
         "trenó",
@@ -1369,6 +1831,16 @@
       "file": "hist_vadico-retrato_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 150,
+      "h": 85,
+      "ratio": 1.765,
+      "size_kb": 19.4,
+      "maxDisplayPx": 150,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Retrato de Vadico — coautor de Pra que Mentir (1937)",
       "tags": [
         "vadico",
@@ -1394,6 +1866,16 @@
       "file": "hist_violonista-vintage_01.png",
       "category": "hist",
       "role": "mid",
+      "w": 150,
+      "h": 120,
+      "ratio": 1.25,
+      "size_kb": 15.1,
+      "maxDisplayPx": 150,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Violonista masculino vintage em preto e branco",
       "tags": [
         "violonista",
@@ -1420,6 +1902,16 @@
       "file": "ilu_abelha-inseto_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 150,
+      "h": 135,
+      "ratio": 1.111,
+      "size_kb": 8.8,
+      "maxDisplayPx": 150,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Abelha estilizada — elemento decorativo lúdico",
       "tags": [
         "abelha",
@@ -1445,6 +1937,14 @@
       "file": "ilu_cachorro-atento_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 49,
+      "h": 37,
+      "ratio": 1.324,
+      "size_kb": 5.5,
+      "maxDisplayPx": 49,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Cachorro olhando — elemento irônico sobre alienação e Bets",
       "tags": [
         "cachorro",
@@ -1471,6 +1971,14 @@
       "file": "ilu_cachorro-personagem_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 74,
+      "h": 67,
+      "ratio": 1.104,
+      "size_kb": 9.2,
+      "maxDisplayPx": 74,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Cachorro estilizado sentado — elemento lúdico irônico",
       "tags": [
         "cachorro",
@@ -1497,6 +2005,14 @@
       "file": "ilu_coracao-balao_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 33,
+      "h": 49,
+      "ratio": 0.673,
+      "size_kb": 5.5,
+      "maxDisplayPx": 49,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Coração como balão — seção amor em 1937",
       "tags": [
         "coracao",
@@ -1523,6 +2039,14 @@
       "file": "ilu_coracao-cinza_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 33,
+      "h": 49,
+      "ratio": 0.673,
+      "size_kb": 2.5,
+      "maxDisplayPx": 49,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Coração cinza ou de pedra — amor de 1937 revisitado",
       "tags": [
         "coracao",
@@ -1549,6 +2073,16 @@
       "file": "ilu_dj-silhueta_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 200,
+      "h": 163,
+      "ratio": 1.227,
+      "size_kb": 9.6,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Silhueta de DJ na vitrola — elemento cyberpunk e Fus-k Beats",
       "tags": [
         "dj",
@@ -1575,6 +2109,16 @@
       "file": "ilu_escultura-figuras-grupo_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 164,
+      "h": 200,
+      "ratio": 0.82,
+      "size_kb": 33.3,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Grupo de figuras em escultura — alegoria coletiva e manifesto",
       "tags": [
         "escultura",
@@ -1601,6 +2145,14 @@
       "file": "ilu_escultura-serpente_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 42,
+      "h": 75,
+      "ratio": 0.56,
+      "size_kb": 5.3,
+      "maxDisplayPx": 75,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Escultura com serpente — alegoria do sistema e da lei",
       "tags": [
         "escultura",
@@ -1626,6 +2178,16 @@
       "file": "ilu_espelho-oval_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 153,
+      "h": 200,
+      "ratio": 0.765,
+      "size_kb": 45.1,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Espelho oval — seção reflexão e procurando ideias",
       "tags": [
         "espelho",
@@ -1651,6 +2213,14 @@
       "file": "ilu_espirito-circulante_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 46,
+      "h": 74,
+      "ratio": 0.622,
+      "size_kb": 4.0,
+      "maxDisplayPx": 74,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Espírito Circulante de Noel Rosa com violão — variante",
       "tags": [
         "noel",
@@ -1677,6 +2247,16 @@
       "file": "ilu_figura-dancando_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 150,
+      "h": 135,
+      "ratio": 1.111,
+      "size_kb": 12.0,
+      "maxDisplayPx": 150,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Figura humana dançando — elemento de movimento",
       "tags": [
         "figura",
@@ -1703,6 +2283,14 @@
       "file": "ilu_figura-feminina-instrumento_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 74,
+      "h": 67,
+      "ratio": 1.104,
+      "size_kb": 9.2,
+      "maxDisplayPx": 74,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Figura feminina com instrumento musical — alegoria artística",
       "tags": [
         "figura",
@@ -1729,6 +2317,16 @@
       "file": "ilu_figura-musico-alto_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 150,
+      "h": 135,
+      "ratio": 1.111,
+      "size_kb": 9.3,
+      "maxDisplayPx": 150,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Silhueta de músico alto com instrumento — tira histórica",
       "tags": [
         "silhueta",
@@ -1754,6 +2352,16 @@
       "file": "ilu_figura-pensando_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 200,
+      "h": 115,
+      "ratio": 1.739,
+      "size_kb": 4.0,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Figura humana pensando — seção precisava de ideias",
       "tags": [
         "figura",
@@ -1779,6 +2387,16 @@
       "file": "ilu_figuras-escultura-alt_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 178,
+      "h": 200,
+      "ratio": 0.89,
+      "size_kb": 18.0,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Figuras em escultura branca — variante para o manifesto",
       "tags": [
         "figuras",
@@ -1804,6 +2422,16 @@
       "file": "ilu_fumaca-abstrata_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 139,
+      "h": 200,
+      "ratio": 0.695,
+      "size_kb": 11.7,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Fumaça branca abstrata — overlay glitch e camada etérea",
       "tags": [
         "fumaca",
@@ -1830,6 +2458,16 @@
       "file": "ilu_fumo-abstrato_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 200,
+      "h": 200,
+      "ratio": 1.0,
+      "size_kb": 6.6,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Fumaça ou vapor abstrato — overlay glitch",
       "tags": [
         "fumaca",
@@ -1856,6 +2494,16 @@
       "file": "ilu_lampada-ideia_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 168,
+      "h": 200,
+      "ratio": 0.84,
+      "size_kb": 15.5,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Lâmpada acesa — seção eu precisava de ideias e desafio aceito",
       "tags": [
         "lampada",
@@ -1882,6 +2530,16 @@
       "file": "ilu_livros-antigos-lampada_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 200,
+      "h": 200,
+      "ratio": 1.0,
+      "size_kb": 50.1,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Livros antigos com abajur — seção pesquisa e Daniel Arbix",
       "tags": [
         "livros",
@@ -1908,6 +2566,16 @@
       "file": "ilu_maquina-fantastica_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 150,
+      "h": 135,
+      "ratio": 1.111,
+      "size_kb": 14.5,
+      "maxDisplayPx": 150,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Máquina fantástica steampunk — o Sistema como entidade",
       "tags": [
         "maquina",
@@ -1934,6 +2602,16 @@
       "file": "ilu_miniatura-cadeira_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 150,
+      "h": 135,
+      "ratio": 1.111,
+      "size_kb": 3.4,
+      "maxDisplayPx": 150,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Cadeira miniatura isolada — elemento decorativo",
       "tags": [
         "miniatura",
@@ -1959,6 +2637,14 @@
       "file": "ilu_miniatura-grupo_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 50,
+      "h": 45,
+      "ratio": 1.111,
+      "size_kb": 0.3,
+      "maxDisplayPx": 50,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Grupo miniatura — elemento de recorte aleatório",
       "tags": [
         "miniatura",
@@ -1984,6 +2670,16 @@
       "file": "ilu_miniatura-personagem_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 150,
+      "h": 135,
+      "ratio": 1.111,
+      "size_kb": 5.0,
+      "maxDisplayPx": 150,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Personagem miniatura isolado — recorte aleatório",
       "tags": [
         "miniatura",
@@ -2009,6 +2705,14 @@
       "file": "ilu_musico-livros_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 75,
+      "h": 50,
+      "ratio": 1.5,
+      "size_kb": 7.0,
+      "maxDisplayPx": 75,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Personagem com livros e música — seção Daniel Arbix e a tese",
       "tags": [
         "musico",
@@ -2035,6 +2739,15 @@
       "file": "ilu_noel-espirito-violao_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 93,
+      "h": 149,
+      "ratio": 0.624,
+      "size_kb": 12.7,
+      "maxDisplayPx": 149,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Espírito Circulante de Noel Rosa tocando violão",
       "tags": [
         "noel",
@@ -2060,6 +2773,15 @@
       "file": "ilu_noel-papai-noel_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 95,
+      "h": 149,
+      "ratio": 0.638,
+      "size_kb": 24.4,
+      "maxDisplayPx": 149,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Noel Rosa como Papai Noel — a encomenda de Natal 2024",
       "tags": [
         "noel",
@@ -2085,6 +2807,14 @@
       "file": "ilu_personagem-livros-computador_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 75,
+      "h": 50,
+      "ratio": 1.5,
+      "size_kb": 8.0,
+      "maxDisplayPx": 75,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Personagem com livros e computador — seção pesquisa e tese",
       "tags": [
         "personagem",
@@ -2111,6 +2841,14 @@
       "file": "ilu_pesquisador-laptop_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 50,
+      "h": 75,
+      "ratio": 0.667,
+      "size_kb": 10.2,
+      "maxDisplayPx": 75,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Pesquisador com laptop — seção processo criativo",
       "tags": [
         "pesquisador",
@@ -2137,6 +2875,16 @@
       "file": "ilu_ponto-flutuante_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 150,
+      "h": 135,
+      "ratio": 1.111,
+      "size_kb": 0.9,
+      "maxDisplayPx": 150,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Ponto ou objeto abstrato flutuante — elemento de ruído visual",
       "tags": [
         "ponto",
@@ -2162,6 +2910,16 @@
       "file": "ilu_trompetista-silhueta-black_01.png",
       "category": "ilu",
       "role": "mid",
+      "w": 129,
+      "h": 200,
+      "ratio": 0.645,
+      "size_kb": 6.9,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Silhueta preta de trompetista — elemento de tira e divisor",
       "tags": [
         "trompetista",
@@ -2187,6 +2945,16 @@
       "file": "ins_clave-notas-musicais_01.png",
       "category": "ins",
       "role": "mid",
+      "w": 200,
+      "h": 160,
+      "ratio": 1.25,
+      "size_kb": 5.7,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Clave de sol com notas musicais — identidade do projeto",
       "tags": [
         "clave",
@@ -2213,6 +2981,16 @@
       "file": "ins_figura-cantando_01.png",
       "category": "ins",
       "role": "mid",
+      "w": 150,
+      "h": 135,
+      "ratio": 1.111,
+      "size_kb": 21.1,
+      "maxDisplayPx": 150,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Figura feminina cantando — elemento artístico",
       "tags": [
         "figura",
@@ -2239,6 +3017,16 @@
       "file": "ins_gramofone-marrom_01.png",
       "category": "ins",
       "role": "mid",
+      "w": 196,
+      "h": 200,
+      "ratio": 0.98,
+      "size_kb": 6.9,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Gramofone marrom detalhado — elemento histórico",
       "tags": [
         "gramofone",
@@ -2264,6 +3052,16 @@
       "file": "ins_gramofone-vintage_01.png",
       "category": "ins",
       "role": "mid",
+      "w": 200,
+      "h": 180,
+      "ratio": 1.111,
+      "size_kb": 5.3,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Gramofone ou vitrola antigo — história da música",
       "tags": [
         "gramofone",
@@ -2291,6 +3089,15 @@
       "file": "ins_lavanderia-maquina_01.png",
       "category": "ins",
       "role": "mid",
+      "w": 149,
+      "h": 83,
+      "ratio": 1.795,
+      "size_kb": 9.0,
+      "maxDisplayPx": 149,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Máquina de lavar — a Lavanderia Musical, símbolo do projeto",
       "tags": [
         "lavanderia",
@@ -2316,6 +3123,16 @@
       "file": "ins_ornamento-floral_01.png",
       "category": "ins",
       "role": "mid",
+      "w": 182,
+      "h": 200,
+      "ratio": 0.91,
+      "size_kb": 14.3,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Ornamento floral delicado — elemento decorativo refinado",
       "tags": [
         "ornamento",
@@ -2342,6 +3159,16 @@
       "file": "ins_vinil-trilhas_01.png",
       "category": "ins",
       "role": "mid",
+      "w": 200,
+      "h": 134,
+      "ratio": 1.493,
+      "size_kb": 7.8,
+      "maxDisplayPx": 200,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Disco de vinil com trilhas sonoras abstratas",
       "tags": [
         "vinil",
@@ -2368,6 +3195,16 @@
       "file": "ins_violonista-estatua_01.png",
       "category": "ins",
       "role": "mid",
+      "w": 150,
+      "h": 143,
+      "ratio": 1.049,
+      "size_kb": 20.3,
+      "maxDisplayPx": 150,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Estátua de violonista — referência ao violão de Noel Rosa",
       "tags": [
         "estatua",
@@ -2393,6 +3230,16 @@
       "file": "ins_vitrol-alt-bronze_01.png",
       "category": "ins",
       "role": "mid",
+      "w": 150,
+      "h": 135,
+      "ratio": 1.111,
+      "size_kb": 6.5,
+      "maxDisplayPx": 150,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Vitrola alternativa em bronze — elemento decorativo",
       "tags": [
         "vitrola",
@@ -2418,6 +3265,16 @@
       "file": "ins_vitrola-bronze_01.png",
       "category": "ins",
       "role": "mid",
+      "w": 150,
+      "h": 135,
+      "ratio": 1.111,
+      "size_kb": 5.0,
+      "maxDisplayPx": 150,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Vitrola em bronze — variante para divisores",
       "tags": [
         "vitrola",
@@ -2443,6 +3300,16 @@
       "file": "ins_vitrola-madeira_01.png",
       "category": "ins",
       "role": "mid",
+      "w": 150,
+      "h": 135,
+      "ratio": 1.111,
+      "size_kb": 9.4,
+      "maxDisplayPx": 150,
+      "placement": [
+        "collage",
+        "strip",
+        "scatter"
+      ],
       "subject": "Vitrola de madeira antigo — divisor histórico",
       "tags": [
         "vitrola",
@@ -2469,6 +3336,14 @@
       "file": "jur_balanca-justica_01.png",
       "category": "jur",
       "role": "foreground",
+      "w": 50,
+      "h": 75,
+      "ratio": 0.667,
+      "size_kb": 11.5,
+      "maxDisplayPx": 75,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Balança da Justiça dourada — símbolo do vértice jurídico",
       "tags": [
         "balanca",
@@ -2495,6 +3370,14 @@
       "file": "jur_constituicao-livro_01.png",
       "category": "jur",
       "role": "foreground",
+      "w": 50,
+      "h": 75,
+      "ratio": 0.667,
+      "size_kb": 7.7,
+      "maxDisplayPx": 75,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Livro da Constituição Brasileira — fundamento do manifesto",
       "tags": [
         "constituicao",
@@ -2523,6 +3406,15 @@
       "file": "jur_escrevendo-manuscrito_01.png",
       "category": "jur",
       "role": "foreground",
+      "w": 150,
+      "h": 100,
+      "ratio": 1.5,
+      "size_kb": 23.4,
+      "maxDisplayPx": 150,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Mão escrevendo documento — seção tese e manifesto",
       "tags": [
         "mao",
@@ -2549,6 +3441,17 @@
       "file": "jur_partitura-antiga_01.png",
       "category": "jur",
       "role": "foreground",
+      "w": 800,
+      "h": 533,
+      "ratio": 1.501,
+      "size_kb": 551.4,
+      "maxDisplayPx": 800,
+      "placement": [
+        "standalone",
+        "section-bg",
+        "strip",
+        "scatter"
+      ],
       "subject": "Partitura musical antiga — fundo histórico jurídico",
       "tags": [
         "partitura",
@@ -2575,6 +3478,15 @@
       "file": "jur_partitura-manuscrita_01.png",
       "category": "jur",
       "role": "foreground",
+      "w": 137,
+      "h": 200,
+      "ratio": 0.685,
+      "size_kb": 12.5,
+      "maxDisplayPx": 200,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Manuscrito com notas musicais — seção Daniel Arbix e tese",
       "tags": [
         "partitura",
@@ -2601,6 +3513,15 @@
       "file": "jur_pergaminho-papel-antigo_01.png",
       "category": "jur",
       "role": "foreground",
+      "w": 200,
+      "h": 191,
+      "ratio": 1.047,
+      "size_kb": 56.5,
+      "maxDisplayPx": 200,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Pergaminho de papel antigo — seção tese jurídica",
       "tags": [
         "pergaminho",
@@ -2627,6 +3548,17 @@
       "file": "jur_rascunho-escrito_01.png",
       "category": "jur",
       "role": "foreground",
+      "w": 800,
+      "h": 533,
+      "ratio": 1.501,
+      "size_kb": 462.5,
+      "maxDisplayPx": 800,
+      "placement": [
+        "standalone",
+        "section-bg",
+        "strip",
+        "scatter"
+      ],
       "subject": "Caderno com rascunho escrito — documentação do processo",
       "tags": [
         "caderno",
@@ -2652,6 +3584,15 @@
       "file": "logo_blue-note-alt_01.png",
       "category": "logo",
       "role": "foreground",
+      "w": 74,
+      "h": 60,
+      "ratio": 1.233,
+      "size_kb": 6.6,
+      "maxDisplayPx": 148,
+      "placement": [
+        "logo",
+        "strip"
+      ],
       "subject": "Logo alternativo do Blue Note — variante para canais",
       "tags": [
         "logo",
@@ -2678,6 +3619,15 @@
       "file": "logo_blue-note-pequeno_01.png",
       "category": "logo",
       "role": "foreground",
+      "w": 50,
+      "h": 50,
+      "ratio": 1.0,
+      "size_kb": 1.7,
+      "maxDisplayPx": 100,
+      "placement": [
+        "logo",
+        "strip"
+      ],
       "subject": "Logo pequeno do Blue Note — rodapé e tiras",
       "tags": [
         "logo",
@@ -2704,6 +3654,15 @@
       "file": "logo_bourbon-street-alt_01.png",
       "category": "logo",
       "role": "foreground",
+      "w": 69,
+      "h": 75,
+      "ratio": 0.92,
+      "size_kb": 4.6,
+      "maxDisplayPx": 150,
+      "placement": [
+        "logo",
+        "strip"
+      ],
       "subject": "Logo alternativo do Bourbon Street Music Club — variante",
       "tags": [
         "logo",
@@ -2730,6 +3689,15 @@
       "file": "logo_obeat_01.png",
       "category": "logo",
       "role": "foreground",
+      "w": 50,
+      "h": 50,
+      "ratio": 1.0,
+      "size_kb": 4.5,
+      "maxDisplayPx": 100,
+      "placement": [
+        "logo",
+        "strip"
+      ],
       "subject": "Logo O'Beat — referência de parceiro do projeto",
       "tags": [
         "logo",
@@ -2756,6 +3724,15 @@
       "file": "logo_pra-que-mentir-capa_01.png",
       "category": "logo",
       "role": "foreground",
+      "w": 33,
+      "h": 49,
+      "ratio": 0.673,
+      "size_kb": 6.6,
+      "maxDisplayPx": 98,
+      "placement": [
+        "logo",
+        "strip"
+      ],
       "subject": "Capa ou livro amarelo do produto editorial Pra que Mentir",
       "tags": [
         "logo",
@@ -2778,24 +3755,25 @@
       "priority": "normal"
     },
     {
-      "id": "logo_pra-que-mentir_02",
+      "id": "logo_pra-que-mentir",
       "file": "logo_pra-que-mentir.png",
       "category": "logo",
       "role": "foreground",
-      "subject": "Logo principal Pra que Mentir — variante local",
-      "tags": [
+      "w": 150,
+      "h": 150,
+      "ratio": 1.0,
+      "size_kb": 17.0,
+      "maxDisplayPx": 300,
+      "placement": [
         "logo",
-        "pra-que-mentir",
-        "principal",
-        "identidade",
-        "marca"
+        "strip"
       ],
-      "sections": [
-        "hero",
-        "footer",
-        "divider"
+      "subject": "",
+      "tags": [
+        "logo"
       ],
-      "alt": "Variante do logo principal do projeto Pra que Mentir sem numeração padrão",
+      "sections": [],
+      "alt": "",
       "transform": {
         "rotate": 0,
         "sepia": 0,
@@ -2809,6 +3787,14 @@
       "file": "ref_disco-black-allen_01.png",
       "category": "ref",
       "role": "mid",
+      "w": 50,
+      "h": 50,
+      "ratio": 1.0,
+      "size_kb": 5.6,
+      "maxDisplayPx": 50,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Capa do álbum Black Allen — pesquisa musical do projeto",
       "tags": [
         "disco",
@@ -2834,6 +3820,14 @@
       "file": "ref_disco-colorido_01.png",
       "category": "ref",
       "role": "mid",
+      "w": 49,
+      "h": 49,
+      "ratio": 1.0,
+      "size_kb": 5.1,
+      "maxDisplayPx": 49,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Disco colorido vintage — pesquisa musical do projeto",
       "tags": [
         "disco",
@@ -2859,6 +3853,14 @@
       "file": "ref_disco-copa7_01.png",
       "category": "ref",
       "role": "mid",
+      "w": 50,
+      "h": 50,
+      "ratio": 1.0,
+      "size_kb": 8.9,
+      "maxDisplayPx": 50,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Disco Copa 7 — referência musical da pesquisa",
       "tags": [
         "disco",
@@ -2884,6 +3886,14 @@
       "file": "ref_disco-samba-antigo_01.png",
       "category": "ref",
       "role": "mid",
+      "w": 75,
+      "h": 42,
+      "ratio": 1.786,
+      "size_kb": 7.7,
+      "maxDisplayPx": 75,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Disco de samba vintage — referência musical histórica",
       "tags": [
         "disco",
@@ -2909,6 +3919,14 @@
       "file": "ref_disco-vinil-preto_01.png",
       "category": "ref",
       "role": "mid",
+      "w": 47,
+      "h": 50,
+      "ratio": 0.94,
+      "size_kb": 7.3,
+      "maxDisplayPx": 50,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Disco de vinil preto — referência de pesquisa musical",
       "tags": [
         "disco",
@@ -2934,6 +3952,14 @@
       "file": "ref_disco-ze-keti_01.png",
       "category": "ref",
       "role": "mid",
+      "w": 50,
+      "h": 50,
+      "ratio": 1.0,
+      "size_kb": 5.2,
+      "maxDisplayPx": 50,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Capa do álbum de Zé Keti — referência do samba brasileiro",
       "tags": [
         "disco",
@@ -2959,6 +3985,14 @@
       "file": "tex_papel-amassado-branco_01.png",
       "category": "tex",
       "role": "background",
+      "w": 200,
+      "h": 79,
+      "ratio": 2.532,
+      "size_kb": 17.0,
+      "maxDisplayPx": 400,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel amassado branco",
       "tags": [
         "papel",
@@ -2984,6 +4018,14 @@
       "file": "tex_papel-amassado-cinza_01.png",
       "category": "tex",
       "role": "background",
+      "w": 200,
+      "h": 145,
+      "ratio": 1.379,
+      "size_kb": 30.8,
+      "maxDisplayPx": 400,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel amassado cinza",
       "tags": [
         "papel",
@@ -3009,6 +4051,14 @@
       "file": "tex_papel-amassado-claro_01.png",
       "category": "tex",
       "role": "background",
+      "w": 200,
+      "h": 77,
+      "ratio": 2.597,
+      "size_kb": 11.7,
+      "maxDisplayPx": 400,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel amassado claro",
       "tags": [
         "papel",
@@ -3035,6 +4085,14 @@
       "file": "tex_papel-amassado-neutro_01.png",
       "category": "tex",
       "role": "background",
+      "w": 158,
+      "h": 200,
+      "ratio": 0.79,
+      "size_kb": 20.5,
+      "maxDisplayPx": 316,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel amassado neutro bege",
       "tags": [
         "papel",
@@ -3060,6 +4118,14 @@
       "file": "tex_papel-borda-direita_01.png",
       "category": "tex",
       "role": "background",
+      "w": 200,
+      "h": 85,
+      "ratio": 2.353,
+      "size_kb": 23.9,
+      "maxDisplayPx": 400,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel borda rasgada direita",
       "tags": [
         "papel",
@@ -3085,6 +4151,14 @@
       "file": "tex_papel-borda-esquerda_01.png",
       "category": "tex",
       "role": "background",
+      "w": 200,
+      "h": 109,
+      "ratio": 1.835,
+      "size_kb": 24.3,
+      "maxDisplayPx": 400,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel borda rasgada esquerda",
       "tags": [
         "papel",
@@ -3110,6 +4184,14 @@
       "file": "tex_papel-borda-torn-leve_01.png",
       "category": "tex",
       "role": "background",
+      "w": 200,
+      "h": 72,
+      "ratio": 2.778,
+      "size_kb": 17.2,
+      "maxDisplayPx": 400,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel borda rasgada leve",
       "tags": [
         "papel",
@@ -3136,6 +4218,14 @@
       "file": "tex_papel-branco-grande_01.png",
       "category": "tex",
       "role": "background",
+      "w": 149,
+      "h": 99,
+      "ratio": 1.505,
+      "size_kb": 29.4,
+      "maxDisplayPx": 298,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel branco grande",
       "tags": [
         "papel",
@@ -3161,6 +4251,14 @@
       "file": "tex_papel-branco-neutro_01.png",
       "category": "tex",
       "role": "background",
+      "w": 200,
+      "h": 94,
+      "ratio": 2.128,
+      "size_kb": 22.5,
+      "maxDisplayPx": 400,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel branco neutro",
       "tags": [
         "papel",
@@ -3186,6 +4284,14 @@
       "file": "tex_papel-desgastado-canto_01.png",
       "category": "tex",
       "role": "background",
+      "w": 200,
+      "h": 133,
+      "ratio": 1.504,
+      "size_kb": 40.7,
+      "maxDisplayPx": 400,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel desgastado com cantos",
       "tags": [
         "papel",
@@ -3211,6 +4317,14 @@
       "file": "tex_papel-dobrado_01.png",
       "category": "tex",
       "role": "background",
+      "w": 200,
+      "h": 190,
+      "ratio": 1.053,
+      "size_kb": 52.8,
+      "maxDisplayPx": 400,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel dobrado",
       "tags": [
         "papel",
@@ -3237,6 +4351,14 @@
       "file": "tex_papel-manchado-sepia_01.png",
       "category": "tex",
       "role": "background",
+      "w": 200,
+      "h": 200,
+      "ratio": 1.0,
+      "size_kb": 21.5,
+      "maxDisplayPx": 400,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel manchado sépia",
       "tags": [
         "papel",
@@ -3262,6 +4384,14 @@
       "file": "tex_papel-manuscrito-cinza_01.png",
       "category": "tex",
       "role": "background",
+      "w": 31,
+      "h": 50,
+      "ratio": 0.62,
+      "size_kb": 2.1,
+      "maxDisplayPx": 62,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel manuscrito cinza",
       "tags": [
         "papel",
@@ -3287,6 +4417,14 @@
       "file": "tex_papel-neve_01.png",
       "category": "tex",
       "role": "background",
+      "w": 149,
+      "h": 99,
+      "ratio": 1.505,
+      "size_kb": 22.7,
+      "maxDisplayPx": 298,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel branco neve",
       "tags": [
         "papel",
@@ -3312,6 +4450,14 @@
       "file": "tex_papel-ondulado_01.png",
       "category": "tex",
       "role": "background",
+      "w": 173,
+      "h": 200,
+      "ratio": 0.865,
+      "size_kb": 22.9,
+      "maxDisplayPx": 346,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel ondulado",
       "tags": [
         "papel",
@@ -3337,6 +4483,14 @@
       "file": "tex_papel-rasgado-borda_01.png",
       "category": "tex",
       "role": "background",
+      "w": 175,
+      "h": 200,
+      "ratio": 0.875,
+      "size_kb": 24.7,
+      "maxDisplayPx": 350,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel com borda rasgada",
       "tags": [
         "papel",
@@ -3363,6 +4517,14 @@
       "file": "tex_papel-rasgado-escuro_01.png",
       "category": "tex",
       "role": "background",
+      "w": 200,
+      "h": 162,
+      "ratio": 1.235,
+      "size_kb": 12.2,
+      "maxDisplayPx": 400,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel rasgado escuro",
       "tags": [
         "papel",
@@ -3389,6 +4551,14 @@
       "file": "tex_papel-rasgado-irregular_01.png",
       "category": "tex",
       "role": "background",
+      "w": 200,
+      "h": 57,
+      "ratio": 3.509,
+      "size_kb": 14.1,
+      "maxDisplayPx": 400,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel rasgado irregular",
       "tags": [
         "papel",
@@ -3415,6 +4585,14 @@
       "file": "tex_papel-rasgado-medio_01.png",
       "category": "tex",
       "role": "background",
+      "w": 187,
+      "h": 200,
+      "ratio": 0.935,
+      "size_kb": 21.4,
+      "maxDisplayPx": 374,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel rasgado médio",
       "tags": [
         "papel",
@@ -3440,6 +4618,14 @@
       "file": "tex_papel-textura-fina_01.png",
       "category": "tex",
       "role": "background",
+      "w": 200,
+      "h": 183,
+      "ratio": 1.093,
+      "size_kb": 42.9,
+      "maxDisplayPx": 400,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel com textura fina",
       "tags": [
         "papel",
@@ -3466,6 +4652,14 @@
       "file": "tex_papel-velho-liso_01.png",
       "category": "tex",
       "role": "background",
+      "w": 200,
+      "h": 160,
+      "ratio": 1.25,
+      "size_kb": 23.5,
+      "maxDisplayPx": 400,
+      "placement": [
+        "section-bg"
+      ],
       "subject": "Papel velho liso creme",
       "tags": [
         "papel",
@@ -3493,6 +4687,15 @@
       "file": "ui_balao-fala-oval_01.png",
       "category": "ui",
       "role": "foreground",
+      "w": 200,
+      "h": 101,
+      "ratio": 1.98,
+      "size_kb": 4.8,
+      "maxDisplayPx": 200,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Balão de fala oval vazio — anotações sobre elementos",
       "tags": [
         "balao",
@@ -3518,6 +4721,15 @@
       "file": "ui_balao-fala-vazio_01.png",
       "category": "ui",
       "role": "foreground",
+      "w": 200,
+      "h": 135,
+      "ratio": 1.481,
+      "size_kb": 3.2,
+      "maxDisplayPx": 200,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Balão de fala em branco — sobreposição sobre fotos e citações",
       "tags": [
         "balao",
@@ -3543,6 +4755,15 @@
       "file": "ui_circulo-vermelho_01.png",
       "category": "ui",
       "role": "foreground",
+      "w": 200,
+      "h": 108,
+      "ratio": 1.852,
+      "size_kb": 2.9,
+      "maxDisplayPx": 200,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Círculo vermelho de marcação — destaque de elementos",
       "tags": [
         "circulo",
@@ -3568,6 +4789,15 @@
       "file": "ui_codigo-barras_01.png",
       "category": "ui",
       "role": "foreground",
+      "w": 200,
+      "h": 38,
+      "ratio": 5.263,
+      "size_kb": 1.2,
+      "maxDisplayPx": 200,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Código de barras — elemento cyberpunk, o sistema como produto",
       "tags": [
         "codigo",
@@ -3594,6 +4824,14 @@
       "file": "ui_disco-voador-ufo_01.png",
       "category": "ui",
       "role": "foreground",
+      "w": 49,
+      "h": 32,
+      "ratio": 1.531,
+      "size_kb": 2.0,
+      "maxDisplayPx": 49,
+      "placement": [
+        "scatter"
+      ],
       "subject": "Disco voador UFO estilizado — elemento irônico cyberpunk",
       "tags": [
         "disco",
@@ -3620,6 +4858,15 @@
       "file": "ui_filmstrip-vazio_01.png",
       "category": "ui",
       "role": "foreground",
+      "w": 200,
+      "h": 60,
+      "ratio": 3.333,
+      "size_kb": 12.9,
+      "maxDisplayPx": 200,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Tira de filme vazia — divisor cinematográfico",
       "tags": [
         "filmstrip",
@@ -3645,6 +4892,15 @@
       "file": "ui_icones-social_01.png",
       "category": "ui",
       "role": "foreground",
+      "w": 200,
+      "h": 161,
+      "ratio": 1.242,
+      "size_kb": 16.2,
+      "maxDisplayPx": 200,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Ícones de redes sociais — Instagram e curtir",
       "tags": [
         "icones",
@@ -3670,6 +4926,15 @@
       "file": "ui_oculos-pixelado_01.png",
       "category": "ui",
       "role": "foreground",
+      "w": 200,
+      "h": 45,
+      "ratio": 4.444,
+      "size_kb": 0.4,
+      "maxDisplayPx": 200,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Óculos pixelado em estilo meme — elemento irônico de denúncia",
       "tags": [
         "oculos",
@@ -3696,6 +4961,15 @@
       "file": "ui_ondas-audio_01.png",
       "category": "ui",
       "role": "foreground",
+      "w": 200,
+      "h": 52,
+      "ratio": 3.846,
+      "size_kb": 4.1,
+      "maxDisplayPx": 200,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Ondas de áudio ou waveform — divisores e seção canais",
       "tags": [
         "ondas",
@@ -3722,6 +4996,15 @@
       "file": "ui_player-video_01.png",
       "category": "ui",
       "role": "foreground",
+      "w": 200,
+      "h": 140,
+      "ratio": 1.429,
+      "size_kb": 0.8,
+      "maxDisplayPx": 200,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Ícone de player de vídeo — seção vídeo-clipe e canais YouTube",
       "tags": [
         "player",
@@ -3747,6 +5030,15 @@
       "file": "ui_poste-placa-direcao_01.png",
       "category": "ui",
       "role": "foreground",
+      "w": 100,
+      "h": 150,
+      "ratio": 0.667,
+      "size_kb": 11.9,
+      "maxDisplayPx": 150,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Poste com placas de direção — elemento narrativo qual caminho",
       "tags": [
         "poste",
@@ -3773,6 +5065,15 @@
       "file": "ui_seta-direita-grande_01.png",
       "category": "ui",
       "role": "foreground",
+      "w": 200,
+      "h": 81,
+      "ratio": 2.469,
+      "size_kb": 5.3,
+      "maxDisplayPx": 200,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Seta curva grande para a direita — CTA e direção",
       "tags": [
         "seta",
@@ -3798,6 +5099,15 @@
       "file": "ui_setas-baixo_01.png",
       "category": "ui",
       "role": "foreground",
+      "w": 84,
+      "h": 149,
+      "ratio": 0.564,
+      "size_kb": 11.2,
+      "maxDisplayPx": 149,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Setas apontando para baixo — navegação e role para baixo",
       "tags": [
         "setas",
@@ -3823,6 +5133,15 @@
       "file": "ui_setas-triplas-baixo_01.png",
       "category": "ui",
       "role": "foreground",
+      "w": 200,
+      "h": 101,
+      "ratio": 1.98,
+      "size_kb": 6.5,
+      "maxDisplayPx": 200,
+      "placement": [
+        "strip",
+        "scatter"
+      ],
       "subject": "Três setas apontando para baixo — CTA e scroll",
       "tags": [
         "setas",
