@@ -83,378 +83,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Caveat:wght@500;700&family=Lora:ital,wght@0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/main.css">
 
-<style>
-/* ============================================================
-   PRA QUE MENTIR — Identidade "Retro-Futurismo de Denúncia"
-   Tokens derivados do Guia da Marca v1.0
-   ============================================================ */
-:root{
-  /* A Lavanderia */
-  --papel:#C4B49A;
-  --areia:#A89880;
-  --tinta:#1A1208;
-  --carvao:#2C2416;
-  /* A Tinta */
-  --vermelho:#C41E1E;
-  --laranja:#D4620A;
-  --roxo:#6B2FA0;
-  --dourado:#B8920A;
-  --verde:#1A6B3C;
-  --azul:#1A3A6B;
-  /* O Glitch */
-  --neon:#FF2D6B;
-  --ciano:#00E5CC;
-  --alerta:#FFE100;
-
-  --max:1440px;
-
-  /* Slots de imagem — PV: troque por assets reais das faixas/tiras */
-  --faixa-1:none;
-  --faixa-2:none;
-  --faixa-3:none;
-}
-
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  background:var(--papel);
-  color:var(--tinta);
-  font-family:'Lora',Georgia,serif;
-  line-height:1.8;
-  overflow-x:hidden;
-  position:relative;
-}
-
-/* Grão de papel global */
-body::before{
-  content:"";position:fixed;inset:0;z-index:9000;pointer-events:none;opacity:.10;
-  mix-blend-mode:multiply;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  animation:grain 8s steps(6) infinite;
-}
-@keyframes grain{
-  0%,100%{transform:translate(0,0)}
-  20%{transform:translate(-3px,2px)}
-  40%{transform:translate(2px,-3px)}
-  60%{transform:translate(-2px,-2px)}
-  80%{transform:translate(3px,2px)}
-}
-
-::selection{background:var(--vermelho);color:#fff}
-
-/* ===================== NAV ===================== */
-.nav{
-  position:fixed;top:0;left:0;right:0;z-index:8000;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:14px clamp(18px,5vw,80px);
-  background:linear-gradient(180deg,rgba(196,180,154,.96),rgba(196,180,154,.78) 70%,transparent);
-  backdrop-filter:blur(2px);
-}
-.brand{font-family:'Anton';font-size:clamp(18px,2.4vw,26px);letter-spacing:.5px;text-transform:uppercase;line-height:1;display:flex;align-items:baseline;gap:6px}
-.brand .q{color:var(--vermelho);font-size:1.3em;transform:translateY(.06em)}
-.nav-links{display:flex;align-items:center;gap:clamp(10px,2vw,30px)}
-.nav-links a{
-  font-family:'Space Mono';font-size:12px;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--tinta);text-decoration:none;position:relative;padding:6px 2px;
-}
-.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--vermelho);transition:width .25s}
-.nav-links a:hover::after,.nav-links a:focus-visible::after{width:100%}
-.nav-cta{
-  font-family:'Anton';text-transform:uppercase;letter-spacing:.06em;
-  background:var(--vermelho);color:#fff;text-decoration:none;
-  padding:9px 18px;font-size:13px;box-shadow:3px 3px 0 rgba(0,0,0,.25);
-  transform:rotate(-1.5deg);transition:transform .15s,box-shadow .15s;
-}
-.nav-cta:hover{transform:rotate(-1.5deg) translate(-1px,-1px);box-shadow:5px 5px 0 rgba(0,0,0,.3)}
-.menu-toggle{display:none}
-
-/* ===================== HERÓI ===================== */
-.hero{
-  position:relative;min-height:100svh;
-  display:flex;flex-direction:column;justify-content:center;
-  padding:120px clamp(18px,5vw,80px) 0;
-  overflow:hidden;
-}
-.hero-bg-layer{position:absolute;inset:-10% -5%;z-index:0;pointer-events:none}
-
-/* manchas de café/umidade */
-.stain{position:absolute;border-radius:50%;filter:blur(8px);opacity:.18;mix-blend-mode:multiply}
-
-/* faixa diagonal — assinatura visual */
-.diag-strip{
-  position:absolute;left:-20%;width:140%;height:120px;z-index:1;
-  background:repeating-linear-gradient(90deg,var(--carvao) 0 2px,transparent 2px 12px),
-             linear-gradient(180deg,var(--areia),var(--papel));
-  border-top:10px solid var(--tinta);border-bottom:10px solid var(--tinta);
-  box-shadow:0 14px 40px rgba(0,0,0,.25);opacity:.9;
-  display:flex;align-items:center;overflow:hidden;
-}
-.diag-strip::before,.diag-strip::after{
-  content:"";position:absolute;left:0;right:0;height:14px;
-  background:repeating-linear-gradient(90deg,transparent 0 14px,var(--tinta) 14px 24px);
-  opacity:.6;
-}
-.diag-strip::before{top:6px}
-.diag-strip::after{bottom:6px}
-.diag-1{top:18%;transform:rotate(-7deg)}
-.diag-2{bottom:8%;transform:rotate(5deg);opacity:.5}
-
-.strip-run{display:flex;gap:48px;white-space:nowrap;align-items:center;padding-left:40px;animation:run 38s linear infinite;will-change:transform}
-.diag-2 .strip-run{animation-duration:52s;animation-direction:reverse}
-@keyframes run{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.strip-word{font-family:'Anton';font-size:42px;text-transform:uppercase;letter-spacing:.04em;color:var(--tinta);opacity:.85}
-.strip-word.red{color:var(--vermelho)}
-.strip-word.gold{color:var(--dourado)}
-.strip-word.mono{font-family:'Space Mono';font-size:26px;letter-spacing:.2em}
-.strip-word.q{color:var(--vermelho);font-size:56px}
-
-.hero-inner{position:relative;z-index:5;max-width:var(--max);margin:0 auto;width:100%}
-.kicker{
-  font-family:'Space Mono';font-size:clamp(11px,1.5vw,14px);letter-spacing:.32em;text-transform:uppercase;
-  color:var(--carvao);display:inline-flex;align-items:center;gap:12px;margin-bottom:18px;
-}
-.kicker::before{content:"";width:42px;height:2px;background:var(--vermelho)}
-.kicker .y1937{color:var(--dourado)}
-.kicker .y2026{color:var(--roxo)}
-
-.hero h1{
-  font-family:'Anton';text-transform:uppercase;line-height:.82;
-  font-size:clamp(58px,14vw,200px);letter-spacing:-.01em;
-  color:var(--tinta);position:relative;margin-bottom:6px;
-}
-.hero h1 .que{
-  display:block;font-family:'Playfair Display';font-style:italic;font-weight:500;
-  font-size:.26em;letter-spacing:0;text-transform:none;color:var(--carvao);
-  margin:-.05em 0 -.04em .04em;
-}
-.hero h1 .mentir{color:var(--tinta)}
-/* Glitch 1937 ↔ 2026 no título */
-.glitch{position:relative;display:inline-block}
-.glitch::before,.glitch::after{
-  content:attr(data-text);position:absolute;left:0;top:0;width:100%;overflow:hidden;pointer-events:none;
-}
-.glitch::before{color:var(--ciano);clip-path:inset(0 0 60% 0);animation:gl1 4.2s infinite steps(2)}
-.glitch::after{color:var(--neon);clip-path:inset(60% 0 0 0);animation:gl2 3.4s infinite steps(2)}
-@keyframes gl1{0%,92%,100%{transform:translate(0,0);opacity:0}93%{opacity:.9;transform:translate(-4px,-2px)}96%{transform:translate(3px,1px)}}
-@keyframes gl2{0%,90%,100%{transform:translate(0,0);opacity:0}91%{opacity:.9;transform:translate(4px,2px)}97%{transform:translate(-3px,-1px)}}
-
-.hero-grid{display:grid;grid-template-columns:1.3fr .9fr;gap:40px;align-items:end;margin-top:26px}
-@media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:28px}}
-
-.hero-lead{font-family:'Playfair Display';font-size:clamp(18px,2.4vw,26px);line-height:1.35;max-width:30ch}
-.hero-lead b{color:var(--vermelho);font-weight:700}
-.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
-.btn{
-  font-family:'Anton';text-transform:uppercase;letter-spacing:.06em;font-size:15px;
-  text-decoration:none;padding:14px 26px;display:inline-flex;align-items:center;gap:10px;
-  box-shadow:4px 4px 0 rgba(0,0,0,.28);transition:transform .15s,box-shadow .15s;cursor:pointer;border:none;
-}
-.btn-red{background:var(--vermelho);color:#fff;transform:rotate(-1deg)}
-.btn-ink{background:var(--tinta);color:var(--papel);transform:rotate(1deg)}
-.btn:hover{transform:translate(-2px,-2px) rotate(0deg);box-shadow:6px 6px 0 rgba(0,0,0,.32)}
-.btn .arr{font-family:'Space Mono';font-weight:700}
-
-/* MENTIRA combativa gigante atrás */
-.mentira-ghost{
-  position:absolute;right:-2%;top:50%;transform:translateY(-50%) rotate(-4deg);
-  font-family:'Anton';font-size:clamp(120px,22vw,360px);color:var(--vermelho);
-  opacity:.13;letter-spacing:-.02em;z-index:1;pointer-events:none;user-select:none;line-height:.8;
-}
-
-/* O ESPÍRITO CIRCULANTE (SVG) */
-.spirit-wrap{position:relative;justify-self:end;width:min(360px,80vw);filter:drop-shadow(0 0 30px rgba(0,229,204,.35))}
-.spirit-tag{
-  font-family:'Caveat';font-size:20px;color:var(--ciano);text-align:center;margin-top:6px;
-  text-shadow:0 0 12px rgba(0,229,204,.6);
-}
-.spirit-svg{width:100%;height:auto;display:block;animation:float 7s ease-in-out infinite;will-change:transform}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
-.aura{animation:pulse 4s ease-in-out infinite}
-@keyframes pulse{0%,100%{opacity:.5}50%{opacity:.95}}
-
-.scroll-cue{
-  position:absolute;bottom:18px;left:50%;transform:translateX(-50%);z-index:6;
-  font-family:'Space Mono';font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--carvao);
-  display:flex;flex-direction:column;align-items:center;gap:6px;opacity:.8;
-}
-.scroll-cue .line{width:1px;height:34px;background:var(--carvao);animation:cue 1.8s ease-in-out infinite}
-@keyframes cue{0%,100%{transform:scaleY(.4);transform-origin:top;opacity:.4}50%{transform:scaleY(1);opacity:1}}
-
-/* recortes aleatórios espalhados via JS */
-.scrap{position:absolute;z-index:2;pointer-events:none;font-family:'Space Mono';font-size:12px;
-  background:var(--papel);border:1px solid var(--carvao);padding:3px 7px;
-  box-shadow:3px 3px 0 rgba(0,0,0,.15);opacity:.0;transition:opacity 1.2s}
-.scrap.show{opacity:.55}
-.scrap.stamp{font-family:'Anton';color:var(--vermelho);border-color:var(--vermelho);background:transparent;font-size:14px;letter-spacing:.05em}
-
-/* ===================== DIVISOR DE FAIXA FULL-BLEED ===================== */
-.faixa-divider{
-  position:relative;height:150px;overflow:hidden;z-index:3;
-  background:linear-gradient(180deg,var(--areia),var(--papel) 50%,var(--areia));
-  border-top:8px solid var(--tinta);border-bottom:8px solid var(--tinta);
-  margin:0;
-}
-.faixa-divider::before,.faixa-divider::after{
-  content:"";position:absolute;left:0;right:0;height:16px;z-index:2;
-  background:repeating-linear-gradient(90deg,transparent 0 16px,var(--tinta) 16px 28px);opacity:.55;
-}
-.faixa-divider::before{top:8px}
-.faixa-divider::after{bottom:8px}
-.faixa-divider .strip-run{height:100%;padding-top:22px}
-.faixa-divider.alt{background:linear-gradient(180deg,#b9a988,var(--papel) 50%,#b9a988)}
-
-/* ===================== SEÇÃO BASE ===================== */
-.section{position:relative;max-width:var(--max);margin:0 auto;padding:clamp(64px,9vw,120px) clamp(18px,5vw,80px);z-index:4}
-.eyebrow{font-family:'Space Mono';font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--vermelho);margin-bottom:14px;display:flex;align-items:center;gap:10px}
-.eyebrow .sym{font-size:18px}
-.h2{font-family:'Anton';text-transform:uppercase;font-size:clamp(34px,6vw,72px);line-height:.92;letter-spacing:-.01em;margin-bottom:22px}
-.h2 .ital{font-family:'Playfair Display';font-style:italic;font-weight:500;text-transform:none;color:var(--vermelho)}
-.lead-p{font-size:clamp(16px,2vw,19px);max-width:62ch;margin-bottom:18px}
-.lead-p strong{color:var(--vermelho)}
-
-/* reveal */
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}
-.reveal.in{opacity:1;transform:none}
-
-/* ----- O PROJETO ----- */
-.projeto{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,5vw,70px);align-items:center}
-@media(max-width:860px){.projeto{grid-template-columns:1fr}}
-.aside-note{
-  font-family:'Caveat';font-size:clamp(19px,2.4vw,26px);color:var(--laranja);
-  border-left:3px solid var(--laranja);padding-left:16px;margin:24px 0;transform:rotate(-.6deg);
-}
-.collage{position:relative;aspect-ratio:4/5;min-height:320px}
-.collage .card{
-  position:absolute;background:var(--papel);border:1px solid var(--carvao);
-  box-shadow:4px 4px 0 rgba(0,0,0,.2);padding:14px;
-  display:flex;flex-direction:column;justify-content:flex-end;
-}
-.collage .card .lbl{font-family:'Space Mono';font-size:11px;letter-spacing:.15em;text-transform:uppercase}
-.collage .card .big{font-family:'Anton';font-size:clamp(28px,4vw,44px);line-height:.9;text-transform:uppercase}
-.c1{inset:0 28% 32% 0;background:linear-gradient(135deg,#9c8c70,var(--areia));transform:rotate(-3deg);z-index:2}
-.c1 .big{color:var(--dourado)}
-.c2{inset:24% 0 8% 30%;background:linear-gradient(135deg,#2a2335,#1a1422);transform:rotate(2.5deg);z-index:3}
-.c2 .lbl,.c2 .big{color:var(--ciano)}
-.c2 .big{color:var(--neon)}
-.c3{right:6%;top:-4%;background:var(--vermelho);color:#fff;transform:rotate(-6deg);z-index:4;padding:10px 14px;width:max-content}
-.c3 .big{font-size:clamp(22px,3vw,32px)}
-
-/* ----- TRIÂNGULO / BANDEIRAS ----- */
-.bandeiras{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:10px}
-@media(max-width:760px){.bandeiras{grid-template-columns:1fr}}
-.bandeira{
-  position:relative;background:var(--papel);border:2px solid var(--tinta);padding:28px;
-  box-shadow:6px 6px 0 rgba(0,0,0,.18);overflow:hidden;
-}
-.bandeira .num{font-family:'Anton';font-size:64px;line-height:1;color:rgba(26,18,8,.12);position:absolute;top:8px;right:14px}
-.bandeira h3{font-family:'Anton';text-transform:uppercase;font-size:clamp(22px,2.6vw,30px);line-height:.95;margin-bottom:12px;position:relative;z-index:2}
-.bandeira p{font-size:15.5px;position:relative;z-index:2}
-.bandeira .tagref{font-family:'Space Mono';font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-top:14px;display:inline-block;color:var(--azul)}
-.bandeira.b1{border-color:var(--verde)}
-.bandeira.b1 h3{color:var(--verde)}
-.bandeira.b2{border-color:var(--vermelho)}
-.bandeira.b2 h3{color:var(--vermelho)}
-.bandeira::after{content:"§";position:absolute;bottom:-18px;left:-6px;font-family:'Playfair Display';font-size:120px;opacity:.06}
-
-/* triângulo visual */
-.triangle{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:46px}
-@media(max-width:760px){.triangle{grid-template-columns:1fr}}
-.vertex{border:1px dashed var(--carvao);padding:20px;background:rgba(255,255,255,.06)}
-.vertex .v-k{font-family:'Space Mono';font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--vermelho)}
-.vertex .v-t{font-family:'Anton';text-transform:uppercase;font-size:clamp(20px,2.4vw,26px);line-height:.95;margin:8px 0 6px}
-.vertex .v-d{font-size:14px}
-.v-hum .v-t{color:var(--laranja)}
-.v-his .v-t{color:var(--dourado)}
-.v-jur .v-t{color:var(--azul)}
-
-/* ----- BLOG ----- */
-.blog-head{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:18px;margin-bottom:34px}
-.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-@media(max-width:900px){.blog-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.blog-grid{grid-template-columns:1fr}}
-.post{
-  position:relative;background:var(--papel);border:1px solid var(--carvao);
-  box-shadow:5px 5px 0 rgba(0,0,0,.16);text-decoration:none;color:var(--tinta);
-  display:flex;flex-direction:column;overflow:hidden;transition:transform .18s,box-shadow .18s;
-}
-.post:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 rgba(0,0,0,.22)}
-.post .thumb{height:150px;position:relative;overflow:hidden;border-bottom:3px solid var(--tinta);
-  display:flex;align-items:center;justify-content:center}
-.post .thumb .glyph{font-family:'Anton';font-size:72px;opacity:.5;text-transform:uppercase}
-.p-a .thumb{background:linear-gradient(135deg,#9c8c70,#7d6f54)}.p-a .glyph{color:var(--papel)}
-.p-b .thumb{background:linear-gradient(135deg,#241d30,#3a2f55)}.p-b .glyph{color:var(--ciano)}
-.p-c .thumb{background:linear-gradient(135deg,#5a1414,var(--vermelho))}.p-c .glyph{color:#fff}
-.post .body{padding:18px 18px 22px}
-.post .cat{font-family:'Space Mono';font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--vermelho)}
-.post h3{font-family:'Playfair Display';font-weight:700;font-size:21px;line-height:1.15;margin:8px 0 8px}
-.post .excerpt{font-size:14.5px;color:var(--carvao)}
-.post .read{font-family:'Space Mono';font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-top:14px;display:inline-block}
-.post .read .arr{color:var(--vermelho)}
-.soon{position:absolute;top:10px;right:-30px;transform:rotate(40deg);background:var(--tinta);color:var(--papel);
-  font-family:'Space Mono';font-size:10px;letter-spacing:.15em;padding:4px 38px;text-transform:uppercase}
-
-/* ----- CANAIS ----- */
-.canais-sec{background:var(--tinta);color:var(--papel);position:relative;z-index:4;overflow:hidden}
-.canais-sec .eyebrow{color:var(--ciano)}
-.canais-sec .h2{color:var(--papel)}
-.canais-sec .h2 .ital{color:var(--neon)}
-.canais-sec .lead-p{color:#cdbfa6}
-.canais{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
-@media(max-width:880px){.canais{grid-template-columns:1fr 1fr}}
-@media(max-width:460px){.canais{grid-template-columns:1fr}}
-.canal{
-  border:1px solid #4a3f2a;padding:22px;text-decoration:none;color:var(--papel);
-  display:flex;flex-direction:column;gap:8px;transition:background .2s,transform .18s,border-color .2s;
-}
-.canal:hover{transform:translateY(-4px)}
-.canal .ic{font-family:'Anton';font-size:30px;line-height:1}
-.canal .nm{font-family:'Anton';text-transform:uppercase;font-size:18px}
-.canal .at{font-family:'Space Mono';font-size:12px;color:#a8956f}
-.canal .desc{font-size:13.5px;color:#cdbfa6;line-height:1.5}
-.canal.insta:hover{background:linear-gradient(135deg,#6b2fa0,#ff2d6b);border-color:transparent}
-.canal.yt:hover{background:var(--vermelho);border-color:transparent}
-.canal.sub:hover{background:var(--laranja);border-color:transparent}
-.canal.site:hover{background:var(--verde);border-color:transparent}
-
-/* ----- CTA MANIFESTO ----- */
-.cta-sec{position:relative;text-align:center;padding:clamp(70px,11vw,150px) clamp(18px,5vw,80px);overflow:hidden;z-index:4}
-.cta-sec .big-q{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-  font-family:'Anton';font-size:min(80vw,900px);color:var(--vermelho);opacity:.08;z-index:0;pointer-events:none;line-height:1}
-.cta-inner{position:relative;z-index:2;max-width:var(--max);margin:0 auto}
-.cta-sec h2{font-family:'Anton';text-transform:uppercase;font-size:clamp(38px,8vw,96px);line-height:.9;margin-bottom:18px}
-.cta-sec p{font-family:'Playfair Display';font-style:italic;font-size:clamp(17px,2.4vw,24px);max-width:46ch;margin:0 auto 30px}
-.count{font-family:'Space Mono';font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--carvao);margin-top:24px}
-.count b{color:var(--vermelho);font-size:18px}
-
-/* ----- RODAPÉ ----- */
-footer{background:var(--carvao);color:#bdae93;position:relative;z-index:4;padding:clamp(48px,7vw,80px) clamp(18px,5vw,80px) 40px}
-.foot-grid{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
-@media(max-width:760px){.foot-grid{grid-template-columns:1fr}}
-footer .brand{color:var(--papel);margin-bottom:14px}
-footer p{font-size:14px;line-height:1.7}
-.foot-col h4{font-family:'Space Mono';font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ciano);margin-bottom:14px}
-.foot-col a{display:block;color:#bdae93;text-decoration:none;font-size:14px;padding:4px 0}
-.foot-col a:hover{color:var(--papel)}
-.tm{max-width:var(--max);margin:36px auto 0;border-top:1px solid #4a3f2a;padding-top:22px;
-  font-family:'Space Mono';font-size:11px;line-height:1.8;color:#8a7c5f;letter-spacing:.04em}
-.tm b{color:var(--ciano)}
-
-/* ── Assets dinâmicos (assets-loader.js) ── */
-.section-bg{position:absolute;inset:0;z-index:0;background-size:cover;
-  background-position:center;opacity:.3;pointer-events:none}
-.strip-cut{height:78px;width:auto;object-fit:contain;vertical-align:middle;
-  filter:drop-shadow(2px 2px 0 rgba(0,0,0,.2))}
-.scatter-img{position:absolute;pointer-events:none;will-change:transform;z-index:2}
-.spirit-real{filter:drop-shadow(0 0 28px rgba(0,229,204,.45))}
-
-/* ===================== ACESSIBILIDADE ===================== */
-a:focus-visible,button:focus-visible{outline:3px solid var(--ciano);outline-offset:3px}
-@media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
-  .reveal{opacity:1;transform:none}
-}
-</style>
 </head>
 <body>
 
@@ -507,82 +137,21 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--ciano);outline-offs
   </div>
 
   <div class="hero-inner">
-    <span class="kicker">Música de <span class="y1937">1937</span> · ecoa em <span class="y2026">2026</span></span>
-    <h1>
-      <span class="glitch" data-text="P4 QU3">PRA QUE</span><span class="que">&nbsp;</span><span class="glitch mentir" data-text="M3NT1R?">MENTIR?</span>
-    </h1>
-
     <div class="hero-grid">
       <div>
-        <p class="hero-lead">Nasceu do luto e da indignação. Pegou a textura de um samba de 1937 e colou sobre a crítica de 2026. <b>Não é cópia — é recriação.</b></p>
-        <div class="hero-actions">
-          <a href="manifesto.html" class="btn btn-red">Leia o Manifesto <span class="arr">→</span></a>
-          <a href="#projeto" class="btn btn-ink">Entenda o Projeto <span class="arr">↓</span></a>
-        </div>
+        <span class="kicker">Música de <span class="y1937">1937</span> · ecoa em <span class="y2026">2026</span></span>
+        <h1>
+          <span class="glitch" data-text="P4 QU3">PRA QUE</span><span class="que">&nbsp;</span><span class="glitch mentir" data-text="M3NT1R?">MENTIR?</span>
+        </h1>
       </div>
 
-      <!-- ESPÍRITO CIRCULANTE — SVG (marca registrada Kride Jr) -->
+      <!-- ESPÍRITO CIRCULANTE — imagem real (marca registrada Kride Jr) -->
       <figure class="spirit-wrap" data-parallax="0.08">
-        <svg class="spirit-svg" viewBox="0 0 300 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Espírito Circulante de Noel Rosa — personagem do projeto">
-          <defs>
-            <radialGradient id="halo" cx="50%" cy="45%" r="55%">
-              <stop offset="0%" stop-color="#00E5CC" stop-opacity="0.55"/>
-              <stop offset="60%" stop-color="#00E5CC" stop-opacity="0.12"/>
-              <stop offset="100%" stop-color="#00E5CC" stop-opacity="0"/>
-            </radialGradient>
-            <linearGradient id="suit" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#eafffb"/><stop offset="100%" stop-color="#bfeee6"/>
-            </linearGradient>
-            <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#caa06a"/><stop offset="100%" stop-color="#8a5e34"/>
-            </linearGradient>
-          </defs>
-          <ellipse class="aura" cx="150" cy="190" rx="150" ry="200" fill="url(#halo)"/>
-          <!-- banquinho -->
-          <rect x="120" y="345" width="60" height="9" rx="2" fill="#2a2118"/>
-          <rect x="126" y="354" width="7" height="48" fill="#2a2118"/>
-          <rect x="167" y="354" width="7" height="48" fill="#2a2118"/>
-          <!-- corpo / terno branco -->
-          <path d="M150 150 C128 150 116 170 114 196 L108 300 C106 322 120 338 150 338 C180 338 194 322 192 300 L186 196 C184 170 172 150 150 150 Z" fill="url(#suit)" stroke="#7fd6c9" stroke-width="1.5"/>
-          <!-- pernas -->
-          <path d="M132 330 L126 392 L142 392 L150 338 Z" fill="url(#suit)" stroke="#7fd6c9" stroke-width="1"/>
-          <path d="M168 330 L182 388 L166 392 L150 338 Z" fill="url(#suit)" stroke="#7fd6c9" stroke-width="1"/>
-          <!-- sapatos brancos -->
-          <ellipse cx="128" cy="396" rx="16" ry="7" fill="#fff"/>
-          <ellipse cx="180" cy="394" rx="16" ry="7" fill="#fff"/>
-          <!-- gravata -->
-          <path d="M150 150 L143 168 L150 230 L157 168 Z" fill="#1a1208"/>
-          <!-- colarinho -->
-          <path d="M138 150 L150 166 L162 150 L156 146 L150 156 L144 146 Z" fill="#d9f7f1"/>
-          <!-- pescoço -->
-          <rect x="143" y="128" width="14" height="26" rx="5" fill="#eafffb"/>
-          <!-- cabeça (caricatura alongada) -->
-          <path d="M150 50 C170 50 182 70 182 96 C182 122 168 138 150 138 C132 138 118 122 118 96 C118 70 130 50 150 50 Z" fill="#eafffb" stroke="#7fd6c9" stroke-width="1.2"/>
-          <!-- cabelo penteado -->
-          <path d="M122 86 C120 60 134 48 150 48 C168 48 182 62 180 86 C176 72 168 64 150 64 C133 64 126 73 122 86 Z" fill="#cfeee8"/>
-          <!-- olhos -->
-          <ellipse cx="138" cy="92" rx="4" ry="5" fill="#1a1208"/>
-          <ellipse cx="160" cy="92" rx="4" ry="5" fill="#1a1208"/>
-          <!-- sobrancelhas expressivas -->
-          <path d="M132 84 Q138 80 144 84" stroke="#1a1208" stroke-width="1.6" fill="none"/>
-          <path d="M155 84 Q161 80 167 84" stroke="#1a1208" stroke-width="1.6" fill="none"/>
-          <!-- boca cantando -->
-          <ellipse cx="149" cy="116" rx="9" ry="12" fill="#1a1208"/>
-          <ellipse cx="149" cy="112" rx="6" ry="5" fill="#d65a7a"/>
-          <!-- VIOLÃO -->
-          <g transform="rotate(-18 150 250)">
-            <ellipse cx="150" cy="270" rx="46" ry="56" fill="url(#wood)" stroke="#5a3a1c" stroke-width="2"/>
-            <ellipse cx="150" cy="278" rx="30" ry="34" fill="none" stroke="#5a3a1c" stroke-width="1.5"/>
-            <circle cx="150" cy="256" r="13" fill="#2a1a0c"/>
-            <rect x="144" y="150" width="12" height="100" rx="3" fill="#3a2614"/>
-            <rect x="143" y="140" width="14" height="16" rx="2" fill="#241608"/>
-            <g stroke="#f2e9d8" stroke-width="0.7">
-              <line x1="146" y1="150" x2="146" y2="300"/><line x1="148" y1="150" x2="148" y2="300"/>
-              <line x1="150" y1="150" x2="150" y2="300"/><line x1="152" y1="150" x2="152" y2="300"/>
-              <line x1="154" y1="150" x2="154" y2="300"/>
-            </g>
-          </g>
-        </svg>
+        <img class="spirit-svg spirit-real"
+             src="./img/recortes/ilu_noel-espirito-violao_01.png"
+             alt="Espírito Circulante de Noel Rosa tocando violão — personagem do projeto"
+             width="93" height="149"
+             loading="eager" decoding="async">
         <figcaption class="spirit-tag">o espírito circulante de Noel</figcaption>
       </figure>
     </div>
@@ -595,6 +164,20 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--ciano);outline-offs
 
   <div class="scroll-cue" aria-hidden="true"><span>role</span><span class="line"></span></div>
 </header>
+
+<!-- ===================== HERO INTRO — seção limpa ===================== -->
+<div class="hero-intro">
+  <div class="hero-intro-inner">
+    <div class="reveal">
+      <p class="hero-lead">Nasceu do luto e da indignação. Pegou a textura de um samba de 1937 e colou sobre a crítica de 2026. <b>Não é cópia — é recriação.</b></p>
+      <div class="hero-actions">
+        <a href="manifesto.html" class="btn btn-red">Leia o Manifesto <span class="arr">→</span></a>
+        <a href="#projeto" class="btn btn-ink">Entenda o Projeto <span class="arr">↓</span></a>
+      </div>
+    </div>
+    <div class="hero-intro-deco reveal" aria-hidden="true">1937<br>→<br>2026</div>
+  </div>
+</div>
 
 <!-- ===================== DIVISOR FAIXA ===================== -->
 <div class="faixa-divider" aria-hidden="true" data-strip-pool="hist,ins,logo">
@@ -620,18 +203,30 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--ciano);outline-offs
       <p class="lead-p">Não infringimos a lei. Exercemos o <strong>Direito Transformativo</strong> teorizado na academia — libertando Noel e Vadico do aprisionamento corporativo para que cumpram sua função social em 2026.</p>
     </div>
     <div class="collage reveal" data-parallax="0.05" aria-hidden="true">
-      <div class="card c1">
-        <img data-asset="art_kride-lavanderia_01" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:0">
-        <span class="lbl">Origem</span><span class="big">1937</span>
+      <!-- Foto 1: Kride na lavanderia — quadrada 150×150, roda esquerda -->
+      <div class="foto f1">
+        <img data-asset="art_kride-lavanderia_01" alt="">
+        <span class="lbl">A Lavanderia Musical</span>
+        <span class="big">1937</span>
       </div>
-      <div class="card c2">
-        <img data-asset="art_kride-marcos-braga-dupla_01" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55;mix-blend-mode:luminosity">
-        <span class="lbl">Ecoa em</span><span class="big">2026</span>
+      <!-- Foto 2: Dupla Kride + Marcos — landscape 149×84 -->
+      <div class="foto f2">
+        <img data-asset="art_kride-marcos-braga-dupla_01" alt="">
+        <span class="lbl">A encomenda</span>
+        <span class="big">2026</span>
       </div>
-      <div class="card c3">
-        <img data-asset="ins_lavanderia-maquina_01" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.4;mix-blend-mode:multiply">
+      <!-- Foto 3: Máquina de lavar — landscape 149×83 -->
+      <div class="foto f3">
+        <img data-asset="ins_lavanderia-maquina_01" alt="">
+        <span class="lbl">A máquina</span>
+      </div>
+      <!-- Foto 4: Kride retrato — landscape 199×112 -->
+      <div class="foto f4">
+        <img data-asset="art_kride-retrato_01" alt="" style="filter:grayscale(30%)">
         <span class="big">MENTIRA?</span>
       </div>
+      <!-- Carimbo tipográfico flutuante -->
+      <span class="collage-stamp" style="top:6%;right:4%">DEZ 2024</span>
     </div>
   </div>
 </section>
@@ -813,72 +408,6 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--ciano);outline-offs
 </footer>
 
 <script src="./js/assets-loader.js" defer></script>
-
-<script>
-(function(){
-  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  /* ---------- Reveal on scroll ---------- */
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, {threshold:0.12, rootMargin:'0px 0px -8% 0px'});
-  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
-
-  if(reduce) return; /* respeita reduced-motion: sem parallax nem recortes animados */
-
-  /* ---------- Parallax (rAF, ligado ao scroll) ---------- */
-  var layers = [].slice.call(document.querySelectorAll('[data-parallax]'));
-  var ticking = false;
-  function onScroll(){
-    if(ticking) return; ticking = true;
-    requestAnimationFrame(function(){
-      var y = window.pageYOffset;
-      layers.forEach(function(l){
-        var speed = parseFloat(l.getAttribute('data-parallax')) || 0;
-        var rect = l.getBoundingClientRect();
-        var center = rect.top + window.pageYOffset + rect.height/2;
-        var off = (y + window.innerHeight/2 - center) * speed;
-        l.style.transform = 'translate3d(0,'+ (-off).toFixed(1) +'px,0)';
-      });
-      ticking = false;
-    });
-  }
-  window.addEventListener('scroll', onScroll, {passive:true});
-  onScroll();
-
-  /* ---------- Recortes aleatórios no herói (aleatoriedade dos elementos) ---------- */
-  var hero = document.getElementById('topo');
-  var bits = ['§','?','♪','1937','2026','RECORTE','MENTIRA','NOEL','VADICO','LAVANDERIA'];
-  var stamps = ['FAKE NEWS','URGENTE','RESGATE','PEDRADA'];
-  var made = [];
-  function place(text, isStamp){
-    var s = document.createElement('span');
-    s.className = 'scrap' + (isStamp?' stamp':'');
-    s.textContent = text;
-    var top = 14 + Math.random()*72;
-    var left = Math.random()*88;
-    s.style.top = top+'%';
-    s.style.left = left+'%';
-    s.style.transform = 'rotate('+ (Math.random()*16-8).toFixed(1) +'deg)';
-    s.style.fontSize = (isStamp ? 13+Math.random()*6 : 10+Math.random()*4).toFixed(0)+'px';
-    hero.appendChild(s);
-    made.push(s);
-    return s;
-  }
-  for(var i=0;i<9;i++){ place(bits[Math.floor(Math.random()*bits.length)], false); }
-  for(var j=0;j<3;j++){ place(stamps[Math.floor(Math.random()*stamps.length)], true); }
-  /* fade-in escalonado + leve drift contínuo */
-  made.forEach(function(s, idx){
-    setTimeout(function(){ s.classList.add('show'); }, 600 + idx*140);
-    var base = parseFloat(s.style.top);
-    var t0 = Math.random()*1000, amp = 4+Math.random()*6, per = 6000+Math.random()*5000;
-    (function drift(){
-      var dy = Math.sin((performance.now()+t0)/per*Math.PI*2)*amp;
-      s.style.marginTop = dy.toFixed(1)+'px';
-      requestAnimationFrame(drift);
-    })();
-  });
-})();
-</script>
+<script src="./js/main.js" defer></script>
 </body>
 </html>

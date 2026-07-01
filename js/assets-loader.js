@@ -149,33 +149,7 @@
     });
   });
 
-  /* ── 6. Espírito Circulante — substituir SVG por imagem real ─────────── */
-  const spiritAsset = byId['ilu_noel-espirito-violao_01'];
-  if (spiritAsset) {
-    const svgEl = document.querySelector('.spirit-wrap .spirit-svg');
-    if (svgEl) {
-      const img = document.createElement('img');
-      img.className  = 'spirit-svg spirit-real';
-      img.src        = url(spiritAsset);
-      img.alt        = spiritAsset.alt;
-      img.width      = 360;
-      img.loading    = 'eager';
-      img.decoding   = 'async';
-      img.setAttribute('data-parallax', spiritAsset.parallax);
-
-      img.onerror = () => {
-        /* fallback: remover e reexibir o SVG original */
-        img.remove();
-        svgEl.style.display = '';
-        console.warn('[assets-loader] ilu_noel-espirito-violao_01 não carregou — mantendo SVG');
-      };
-
-      svgEl.style.display = 'none'; /* ocultar SVG; revelar só se img falhar */
-      svgEl.parentNode.insertBefore(img, svgEl);
-    }
-  }
-
-  /* ── 7. Scatter híbrido [data-scatter-pool] ─────────────────────────────
+  /* ── 6. Scatter híbrido [data-scatter-pool] ─────────────────────────────
      Posiciona imagens aleatórias do pool com posição/rotação/tamanho
      aleatórios + drift senoidal (reutiliza lógica do script inline).      */
   document.querySelectorAll('[data-scatter-pool]').forEach(container => {
@@ -202,12 +176,13 @@
       img.setAttribute('aria-hidden', 'true');
       img.onerror = () => img.remove();
 
-      const top  = 10 + Math.random() * 78;
-      const left = Math.random() * 88;
-      const rot  = (Math.random() * 20 - 10).toFixed(1);
-      const size = (40 + Math.random() * 60).toFixed(0);
+      const top  = 8 + Math.random() * 76;
+      const left = Math.random() * 85;
+      const rot  = (Math.random() * 18 - 9).toFixed(1);
+      /* tamanho respeitando proporção natural — máx 80px */
+      const maxPx = 52 + Math.random() * 28;
 
-      img.style.cssText = `top:${top}%;left:${left}%;transform:rotate(${rot}deg);width:${size}px;opacity:0;transition:opacity 1.2s`;
+      img.style.cssText = `top:${top}%;left:${left}%;transform:rotate(${rot}deg);max-width:${maxPx.toFixed(0)}px;width:auto;height:auto;opacity:0;transition:opacity 1.2s`;
 
       container.style.position = 'relative';
       container.appendChild(img);
