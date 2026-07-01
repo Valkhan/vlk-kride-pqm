@@ -424,6 +424,41 @@ body::before{
 .v-his .v-t{color:var(--dourado)}
 .v-jur .v-t{color:var(--azul)}
 
+/* ----- TESE (Daniel Arbix) ----- */
+.tese-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:36px}
+@media(max-width:760px){.tese-grid{grid-template-columns:1fr}}
+.tese{position:relative;background:rgba(26,18,8,.04);border:1px solid var(--carvao);padding:26px 26px 22px}
+.tese .tnum{font-family:'Space Mono';font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--azul)}
+.tese h3{font-family:'Playfair Display';font-weight:700;font-size:clamp(19px,2.2vw,23px);line-height:1.2;margin:10px 0 12px}
+.tese p{font-size:14.5px}
+.tese blockquote{font-family:'Caveat';font-size:18px;color:var(--laranja);margin-top:14px;border-left:2px solid var(--laranja);padding-left:12px}
+
+/* ----- COMPARATIVO DE PRAZO 70 → 30 ----- */
+.law-compare{display:flex;align-items:center;justify-content:center;gap:clamp(14px,4vw,36px);margin:44px 0;flex-wrap:wrap;text-align:center}
+.law-num{font-family:'Anton';line-height:.8;font-size:clamp(64px,11vw,150px)}
+.law-num .yrs{display:block;font-family:'Space Mono';font-size:12px;letter-spacing:.2em;margin-top:8px;text-transform:uppercase}
+.law-num.old{color:var(--carvao);opacity:.35;text-decoration:line-through;text-decoration-thickness:4px}
+.law-num.new{color:var(--verde)}
+.law-arrow{font-family:'Anton';font-size:clamp(30px,5vw,54px);color:var(--vermelho)}
+
+/* ----- CITAÇÃO EM DESTAQUE ----- */
+.quote-block{border-left:4px solid var(--vermelho);padding:6px 0 6px 26px;margin:32px 0}
+.quote-block p{font-family:'Playfair Display';font-style:italic;font-size:clamp(18px,2.1vw,23px);line-height:1.45}
+.quote-block cite{display:block;margin-top:10px;font-family:'Space Mono';font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--carvao);font-style:normal}
+
+/* ----- LINHA DO TEMPO ----- */
+.timeline{position:relative;margin-top:50px;padding-left:30px;border-left:3px solid var(--tinta)}
+.timeline-item{position:relative;padding-bottom:44px}
+.timeline-item:last-child{padding-bottom:4px}
+.timeline-item::before{content:"";position:absolute;left:-39px;top:4px;width:14px;height:14px;border-radius:50%;
+  background:var(--vermelho);border:3px solid var(--papel);box-shadow:0 0 0 2px var(--tinta)}
+.tl-date{font-family:'Space Mono';font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--dourado)}
+.timeline-item h3{font-family:'Anton';text-transform:uppercase;font-size:clamp(19px,2.4vw,26px);line-height:1;margin:8px 0 8px}
+.timeline-item p{font-size:14.5px;max-width:64ch}
+
+/* variante estática do .canal — sem link, mesma linguagem visual */
+.canal.static{cursor:default}
+
 /* ----- BLOG ----- */
 .blog-head{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:18px;margin-bottom:34px}
 .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
