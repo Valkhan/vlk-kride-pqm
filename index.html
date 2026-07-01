@@ -440,6 +440,14 @@ footer p{font-size:14px;line-height:1.7}
   font-family:'Space Mono';font-size:11px;line-height:1.8;color:#8a7c5f;letter-spacing:.04em}
 .tm b{color:var(--ciano)}
 
+/* ── Assets dinâmicos (assets-loader.js) ── */
+.section-bg{position:absolute;inset:0;z-index:0;background-size:cover;
+  background-position:center;opacity:.3;pointer-events:none}
+.strip-cut{height:78px;width:auto;object-fit:contain;vertical-align:middle;
+  filter:drop-shadow(2px 2px 0 rgba(0,0,0,.2))}
+.scatter-img{position:absolute;pointer-events:none;will-change:transform;z-index:2}
+.spirit-real{filter:drop-shadow(0 0 28px rgba(0,229,204,.45))}
+
 /* ===================== ACESSIBILIDADE ===================== */
 a:focus-visible,button:focus-visible{outline:3px solid var(--ciano);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){
@@ -501,7 +509,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--ciano);outline-offs
   <div class="hero-inner">
     <span class="kicker">Música de <span class="y1937">1937</span> · ecoa em <span class="y2026">2026</span></span>
     <h1>
-      <span class="glitch" data-text="PRA">PRA</span><span class="que">que</span><span class="glitch mentir" data-text="MENTIR?">MENTIR?</span>
+      <span class="glitch" data-text="P4 QU3">PRA QUE</span><span class="que">&nbsp;</span><span class="glitch mentir" data-text="M3NT1R?">MENTIR?</span>
     </h1>
 
     <div class="hero-grid">
@@ -580,11 +588,16 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--ciano);outline-offs
     </div>
   </div>
 
+  <!-- Scatter híbrido: imagens reais (ui_ + ilu_ pequenos) + scraps tipográficos via JS -->
+  <div id="hero-scatter" data-scatter-pool="ui,ilu" data-scatter-count="8"
+       data-scatter-priority="low" aria-hidden="true"
+       style="position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden"></div>
+
   <div class="scroll-cue" aria-hidden="true"><span>role</span><span class="line"></span></div>
 </header>
 
 <!-- ===================== DIVISOR FAIXA ===================== -->
-<div class="faixa-divider" aria-hidden="true">
+<div class="faixa-divider" aria-hidden="true" data-strip-pool="hist,ins,logo">
   <div class="strip-run">
     <span class="strip-word">DA RE-CRIAÇÃO</span><span class="strip-word red">&</span><span class="strip-word">ADAPTAÇÃO</span>
     <span class="strip-word q">?</span><span class="strip-word gold">PRA QUE MENTIR</span>
@@ -596,7 +609,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--ciano);outline-offs
 </div>
 
 <!-- ===================== O PROJETO ===================== -->
-<section class="section" id="projeto">
+<section class="section" id="projeto" data-bg-pool="tex" data-bg-tone="sepia">
   <div class="projeto">
     <div class="reveal">
       <span class="eyebrow"><span class="sym">𝄞</span> O Projeto</span>
@@ -607,15 +620,24 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--ciano);outline-offs
       <p class="lead-p">Não infringimos a lei. Exercemos o <strong>Direito Transformativo</strong> teorizado na academia — libertando Noel e Vadico do aprisionamento corporativo para que cumpram sua função social em 2026.</p>
     </div>
     <div class="collage reveal" data-parallax="0.05" aria-hidden="true">
-      <div class="card c1"><span class="lbl">Origem</span><span class="big">1937</span></div>
-      <div class="card c2"><span class="lbl">Ecoa em</span><span class="big">2026</span></div>
-      <div class="card c3"><span class="big">MENTIRA?</span></div>
+      <div class="card c1">
+        <img data-asset="art_kride-lavanderia_01" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:0">
+        <span class="lbl">Origem</span><span class="big">1937</span>
+      </div>
+      <div class="card c2">
+        <img data-asset="art_kride-marcos-braga-dupla_01" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55;mix-blend-mode:luminosity">
+        <span class="lbl">Ecoa em</span><span class="big">2026</span>
+      </div>
+      <div class="card c3">
+        <img data-asset="ins_lavanderia-maquina_01" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.4;mix-blend-mode:multiply">
+        <span class="big">MENTIRA?</span>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ===================== DIVISOR FAIXA ALT ===================== -->
-<div class="faixa-divider alt" aria-hidden="true">
+<div class="faixa-divider alt" aria-hidden="true" data-strip-pool="jur,ins">
   <div class="strip-run">
     <span class="strip-word mono">ESTATUTO DO ARTISTA</span><span class="strip-word red">§</span>
     <span class="strip-word">FUNÇÃO SOCIAL</span><span class="strip-word gold">CONSTITUIÇÃO</span>
@@ -627,7 +649,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--ciano);outline-offs
 </div>
 
 <!-- ===================== AS BANDEIRAS ===================== -->
-<section class="section" id="bandeiras">
+<section class="section" id="bandeiras" data-bg-pool="tex" data-bg-tone="rasgado">
   <span class="eyebrow reveal"><span class="sym">§</span> O Manifesto Legislativo</span>
   <h2 class="h2 reveal">Duas bandeiras, <span class="ital">um confronto</span></h2>
   <p class="lead-p reveal">O projeto bate de frente com o monopólio da indústria fonográfica — com elegância, mas sem recuo. São duas proposições que sustentam toda a tese.</p>
@@ -719,6 +741,12 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--ciano);outline-offs
     <h2 class="h2 reveal">Três pilares, <span class="ital">um porto seguro</span></h2>
     <p class="lead-p reveal">A narrativa se desdobra em camadas. O Instagram conta a história, o YouTube e o Substack aprofundam a tese, e este site é o bunker — onde a comunidade se organiza.</p>
 
+    <!-- Logos de parceiros -->
+    <div style="display:flex;gap:20px;align-items:center;margin-bottom:22px;opacity:.7">
+      <img data-asset="logo_blue-note-alt_01" alt="Blue Note — parceiro do projeto Pra que Mentir" style="height:36px;width:auto;filter:invert(1) brightness(0.8)">
+      <img data-asset="logo_bourbon-street-alt_01" alt="Bourbon Street Music Club — parceiro do projeto Pra que Mentir" style="height:36px;width:auto;filter:invert(1) brightness(0.8)">
+    </div>
+
     <div class="canais">
       <a href="https://instagram.com/praquementiroficial" class="canal insta reveal" target="_blank" rel="noopener">
         <span class="ic">◉</span><span class="nm">Instagram</span>
@@ -745,7 +773,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--ciano);outline-offs
 </section>
 
 <!-- ===================== CTA MANIFESTO ===================== -->
-<section class="cta-sec">
+<section class="cta-sec" data-bg-pool="den" data-bg-tone="dark">
   <span class="big-q" aria-hidden="true">?</span>
   <div class="cta-inner">
     <span class="eyebrow reveal" style="justify-content:center"><span class="sym">✶</span> A Ofensiva</span>
@@ -783,6 +811,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--ciano);outline-offs
     "Pra que Mentir" (Noel Rosa / Vadico, 1937) — uso transformativo amparado na função social da obra. © 2026 Projeto Pra que Mentir.
   </div>
 </footer>
+
+<script src="./js/assets-loader.js" defer></script>
 
 <script>
 (function(){

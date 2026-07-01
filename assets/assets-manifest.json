@@ -1,0 +1,3848 @@
+{
+  "version": "1.0",
+  "generated": "2026-07-01T00:21:58Z",
+  "basePath": "./img/recortes/",
+  "categories": {
+    "tex": {
+      "label": "Texturas",
+      "role": "background",
+      "parallax": 0.05
+    },
+    "hist": {
+      "label": "Histórico",
+      "role": "mid",
+      "parallax": 0.12
+    },
+    "art": {
+      "label": "Artistas",
+      "role": "mid",
+      "parallax": 0.12
+    },
+    "ins": {
+      "label": "Instrumentos",
+      "role": "mid",
+      "parallax": 0.1
+    },
+    "ilu": {
+      "label": "Ilustrações",
+      "role": "mid",
+      "parallax": 0.14
+    },
+    "den": {
+      "label": "Denúncia",
+      "role": "mid",
+      "parallax": 0.14
+    },
+    "ref": {
+      "label": "Referências",
+      "role": "mid",
+      "parallax": 0.1
+    },
+    "jur": {
+      "label": "Jurídico",
+      "role": "foreground",
+      "parallax": 0.0
+    },
+    "ui": {
+      "label": "UI",
+      "role": "foreground",
+      "parallax": 0.0
+    },
+    "logo": {
+      "label": "Logos",
+      "role": "foreground",
+      "parallax": 0.0
+    }
+  },
+  "assets": [
+    {
+      "id": "art_artista-retrato-colorido_01",
+      "file": "art_artista-retrato-colorido_01.png",
+      "category": "art",
+      "role": "mid",
+      "subject": "Retrato colorido de músico contemporâneo",
+      "tags": [
+        "musico",
+        "retrato",
+        "colorido",
+        "artista",
+        "contemporaneo"
+      ],
+      "sections": [
+        "blog",
+        "projeto"
+      ],
+      "alt": "Retrato colorido de músico contemporâneo para blog e seção de artistas do projeto",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "art_banda-apresentacao_01",
+      "file": "art_banda-apresentacao_01.png",
+      "category": "art",
+      "role": "mid",
+      "subject": "Banda em apresentação ao vivo — Blue Note ou Bourbon Street",
+      "tags": [
+        "banda",
+        "apresentacao",
+        "blue-note",
+        "bourbon",
+        "show"
+      ],
+      "sections": [
+        "canais"
+      ],
+      "alt": "Fotografia de banda em apresentação ao vivo colorida, para a seção Blue Note e Bourbon Street dos canais do projeto",
+      "transform": {
+        "rotate": 1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "art_banda-palco_01",
+      "file": "art_banda-palco_01.png",
+      "category": "art",
+      "role": "mid",
+      "subject": "Grupo ou banda em palco — Chinela Voadora",
+      "tags": [
+        "banda",
+        "palco",
+        "chinela-voadora",
+        "show",
+        "musicos"
+      ],
+      "sections": [
+        "canais",
+        "projeto"
+      ],
+      "alt": "Fotografia de grupo ou banda em palco representando a Chinela Voadora ou artistas associados ao projeto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "art_dancarino-acrobata_01",
+      "file": "art_dancarino-acrobata_01.png",
+      "category": "art",
+      "role": "mid",
+      "subject": "Figura em movimento acrobático — elemento dinâmico",
+      "tags": [
+        "dancarino",
+        "acrobata",
+        "movimento",
+        "dinamico",
+        "figura"
+      ],
+      "sections": [
+        "hero",
+        "divider"
+      ],
+      "alt": "Figura humana em movimento acrobático para tiras animadas e elementos dinâmicos do site",
+      "transform": {
+        "rotate": 3,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "art_dialogo-dois-homens_01",
+      "file": "art_dialogo-dois-homens_01.png",
+      "category": "art",
+      "role": "mid",
+      "subject": "Diálogo entre dois homens — a encomenda e o papo reto",
+      "tags": [
+        "dialogo",
+        "homens",
+        "encomenda",
+        "conversa",
+        "parceria"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Cena de diálogo entre dois homens representando a encomenda do projeto e a conversa entre Kride Jr e Marcos Braga",
+      "transform": {
+        "rotate": 2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "art_figura-contemplando_01",
+      "file": "art_figura-contemplando_01.png",
+      "category": "art",
+      "role": "mid",
+      "subject": "Figura humana contemplando — cena de pesquisa e criação",
+      "tags": [
+        "figura",
+        "contemplando",
+        "pesquisa",
+        "criativo",
+        "reflexao"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Figura humana em posição de contemplação, para a seção de pesquisa criativa e o processo do projeto",
+      "transform": {
+        "rotate": 2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "art_figura-esforco_01",
+      "file": "art_figura-esforco_01.png",
+      "category": "art",
+      "role": "mid",
+      "subject": "Figura em posição de esforço e luta — desafio aceito",
+      "tags": [
+        "figura",
+        "esforco",
+        "luta",
+        "desafio",
+        "aceito"
+      ],
+      "sections": [
+        "projeto",
+        "bandeiras"
+      ],
+      "alt": "Pessoa em posição de esforço ou luta representando o desafio aceito pelo projeto",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "art_figura-gritando-alt_01",
+      "file": "art_figura-gritando-alt_01.png",
+      "category": "art",
+      "role": "mid",
+      "subject": "Figura gritando — variante para denúncia e emoção",
+      "tags": [
+        "figura",
+        "gritando",
+        "denuncia",
+        "emocao",
+        "variante"
+      ],
+      "sections": [
+        "bandeiras",
+        "cta"
+      ],
+      "alt": "Variante de figura gritando para elementos de denúncia e emoção do projeto",
+      "transform": {
+        "rotate": -3,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "art_figura-gritando-poderosa_01",
+      "file": "art_figura-gritando-poderosa_01.png",
+      "category": "art",
+      "role": "mid",
+      "subject": "Figura humana gritando com força — potência vocal e denúncia",
+      "tags": [
+        "figura",
+        "gritando",
+        "denuncia",
+        "forca",
+        "potencia"
+      ],
+      "sections": [
+        "bandeiras",
+        "cta"
+      ],
+      "alt": "Figura humana gritando com força, representando a potência vocal e a denúncia do projeto",
+      "transform": {
+        "rotate": -2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "art_fotografo-retrato-obra_01",
+      "file": "art_fotografo-retrato-obra_01.png",
+      "category": "art",
+      "role": "mid",
+      "subject": "Fotógrafo ou artista próximo a obra gráfica",
+      "tags": [
+        "fotografo",
+        "artista",
+        "obra",
+        "grafica",
+        "processo"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Homem próximo a obra gráfica ou fotográfica, para a seção processo criativo do projeto",
+      "transform": {
+        "rotate": -2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "art_homem-espelho-reflexao_01",
+      "file": "art_homem-espelho-reflexao_01.png",
+      "category": "art",
+      "role": "mid",
+      "subject": "Homem olhando para espelho — seção procurando ideias",
+      "tags": [
+        "homem",
+        "espelho",
+        "reflexao",
+        "ideias",
+        "processo"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Homem olhando para espelho ou quadro, para a seção procurando ideias e o processo criativo do projeto",
+      "transform": {
+        "rotate": 1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "art_homem-pensativo_01",
+      "file": "art_homem-pensativo_01.png",
+      "category": "art",
+      "role": "mid",
+      "subject": "Homem pensativo — seção eu precisava de ideias",
+      "tags": [
+        "homem",
+        "pensativo",
+        "ideias",
+        "criativo",
+        "reflexao"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Figura de homem pensativo representando o momento de busca criativa e a seção eu precisava de ideias do projeto",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "art_kride-escrevendo_01",
+      "file": "art_kride-escrevendo_01.png",
+      "category": "art",
+      "role": "mid",
+      "subject": "Kride Jr escrevendo ou compondo — processo criativo",
+      "tags": [
+        "kride",
+        "escrevendo",
+        "composicao",
+        "criativo",
+        "lavanderia"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Kride Jr escrevendo ou compondo a letra da música, para a seção processo criativo e a lavanderia musical",
+      "transform": {
+        "rotate": 2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "art_kride-lavanderia_01",
+      "file": "art_kride-lavanderia_01.png",
+      "category": "art",
+      "role": "mid",
+      "subject": "Kride Jr na lavanderia musical — foto-chave do projeto",
+      "tags": [
+        "kride",
+        "lavanderia",
+        "musical",
+        "foto-chave",
+        "projeto"
+      ],
+      "sections": [
+        "projeto",
+        "blog"
+      ],
+      "alt": "Fotografia de Kride Jr na lavanderia, imagem-chave que simboliza a origem artesanal do projeto Pra que Mentir",
+      "transform": {
+        "rotate": -2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.12,
+      "priority": "high"
+    },
+    {
+      "id": "art_kride-marcos-braga-dupla_01",
+      "file": "art_kride-marcos-braga-dupla_01.png",
+      "category": "art",
+      "role": "mid",
+      "subject": "Kride Jr e Marcos Braga juntos — a parceria do projeto",
+      "tags": [
+        "kride",
+        "marcos-braga",
+        "dupla",
+        "parceria",
+        "projeto"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Fotografia de Kride Jr e Marcos Braga juntos, representando a parceria criativa da encomenda do projeto",
+      "transform": {
+        "rotate": 1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "art_kride-retrato_01",
+      "file": "art_kride-retrato_01.png",
+      "category": "art",
+      "role": "mid",
+      "subject": "Retrato de Kride Jr — criador do projeto",
+      "tags": [
+        "kride",
+        "retrato",
+        "criador",
+        "projeto",
+        "artista"
+      ],
+      "sections": [
+        "projeto",
+        "bandeiras"
+      ],
+      "alt": "Retrato de Kride Jr, criador e produtor do projeto Pra que Mentir, para seção O Projeto e sobre o autor",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "art_menino-sentado_01",
+      "file": "art_menino-sentado_01.png",
+      "category": "art",
+      "role": "mid",
+      "subject": "Menino sentado pensativo — ilustração conceitual",
+      "tags": [
+        "menino",
+        "sentado",
+        "pensativo",
+        "conceitual",
+        "ilustracao"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Menino sentado em posição pensativa, ilustração conceitual para elementos de narrativa do projeto",
+      "transform": {
+        "rotate": -2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "art_musico-vintage-colorido_01",
+      "file": "art_musico-vintage-colorido_01.png",
+      "category": "art",
+      "role": "mid",
+      "subject": "Músico em contexto vintage colorido",
+      "tags": [
+        "musico",
+        "vintage",
+        "colorido",
+        "artista",
+        "colagem"
+      ],
+      "sections": [
+        "projeto",
+        "divider"
+      ],
+      "alt": "Músico em contexto visual vintage com tratamento colorido para tiras parallax e colagem do projeto",
+      "transform": {
+        "rotate": 2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "art_trompetista-silhueta_01",
+      "file": "art_trompetista-silhueta_01.png",
+      "category": "art",
+      "role": "mid",
+      "subject": "Silhueta de trompetista — Marcos Braga",
+      "tags": [
+        "trompetista",
+        "silhueta",
+        "marcos-braga",
+        "instrumento",
+        "musico"
+      ],
+      "sections": [
+        "divider",
+        "hero"
+      ],
+      "alt": "Silhueta de trompetista representando Marcos Braga, produtor e arranjador do projeto, elemento de tira e divisor",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.12,
+      "priority": "high"
+    },
+    {
+      "id": "den_carimbo-fake-news_01",
+      "file": "den_carimbo-fake-news_01.png",
+      "category": "den",
+      "role": "mid",
+      "subject": "Carimbo FAKE NEWS vermelho — denúncia à desinformação",
+      "tags": [
+        "carimbo",
+        "fake-news",
+        "denuncia",
+        "desinformacao",
+        "vermelho"
+      ],
+      "sections": [
+        "hero",
+        "bandeiras"
+      ],
+      "alt": "Carimbo FAKE NEWS vermelho para recorte sobre a seção de denúncia às bets e à alienação do projeto",
+      "transform": {
+        "rotate": 3,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "den_cidade-conglomerado_01",
+      "file": "den_cidade-conglomerado_01.png",
+      "category": "den",
+      "role": "mid",
+      "subject": "Conglomerado urbano denso — alienação e gaiola social",
+      "tags": [
+        "cidade",
+        "conglomerado",
+        "alienacao",
+        "urbano",
+        "denuncia"
+      ],
+      "sections": [
+        "bandeiras",
+        "cta"
+      ],
+      "alt": "Multidão ou conglomerado urbano denso representando a alienação programada e a gaiola social no projeto",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "den_cidade-dystopica_01",
+      "file": "den_cidade-dystopica_01.png",
+      "category": "den",
+      "role": "mid",
+      "subject": "Cidade distópica superlotada — crítica ao sistema urbano",
+      "tags": [
+        "cidade",
+        "distopica",
+        "superlotada",
+        "sistema",
+        "bets"
+      ],
+      "sections": [
+        "bandeiras",
+        "cta"
+      ],
+      "alt": "Paisagem de cidade distópica superlotada como crítica ao sistema urbano e à alienação nas Bets do projeto",
+      "transform": {
+        "rotate": -2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "den_diabinho-sistema_01",
+      "file": "den_diabinho-sistema_01.png",
+      "category": "den",
+      "role": "mid",
+      "subject": "Diabinho vermelho com tridente — o inimigo, o Sistema",
+      "tags": [
+        "diabinho",
+        "sistema",
+        "inimigo",
+        "vermelho",
+        "denuncia"
+      ],
+      "sections": [
+        "bandeiras",
+        "cta"
+      ],
+      "alt": "Diabinho vermelho com tridente representando o inimigo e o Sistema na seção de denúncia do projeto",
+      "transform": {
+        "rotate": -3,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "den_fantoches-manipulados_01",
+      "file": "den_fantoches-manipulados_01.png",
+      "category": "den",
+      "role": "mid",
+      "subject": "Fantoches sendo manipulados — o sistema controlando",
+      "tags": [
+        "fantoches",
+        "manipulados",
+        "sistema",
+        "controle",
+        "alegoria"
+      ],
+      "sections": [
+        "cta",
+        "bandeiras"
+      ],
+      "alt": "Fantoches sendo manipulados representando o sistema controlando a população na seção CTA do manifesto",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "den_figura-encurralada_01",
+      "file": "den_figura-encurralada_01.png",
+      "category": "den",
+      "role": "mid",
+      "subject": "Personagem encurralado pelo sistema — o artista contra o sistema",
+      "tags": [
+        "encurralado",
+        "artista",
+        "sistema",
+        "denuncia",
+        "alegoria"
+      ],
+      "sections": [
+        "bandeiras",
+        "cta"
+      ],
+      "alt": "Personagem encurralado ou cercado representando o artista independente contra o sistema fonográfico",
+      "transform": {
+        "rotate": 2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "den_figura-sombria-vento_01",
+      "file": "den_figura-sombria-vento_01.png",
+      "category": "den",
+      "role": "mid",
+      "subject": "Figura sombria no vento — seção denúncia overlay cyberpunk",
+      "tags": [
+        "figura",
+        "sombria",
+        "vento",
+        "denuncia",
+        "cyberpunk"
+      ],
+      "sections": [
+        "bandeiras",
+        "cta"
+      ],
+      "alt": "Figura sombria no vento para a seção de denúncia e overlay cyberpunk do projeto",
+      "transform": {
+        "rotate": -3,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "den_figura-sombria_01",
+      "file": "den_figura-sombria_01.png",
+      "category": "den",
+      "role": "mid",
+      "subject": "Figura sombria abstrata — elemento glitch cyberpunk",
+      "tags": [
+        "figura",
+        "sombria",
+        "abstrata",
+        "glitch",
+        "cyberpunk"
+      ],
+      "sections": [
+        "hero",
+        "bandeiras"
+      ],
+      "alt": "Figura sombria abstrata para elemento glitch e seção cyberpunk de denúncia do projeto",
+      "transform": {
+        "rotate": -2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "den_mochileiro-fuga_01",
+      "file": "den_mochileiro-fuga_01.png",
+      "category": "den",
+      "role": "mid",
+      "subject": "Figura em fuga com mochila — seção desafio aceito",
+      "tags": [
+        "mochileiro",
+        "fuga",
+        "desafio",
+        "aceito",
+        "figura"
+      ],
+      "sections": [
+        "projeto",
+        "bandeiras"
+      ],
+      "alt": "Figura em fuga ou mochileiro representando o desafio aceito pelo projeto na seção de denúncia",
+      "transform": {
+        "rotate": 2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "den_multidao-historica_01",
+      "file": "den_multidao-historica_01.png",
+      "category": "den",
+      "role": "mid",
+      "subject": "Multidão histórica comprimida — alienação programada",
+      "tags": [
+        "multidao",
+        "historica",
+        "alienacao",
+        "comprimida",
+        "denuncia"
+      ],
+      "sections": [
+        "bandeiras"
+      ],
+      "alt": "Multidão histórica comprimida representando a alienação programada no contexto do projeto de denúncia",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "den_paisagem-apocaliptica_01",
+      "file": "den_paisagem-apocaliptica_01.png",
+      "category": "den",
+      "role": "mid",
+      "subject": "Paisagem apocalíptica com figura solitária — seção Bets e alienação",
+      "tags": [
+        "paisagem",
+        "apocaliptica",
+        "bets",
+        "alienacao",
+        "solitario"
+      ],
+      "sections": [
+        "bandeiras",
+        "cta"
+      ],
+      "alt": "Paisagem apocalíptica com figura solitária para a seção de denúncia às Bets e à alienação programada do projeto",
+      "transform": {
+        "rotate": 1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "den_politico-corrupto-alegorico_01",
+      "file": "den_politico-corrupto-alegorico_01.png",
+      "category": "den",
+      "role": "mid",
+      "subject": "Cena alegórica de político corrupto brasileiro",
+      "tags": [
+        "politico",
+        "corrupto",
+        "alegorico",
+        "brasileiro",
+        "denuncia"
+      ],
+      "sections": [
+        "bandeiras"
+      ],
+      "alt": "Cena alegórica de político corrupto brasileiro para a seção de denúncia ao sistema do projeto",
+      "transform": {
+        "rotate": 2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "den_sombra-cabelo_01",
+      "file": "den_sombra-cabelo_01.png",
+      "category": "den",
+      "role": "mid",
+      "subject": "Silhueta sombria de cabelo — elemento de tensão e overlay",
+      "tags": [
+        "silhueta",
+        "sombria",
+        "tensao",
+        "overlay",
+        "glitch"
+      ],
+      "sections": [
+        "hero",
+        "cta"
+      ],
+      "alt": "Silhueta sombria de cabelo como elemento de tensão e overlay do projeto de denúncia",
+      "transform": {
+        "rotate": 1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "low"
+    },
+    {
+      "id": "hist_casal-vintage-1937_01",
+      "file": "hist_casal-vintage-1937_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Casal vintage de 1937 — amor em preto e branco",
+      "tags": [
+        "casal",
+        "vintage",
+        "1937",
+        "amor",
+        "historico"
+      ],
+      "sections": [
+        "hero",
+        "projeto"
+      ],
+      "alt": "Fotografia de casal vintage referência ao ano de 1937, para a seção Pra que Mentir era sobre amor",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_cena-historica-sepia_01",
+      "file": "hist_cena-historica-sepia_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Cena histórica em sépia — paisagem ou personagens dos anos 1930",
+      "tags": [
+        "historico",
+        "sepia",
+        "paisagem",
+        "1930",
+        "fundo"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Cena histórica em sépia com paisagem ou personagens dos anos 1930, para fundo parallax da seção O Projeto",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_cena-urbana-vintage_01",
+      "file": "hist_cena-urbana-vintage_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Cena urbana vintage em sépia — referência à Lapa carioca",
+      "tags": [
+        "cidade",
+        "lapa",
+        "sepia",
+        "vintage",
+        "historico"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Cena de rua ou cidade vintage em sépia para reforçar a narrativa da Lapa e do Rio de Janeiro da era do samba",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_disco-vinil-pb_01",
+      "file": "hist_disco-vinil-pb_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Disco de vinil em preto e branco com personagem",
+      "tags": [
+        "disco",
+        "vinil",
+        "pb",
+        "historico",
+        "musica"
+      ],
+      "sections": [
+        "blog",
+        "divider"
+      ],
+      "alt": "Disco de vinil em preto e branco com personagem ao centro, referência musical histórica para o blog",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_disco-vinil-vintage_01",
+      "file": "hist_disco-vinil-vintage_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Capa de disco de vinil vintage",
+      "tags": [
+        "disco",
+        "vinil",
+        "vintage",
+        "historico",
+        "musica"
+      ],
+      "sections": [
+        "blog",
+        "divider"
+      ],
+      "alt": "Capa de disco de vinil vintage com personagem, referência musical histórica para o blog",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_dupla-retrato-kride-vadico_01",
+      "file": "hist_dupla-retrato-kride-vadico_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Retrato duplo histórico — dois rostos em preto e branco",
+      "tags": [
+        "dupla",
+        "retrato",
+        "historico",
+        "pb",
+        "parceria"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Retrato duplo histórico com dois rostos em preto e branco, referência à dupla Noel Rosa e Vadico ou à parceria artística contemporânea",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_jornal-extra-extra_01",
+      "file": "hist_jornal-extra-extra_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Jornal histórico com manchete EXTRA! EXTRA!",
+      "tags": [
+        "jornal",
+        "manchete",
+        "urgente",
+        "historico",
+        "denuncia"
+      ],
+      "sections": [
+        "bandeiras",
+        "hero"
+      ],
+      "alt": "Recorte de jornal histórico com manchete urgente, para seção de denúncia e urgência narrativa",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_mulher-vintage-elegante_01",
+      "file": "hist_mulher-vintage-elegante_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Mulher elegante vintage dos anos 1930",
+      "tags": [
+        "mulher",
+        "elegante",
+        "vintage",
+        "1930",
+        "historico"
+      ],
+      "sections": [
+        "hero",
+        "projeto"
+      ],
+      "alt": "Fotografia de mulher elegante vintage dos anos 1930, para colagem histórica e tiras do herói",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_noel-rosa-capa-disco_01",
+      "file": "hist_noel-rosa-capa-disco_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Capa de disco com cartaz tipográfico NOEL ROSA",
+      "tags": [
+        "noel-rosa",
+        "capa",
+        "disco",
+        "cartaz",
+        "historico"
+      ],
+      "sections": [
+        "blog",
+        "divider"
+      ],
+      "alt": "Capa de disco ou cartaz tipográfico histórico com o nome Noel Rosa, para blog e referência histórica",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_noel-rosa-cartaz-epoca_01",
+      "file": "hist_noel-rosa-cartaz-epoca_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Cartaz tipográfico histórico com o nome Noel Rosa",
+      "tags": [
+        "noel-rosa",
+        "cartaz",
+        "tipografico",
+        "historico",
+        "logo"
+      ],
+      "sections": [
+        "divider",
+        "projeto"
+      ],
+      "alt": "Cartaz tipográfico da época com o nome Noel Rosa, para divisores de faixa e elementos gráficos",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_noel-rosa-chapeu_01",
+      "file": "hist_noel-rosa-chapeu_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Noel Rosa de chapéu — ilustração histórica",
+      "tags": [
+        "noel-rosa",
+        "chapeu",
+        "historico",
+        "ilustracao",
+        "hero"
+      ],
+      "sections": [
+        "hero",
+        "divider"
+      ],
+      "alt": "Ilustração ou fotografia histórica de Noel Rosa usando chapéu, para o herói e sobreposições diagonais",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_noel-rosa-retrato-adulto_01",
+      "file": "hist_noel-rosa-retrato-adulto_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Rosto frontal de Noel Rosa",
+      "tags": [
+        "noel-rosa",
+        "retrato",
+        "historico",
+        "frontal",
+        "samba"
+      ],
+      "sections": [
+        "projeto",
+        "divider"
+      ],
+      "alt": "Rosto frontal de Noel Rosa, imagem histórica para seção O Projeto e divisores",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_noel-rosa-retrato-jovem_01",
+      "file": "hist_noel-rosa-retrato-jovem_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Retrato jovem de Noel Rosa em preto e branco",
+      "tags": [
+        "noel-rosa",
+        "retrato",
+        "historico",
+        "pb",
+        "jovem"
+      ],
+      "sections": [
+        "hero",
+        "projeto"
+      ],
+      "alt": "Retrato jovem de Noel Rosa em preto e branco para a colagem do herói e seção O Projeto",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_noel-rosa-retrato-sepias_01",
+      "file": "hist_noel-rosa-retrato-sepias_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Retrato de Noel Rosa com violão em sépia",
+      "tags": [
+        "noel-rosa",
+        "retrato",
+        "sepia",
+        "violao",
+        "historico"
+      ],
+      "sections": [
+        "hero",
+        "projeto"
+      ],
+      "alt": "Retrato histórico de Noel Rosa com violão em tom sépia para colagem do herói",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_noel-rosa-retrato-vintage_01",
+      "file": "hist_noel-rosa-retrato-vintage_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Retrato vintage de Noel Rosa para fundo do herói",
+      "tags": [
+        "noel-rosa",
+        "retrato",
+        "vintage",
+        "sepia",
+        "hero"
+      ],
+      "sections": [
+        "hero"
+      ],
+      "alt": "Retrato vintage de Noel Rosa em sépia para fundo do herói com efeito parallax",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_partitura-rasgada_01",
+      "file": "hist_partitura-rasgada_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Papel de partitura rasgado em triângulo",
+      "tags": [
+        "partitura",
+        "papel",
+        "rasgado",
+        "historico",
+        "musica"
+      ],
+      "sections": [
+        "bandeiras",
+        "projeto"
+      ],
+      "alt": "Papel de partitura musical rasgado em formato triangular, elemento jurídico e histórico",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_retrato-feminino-epoca_01",
+      "file": "hist_retrato-feminino-epoca_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Retrato feminino histórico em sépia da época de 1937",
+      "tags": [
+        "retrato",
+        "feminino",
+        "sepia",
+        "historico",
+        "1937"
+      ],
+      "sections": [
+        "hero",
+        "projeto"
+      ],
+      "alt": "Retrato feminino histórico em tom sépia, referência à era do samba e da Lapa carioca",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_rua-cidade-antiga_01",
+      "file": "hist_rua-cidade-antiga_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Vista urbana antiga em preto e branco — Lapa carioca",
+      "tags": [
+        "cidade",
+        "historico",
+        "lapa",
+        "rio",
+        "pb"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Fotografia histórica de vista urbana antiga em preto e branco, referência à Lapa e ao Rio de Janeiro da era do samba",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_trenó-papai-noel_01",
+      "file": "hist_trenó-papai-noel_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Trenó com renas — referência ao Natal de dezembro de 2024",
+      "tags": [
+        "trenó",
+        "natal",
+        "encomenda",
+        "dezembro",
+        "2024"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Imagem de trenó com renas representando o Natal de dezembro de 2024, quando surgiu a encomenda do projeto",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_vadico-retrato_01",
+      "file": "hist_vadico-retrato_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Retrato de Vadico — coautor de Pra que Mentir (1937)",
+      "tags": [
+        "vadico",
+        "retrato",
+        "historico",
+        "coautor",
+        "samba"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Retrato histórico de Vadico (Oswaldo Gogliano), coautor do samba Pra que Mentir de 1937",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "hist_violonista-vintage_01",
+      "file": "hist_violonista-vintage_01.png",
+      "category": "hist",
+      "role": "mid",
+      "subject": "Violonista masculino vintage em preto e branco",
+      "tags": [
+        "violonista",
+        "vintage",
+        "pb",
+        "historico",
+        "musica"
+      ],
+      "sections": [
+        "projeto",
+        "divider"
+      ],
+      "alt": "Fotografia histórica de violonista masculino vintage, para tiras históricas e seção O Projeto",
+      "transform": {
+        "rotate": -2,
+        "sepia": 40,
+        "blend": "multiply"
+      },
+      "parallax": 0.12,
+      "priority": "normal"
+    },
+    {
+      "id": "ilu_abelha-inseto_01",
+      "file": "ilu_abelha-inseto_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Abelha estilizada — elemento decorativo lúdico",
+      "tags": [
+        "abelha",
+        "inseto",
+        "decorativo",
+        "ludicro",
+        "estilizado"
+      ],
+      "sections": [
+        "hero"
+      ],
+      "alt": "Abelha ou inseto estilizado como elemento decorativo lúdico do projeto",
+      "transform": {
+        "rotate": 3,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "low"
+    },
+    {
+      "id": "ilu_cachorro-atento_01",
+      "file": "ilu_cachorro-atento_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Cachorro olhando — elemento irônico sobre alienação e Bets",
+      "tags": [
+        "cachorro",
+        "ironico",
+        "alienacao",
+        "bets",
+        "ludicro"
+      ],
+      "sections": [
+        "bandeiras",
+        "hero"
+      ],
+      "alt": "Cachorro olhando com atenção como elemento irônico sobre a alienação programada e as apostas esportivas do projeto",
+      "transform": {
+        "rotate": 2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "low"
+    },
+    {
+      "id": "ilu_cachorro-personagem_01",
+      "file": "ilu_cachorro-personagem_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Cachorro estilizado sentado — elemento lúdico irônico",
+      "tags": [
+        "cachorro",
+        "estilizado",
+        "ludicro",
+        "ironico",
+        "personagem"
+      ],
+      "sections": [
+        "hero",
+        "bandeiras"
+      ],
+      "alt": "Cachorro estilizado sentado como elemento lúdico e irônico do projeto",
+      "transform": {
+        "rotate": -2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "low"
+    },
+    {
+      "id": "ilu_coracao-balao_01",
+      "file": "ilu_coracao-balao_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Coração como balão — seção amor em 1937",
+      "tags": [
+        "coracao",
+        "balao",
+        "amor",
+        "1937",
+        "romantismo"
+      ],
+      "sections": [
+        "projeto",
+        "hero"
+      ],
+      "alt": "Coração em formato de balão flutuante para a seção Pra que Mentir era sobre amor em 1937",
+      "transform": {
+        "rotate": 3,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "ilu_coracao-cinza_01",
+      "file": "ilu_coracao-cinza_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Coração cinza ou de pedra — amor de 1937 revisitado",
+      "tags": [
+        "coracao",
+        "cinza",
+        "pedra",
+        "amor",
+        "1937"
+      ],
+      "sections": [
+        "projeto",
+        "hero"
+      ],
+      "alt": "Coração cinza ou de pedra para a seção Pra que Mentir era sobre amor revisitado em 2026",
+      "transform": {
+        "rotate": -2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "ilu_dj-silhueta_01",
+      "file": "ilu_dj-silhueta_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Silhueta de DJ na vitrola — elemento cyberpunk e Fus-k Beats",
+      "tags": [
+        "dj",
+        "silhueta",
+        "vitrola",
+        "cyberpunk",
+        "beats"
+      ],
+      "sections": [
+        "hero",
+        "bandeiras"
+      ],
+      "alt": "Silhueta de DJ na vitrola representando Fus-k Beats e o elemento cyberpunk do projeto",
+      "transform": {
+        "rotate": -2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "high"
+    },
+    {
+      "id": "ilu_escultura-figuras-grupo_01",
+      "file": "ilu_escultura-figuras-grupo_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Grupo de figuras em escultura — alegoria coletiva e manifesto",
+      "tags": [
+        "escultura",
+        "figuras",
+        "grupo",
+        "coletivo",
+        "manifesto"
+      ],
+      "sections": [
+        "bandeiras",
+        "cta"
+      ],
+      "alt": "Grupo de figuras em escultura representando a alegoria coletiva e o manifesto do projeto",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "ilu_escultura-serpente_01",
+      "file": "ilu_escultura-serpente_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Escultura com serpente — alegoria do sistema e da lei",
+      "tags": [
+        "escultura",
+        "serpente",
+        "alegoria",
+        "sistema",
+        "lei"
+      ],
+      "sections": [
+        "bandeiras"
+      ],
+      "alt": "Escultura com serpente como alegoria do sistema e da lei no manifesto do projeto",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "ilu_espelho-oval_01",
+      "file": "ilu_espelho-oval_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Espelho oval — seção reflexão e procurando ideias",
+      "tags": [
+        "espelho",
+        "oval",
+        "reflexao",
+        "ideias",
+        "processo"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Espelho oval para a seção de reflexão e procurando ideias no processo criativo do projeto",
+      "transform": {
+        "rotate": 1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "ilu_espirito-circulante_01",
+      "file": "ilu_espirito-circulante_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Espírito Circulante de Noel Rosa com violão — variante",
+      "tags": [
+        "noel",
+        "espirito",
+        "circulante",
+        "violao",
+        "alternativo"
+      ],
+      "sections": [
+        "hero",
+        "bandeiras"
+      ],
+      "alt": "Variante do Espírito Circulante de Noel Rosa com violão para o herói alternativo e seção histórica",
+      "transform": {
+        "rotate": 2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "ilu_figura-dancando_01",
+      "file": "ilu_figura-dancando_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Figura humana dançando — elemento de movimento",
+      "tags": [
+        "figura",
+        "dancando",
+        "movimento",
+        "dinamico",
+        "artistico"
+      ],
+      "sections": [
+        "hero",
+        "divider"
+      ],
+      "alt": "Figura humana dançando como elemento de movimento e dinamismo visual do projeto",
+      "transform": {
+        "rotate": 3,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "ilu_figura-feminina-instrumento_01",
+      "file": "ilu_figura-feminina-instrumento_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Figura feminina com instrumento musical — alegoria artística",
+      "tags": [
+        "figura",
+        "feminina",
+        "instrumento",
+        "alegoria",
+        "artistico"
+      ],
+      "sections": [
+        "projeto",
+        "divider"
+      ],
+      "alt": "Figura feminina com instrumento musical como alegoria artística do projeto",
+      "transform": {
+        "rotate": 2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "ilu_figura-musico-alto_01",
+      "file": "ilu_figura-musico-alto_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Silhueta de músico alto com instrumento — tira histórica",
+      "tags": [
+        "silhueta",
+        "musico",
+        "instrumento",
+        "historico",
+        "tira"
+      ],
+      "sections": [
+        "divider"
+      ],
+      "alt": "Silhueta de músico alto com instrumento para tiras históricas do projeto",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "ilu_figura-pensando_01",
+      "file": "ilu_figura-pensando_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Figura humana pensando — seção precisava de ideias",
+      "tags": [
+        "figura",
+        "pensando",
+        "ideias",
+        "criativo",
+        "conceitual"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Figura humana em posição de pensamento para a seção eu precisava de ideias do processo criativo",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "ilu_figuras-escultura-alt_01",
+      "file": "ilu_figuras-escultura-alt_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Figuras em escultura branca — variante para o manifesto",
+      "tags": [
+        "figuras",
+        "escultura",
+        "branca",
+        "manifesto",
+        "variante"
+      ],
+      "sections": [
+        "bandeiras"
+      ],
+      "alt": "Figuras em escultura branca como variante para a seção manifesto e bandeiras do projeto",
+      "transform": {
+        "rotate": 1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "ilu_fumaca-abstrata_01",
+      "file": "ilu_fumaca-abstrata_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Fumaça branca abstrata — overlay glitch e camada etérea",
+      "tags": [
+        "fumaca",
+        "branca",
+        "abstrata",
+        "glitch",
+        "etereo"
+      ],
+      "sections": [
+        "hero",
+        "cta"
+      ],
+      "alt": "Fumaça branca abstrata para overlay glitch e camada etérea do projeto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "low"
+    },
+    {
+      "id": "ilu_fumo-abstrato_01",
+      "file": "ilu_fumo-abstrato_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Fumaça ou vapor abstrato — overlay glitch",
+      "tags": [
+        "fumaca",
+        "vapor",
+        "abstrato",
+        "glitch",
+        "etereo"
+      ],
+      "sections": [
+        "hero",
+        "bandeiras"
+      ],
+      "alt": "Fumaça ou vapor em abstrato para overlay glitch e elementos etéreos do projeto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "low"
+    },
+    {
+      "id": "ilu_lampada-ideia_01",
+      "file": "ilu_lampada-ideia_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Lâmpada acesa — seção eu precisava de ideias e desafio aceito",
+      "tags": [
+        "lampada",
+        "ideia",
+        "inspiracao",
+        "desafio",
+        "aceito"
+      ],
+      "sections": [
+        "projeto",
+        "hero"
+      ],
+      "alt": "Lâmpada acesa simbolizando o momento de inspiração e a seção eu precisava de ideias e desafio aceito do projeto",
+      "transform": {
+        "rotate": 2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "high"
+    },
+    {
+      "id": "ilu_livros-antigos-lampada_01",
+      "file": "ilu_livros-antigos-lampada_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Livros antigos com abajur — seção pesquisa e Daniel Arbix",
+      "tags": [
+        "livros",
+        "antigos",
+        "abajur",
+        "pesquisa",
+        "arbix"
+      ],
+      "sections": [
+        "blog",
+        "bandeiras"
+      ],
+      "alt": "Livros antigos com abajur para a seção de pesquisa da tese jurídica e Daniel Arbix no projeto",
+      "transform": {
+        "rotate": -2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "ilu_maquina-fantastica_01",
+      "file": "ilu_maquina-fantastica_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Máquina fantástica steampunk — o Sistema como entidade",
+      "tags": [
+        "maquina",
+        "steampunk",
+        "sistema",
+        "fantasia",
+        "cyberpunk"
+      ],
+      "sections": [
+        "bandeiras",
+        "cta"
+      ],
+      "alt": "Máquina fantástica steampunk representando o Sistema como entidade abstrata no projeto de denúncia",
+      "transform": {
+        "rotate": 1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "high"
+    },
+    {
+      "id": "ilu_miniatura-cadeira_01",
+      "file": "ilu_miniatura-cadeira_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Cadeira miniatura isolada — elemento decorativo",
+      "tags": [
+        "miniatura",
+        "cadeira",
+        "decorativo",
+        "recorte",
+        "objeto"
+      ],
+      "sections": [
+        "hero"
+      ],
+      "alt": "Cadeira miniatura isolada como elemento decorativo e recorte aleatório do projeto",
+      "transform": {
+        "rotate": -3,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "low"
+    },
+    {
+      "id": "ilu_miniatura-grupo_01",
+      "file": "ilu_miniatura-grupo_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Grupo miniatura — elemento de recorte aleatório",
+      "tags": [
+        "miniatura",
+        "grupo",
+        "recorte",
+        "decorativo",
+        "aleatorio"
+      ],
+      "sections": [
+        "hero"
+      ],
+      "alt": "Grupo de personagens em miniatura para recortes aleatórios e elementos decorativos do herói",
+      "transform": {
+        "rotate": 2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "low"
+    },
+    {
+      "id": "ilu_miniatura-personagem_01",
+      "file": "ilu_miniatura-personagem_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Personagem miniatura isolado — recorte aleatório",
+      "tags": [
+        "miniatura",
+        "personagem",
+        "recorte",
+        "decorativo",
+        "aleatorio"
+      ],
+      "sections": [
+        "hero"
+      ],
+      "alt": "Personagem miniatura isolado para recortes aleatórios do herói e elementos decorativos",
+      "transform": {
+        "rotate": 3,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "low"
+    },
+    {
+      "id": "ilu_musico-livros_01",
+      "file": "ilu_musico-livros_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Personagem com livros e música — seção Daniel Arbix e a tese",
+      "tags": [
+        "musico",
+        "livros",
+        "tese",
+        "juridico",
+        "arbix"
+      ],
+      "sections": [
+        "bandeiras",
+        "blog"
+      ],
+      "alt": "Personagem com livros e instrumentos musicais para a seção de Daniel Arbix e a tese jurídica do projeto",
+      "transform": {
+        "rotate": 1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "ilu_noel-espirito-violao_01",
+      "file": "ilu_noel-espirito-violao_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Espírito Circulante de Noel Rosa tocando violão",
+      "tags": [
+        "noel",
+        "espirito",
+        "violao",
+        "hero",
+        "personagem"
+      ],
+      "sections": [
+        "hero"
+      ],
+      "alt": "Espírito Circulante de Noel Rosa tocando violão — marca registrada de Kride Jr e elemento principal do herói",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.08,
+      "priority": "high"
+    },
+    {
+      "id": "ilu_noel-papai-noel_01",
+      "file": "ilu_noel-papai-noel_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Noel Rosa como Papai Noel — a encomenda de Natal 2024",
+      "tags": [
+        "noel",
+        "papai-noel",
+        "natal",
+        "encomenda",
+        "2024"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Ilustração de Noel Rosa como Papai Noel, representando a encomenda de Natal de dezembro de 2024 que originou o projeto",
+      "transform": {
+        "rotate": -3,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "ilu_personagem-livros-computador_01",
+      "file": "ilu_personagem-livros-computador_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Personagem com livros e computador — seção pesquisa e tese",
+      "tags": [
+        "personagem",
+        "livros",
+        "computador",
+        "pesquisa",
+        "tese"
+      ],
+      "sections": [
+        "blog",
+        "bandeiras"
+      ],
+      "alt": "Personagem com livros e computador para a seção de pesquisa e tese jurídica do projeto",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "ilu_pesquisador-laptop_01",
+      "file": "ilu_pesquisador-laptop_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Pesquisador com laptop — seção processo criativo",
+      "tags": [
+        "pesquisador",
+        "laptop",
+        "processo",
+        "criativo",
+        "pesquisa"
+      ],
+      "sections": [
+        "projeto",
+        "blog"
+      ],
+      "alt": "Pesquisador com laptop para a seção processo criativo e pesquisa jurídica do projeto",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "ilu_ponto-flutuante_01",
+      "file": "ilu_ponto-flutuante_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Ponto ou objeto abstrato flutuante — elemento de ruído visual",
+      "tags": [
+        "ponto",
+        "abstrato",
+        "flutuante",
+        "ruido",
+        "visual"
+      ],
+      "sections": [
+        "hero"
+      ],
+      "alt": "Ponto ou objeto abstrato flutuante como elemento de ruído visual e textura do projeto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "low"
+    },
+    {
+      "id": "ilu_trompetista-silhueta-black_01",
+      "file": "ilu_trompetista-silhueta-black_01.png",
+      "category": "ilu",
+      "role": "mid",
+      "subject": "Silhueta preta de trompetista — elemento de tira e divisor",
+      "tags": [
+        "trompetista",
+        "silhueta",
+        "preta",
+        "divisor",
+        "tira"
+      ],
+      "sections": [
+        "divider"
+      ],
+      "alt": "Silhueta preta de trompetista para elementos de tira e divisores do projeto",
+      "transform": {
+        "rotate": -2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.14,
+      "priority": "normal"
+    },
+    {
+      "id": "ins_clave-notas-musicais_01",
+      "file": "ins_clave-notas-musicais_01.png",
+      "category": "ins",
+      "role": "mid",
+      "subject": "Clave de sol com notas musicais — identidade do projeto",
+      "tags": [
+        "clave",
+        "notas",
+        "musicais",
+        "identidade",
+        "divisor"
+      ],
+      "sections": [
+        "divider",
+        "hero"
+      ],
+      "alt": "Clave de sol com notas musicais, elemento de identidade visual do projeto e divisores",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.1,
+      "priority": "normal"
+    },
+    {
+      "id": "ins_figura-cantando_01",
+      "file": "ins_figura-cantando_01.png",
+      "category": "ins",
+      "role": "mid",
+      "subject": "Figura feminina cantando — elemento artístico",
+      "tags": [
+        "figura",
+        "cantando",
+        "feminina",
+        "artistico",
+        "musica"
+      ],
+      "sections": [
+        "projeto",
+        "divider"
+      ],
+      "alt": "Figura feminina cantando como elemento artístico decorativo e tira histórica do projeto",
+      "transform": {
+        "rotate": 2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.1,
+      "priority": "normal"
+    },
+    {
+      "id": "ins_gramofone-marrom_01",
+      "file": "ins_gramofone-marrom_01.png",
+      "category": "ins",
+      "role": "mid",
+      "subject": "Gramofone marrom detalhado — elemento histórico",
+      "tags": [
+        "gramofone",
+        "marrom",
+        "vintage",
+        "detalhe",
+        "divisor"
+      ],
+      "sections": [
+        "divider"
+      ],
+      "alt": "Gramofone marrom detalhado para divisores de faixa e tiras históricas do projeto",
+      "transform": {
+        "rotate": 1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.1,
+      "priority": "normal"
+    },
+    {
+      "id": "ins_gramofone-vintage_01",
+      "file": "ins_gramofone-vintage_01.png",
+      "category": "ins",
+      "role": "mid",
+      "subject": "Gramofone ou vitrola antigo — história da música",
+      "tags": [
+        "gramofone",
+        "vitrola",
+        "vintage",
+        "historico",
+        "musica"
+      ],
+      "sections": [
+        "hero",
+        "divider",
+        "projeto"
+      ],
+      "alt": "Gramofone ou vitrola antigo para a seção histórica do herói e colagem do projeto",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.1,
+      "priority": "normal"
+    },
+    {
+      "id": "ins_lavanderia-maquina_01",
+      "file": "ins_lavanderia-maquina_01.png",
+      "category": "ins",
+      "role": "mid",
+      "subject": "Máquina de lavar — a Lavanderia Musical, símbolo do projeto",
+      "tags": [
+        "lavanderia",
+        "maquina",
+        "lavar",
+        "musica",
+        "simbolo"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Máquina de lavar ou tanque representando a Lavanderia Musical, elemento narrativo central do projeto Pra que Mentir",
+      "transform": {
+        "rotate": -2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.1,
+      "priority": "high"
+    },
+    {
+      "id": "ins_ornamento-floral_01",
+      "file": "ins_ornamento-floral_01.png",
+      "category": "ins",
+      "role": "mid",
+      "subject": "Ornamento floral delicado — elemento decorativo refinado",
+      "tags": [
+        "ornamento",
+        "floral",
+        "decorativo",
+        "refinado",
+        "delicado"
+      ],
+      "sections": [
+        "divider",
+        "footer"
+      ],
+      "alt": "Ornamento floral delicado para elementos decorativos refinados e divisores do projeto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.1,
+      "priority": "low"
+    },
+    {
+      "id": "ins_vinil-trilhas_01",
+      "file": "ins_vinil-trilhas_01.png",
+      "category": "ins",
+      "role": "mid",
+      "subject": "Disco de vinil com trilhas sonoras abstratas",
+      "tags": [
+        "vinil",
+        "disco",
+        "trilha",
+        "musica",
+        "abstrato"
+      ],
+      "sections": [
+        "hero",
+        "divider"
+      ],
+      "alt": "Disco de vinil ou trilhas sonoras em abstrato, para o herói, divisores e parallax do projeto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.1,
+      "priority": "normal"
+    },
+    {
+      "id": "ins_violonista-estatua_01",
+      "file": "ins_violonista-estatua_01.png",
+      "category": "ins",
+      "role": "mid",
+      "subject": "Estátua de violonista — referência ao violão de Noel Rosa",
+      "tags": [
+        "estatua",
+        "violonista",
+        "violao",
+        "noel-rosa",
+        "musica"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Estátua de violonista representando a referência ao violão de Noel Rosa na seção O Projeto",
+      "transform": {
+        "rotate": -2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.1,
+      "priority": "normal"
+    },
+    {
+      "id": "ins_vitrol-alt-bronze_01",
+      "file": "ins_vitrol-alt-bronze_01.png",
+      "category": "ins",
+      "role": "mid",
+      "subject": "Vitrola alternativa em bronze — elemento decorativo",
+      "tags": [
+        "vitrola",
+        "bronze",
+        "alternativo",
+        "decorativo",
+        "divisor"
+      ],
+      "sections": [
+        "divider"
+      ],
+      "alt": "Variante menor de vitrola em bronze para elemento decorativo de tiras e divisores do projeto",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.1,
+      "priority": "low"
+    },
+    {
+      "id": "ins_vitrola-bronze_01",
+      "file": "ins_vitrola-bronze_01.png",
+      "category": "ins",
+      "role": "mid",
+      "subject": "Vitrola em bronze — variante para divisores",
+      "tags": [
+        "vitrola",
+        "bronze",
+        "fonografo",
+        "divisor",
+        "musica"
+      ],
+      "sections": [
+        "divider"
+      ],
+      "alt": "Vitrola ou fonógrafo em bronze para variação visual nos divisores do projeto",
+      "transform": {
+        "rotate": 1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.1,
+      "priority": "normal"
+    },
+    {
+      "id": "ins_vitrola-madeira_01",
+      "file": "ins_vitrola-madeira_01.png",
+      "category": "ins",
+      "role": "mid",
+      "subject": "Vitrola de madeira antigo — divisor histórico",
+      "tags": [
+        "vitrola",
+        "madeira",
+        "fonografo",
+        "historico",
+        "divisor"
+      ],
+      "sections": [
+        "divider",
+        "projeto"
+      ],
+      "alt": "Vitrola ou fonógrafo de madeira antigo para divisores históricos do projeto",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.1,
+      "priority": "normal"
+    },
+    {
+      "id": "jur_balanca-justica_01",
+      "file": "jur_balanca-justica_01.png",
+      "category": "jur",
+      "role": "foreground",
+      "subject": "Balança da Justiça dourada — símbolo do vértice jurídico",
+      "tags": [
+        "balanca",
+        "justica",
+        "dourada",
+        "juridico",
+        "manifesto"
+      ],
+      "sections": [
+        "bandeiras",
+        "divider"
+      ],
+      "alt": "Balança da Justiça dourada simbolizando o vértice jurídico do manifesto e a tese constitucional do projeto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "high"
+    },
+    {
+      "id": "jur_constituicao-livro_01",
+      "file": "jur_constituicao-livro_01.png",
+      "category": "jur",
+      "role": "foreground",
+      "subject": "Livro da Constituição Brasileira — fundamento do manifesto",
+      "tags": [
+        "constituicao",
+        "livro",
+        "juridico",
+        "manifesto",
+        "cta"
+      ],
+      "sections": [
+        "bandeiras",
+        "divider",
+        "cta",
+        "blog"
+      ],
+      "alt": "Livro da Constituição Brasileira como fundamento jurídico do manifesto e do CTA do projeto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "high"
+    },
+    {
+      "id": "jur_escrevendo-manuscrito_01",
+      "file": "jur_escrevendo-manuscrito_01.png",
+      "category": "jur",
+      "role": "foreground",
+      "subject": "Mão escrevendo documento — seção tese e manifesto",
+      "tags": [
+        "mao",
+        "escrevendo",
+        "documento",
+        "tese",
+        "manifesto"
+      ],
+      "sections": [
+        "bandeiras",
+        "blog"
+      ],
+      "alt": "Mão escrevendo documento para a seção da tese jurídica e do manifesto do projeto",
+      "transform": {
+        "rotate": 2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "jur_partitura-antiga_01",
+      "file": "jur_partitura-antiga_01.png",
+      "category": "jur",
+      "role": "foreground",
+      "subject": "Partitura musical antiga — fundo histórico jurídico",
+      "tags": [
+        "partitura",
+        "antiga",
+        "musica",
+        "historico",
+        "juridico"
+      ],
+      "sections": [
+        "divider",
+        "bandeiras"
+      ],
+      "alt": "Partitura musical antiga para tiras históricas e fundo da seção jurídica do projeto",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "jur_partitura-manuscrita_01",
+      "file": "jur_partitura-manuscrita_01.png",
+      "category": "jur",
+      "role": "foreground",
+      "subject": "Manuscrito com notas musicais — seção Daniel Arbix e tese",
+      "tags": [
+        "partitura",
+        "manuscrito",
+        "notas",
+        "tese",
+        "arbix"
+      ],
+      "sections": [
+        "bandeiras",
+        "blog"
+      ],
+      "alt": "Manuscrito com notas musicais para a seção de Daniel Arbix e a tese jurídica sobre direitos autorais",
+      "transform": {
+        "rotate": 1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "jur_pergaminho-papel-antigo_01",
+      "file": "jur_pergaminho-papel-antigo_01.png",
+      "category": "jur",
+      "role": "foreground",
+      "subject": "Pergaminho de papel antigo — seção tese jurídica",
+      "tags": [
+        "pergaminho",
+        "papel",
+        "antigo",
+        "tese",
+        "juridico"
+      ],
+      "sections": [
+        "bandeiras",
+        "blog"
+      ],
+      "alt": "Pergaminho de papel antigo para a seção da tese jurídica sobre direitos autorais do projeto",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "jur_rascunho-escrito_01",
+      "file": "jur_rascunho-escrito_01.png",
+      "category": "jur",
+      "role": "foreground",
+      "subject": "Caderno com rascunho escrito — documentação do processo",
+      "tags": [
+        "caderno",
+        "rascunho",
+        "escrito",
+        "lavanderia",
+        "documentacao"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Caderno com rascunho escrito para a seção da lavanderia musical e documentação do processo criativo",
+      "transform": {
+        "rotate": -2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "logo_blue-note-alt_01",
+      "file": "logo_blue-note-alt_01.png",
+      "category": "logo",
+      "role": "foreground",
+      "subject": "Logo alternativo do Blue Note — variante para canais",
+      "tags": [
+        "logo",
+        "blue-note",
+        "alternativo",
+        "canais",
+        "jazz"
+      ],
+      "sections": [
+        "canais",
+        "divider"
+      ],
+      "alt": "Logo alternativo do Blue Note para variação visual na seção de canais do projeto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "logo_blue-note-pequeno_01",
+      "file": "logo_blue-note-pequeno_01.png",
+      "category": "logo",
+      "role": "foreground",
+      "subject": "Logo pequeno do Blue Note — rodapé e tiras",
+      "tags": [
+        "logo",
+        "blue-note",
+        "pequeno",
+        "rodape",
+        "tira"
+      ],
+      "sections": [
+        "footer",
+        "divider"
+      ],
+      "alt": "Logo pequeno do Blue Note para o rodapé e tiras do projeto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "low"
+    },
+    {
+      "id": "logo_bourbon-street-alt_01",
+      "file": "logo_bourbon-street-alt_01.png",
+      "category": "logo",
+      "role": "foreground",
+      "subject": "Logo alternativo do Bourbon Street Music Club — variante",
+      "tags": [
+        "logo",
+        "bourbon-street",
+        "alternativo",
+        "canais",
+        "jazz"
+      ],
+      "sections": [
+        "canais",
+        "divider"
+      ],
+      "alt": "Logo alternativo do Bourbon Street Music Club como variante para a seção de canais do projeto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "logo_obeat_01",
+      "file": "logo_obeat_01.png",
+      "category": "logo",
+      "role": "foreground",
+      "subject": "Logo O'Beat — referência de parceiro do projeto",
+      "tags": [
+        "logo",
+        "obeat",
+        "parceiro",
+        "referencia",
+        "musica"
+      ],
+      "sections": [
+        "footer",
+        "canais"
+      ],
+      "alt": "Logo O'Beat como referência de parceiro e ecossistema do projeto Pra que Mentir",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "low"
+    },
+    {
+      "id": "logo_pra-que-mentir-capa_01",
+      "file": "logo_pra-que-mentir-capa_01.png",
+      "category": "logo",
+      "role": "foreground",
+      "subject": "Capa ou livro amarelo do produto editorial Pra que Mentir",
+      "tags": [
+        "logo",
+        "pra-que-mentir",
+        "capa",
+        "livro",
+        "editorial"
+      ],
+      "sections": [
+        "hero",
+        "projeto"
+      ],
+      "alt": "Capa ou livro amarelo representando o produto editorial Pra que Mentir",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "logo_pra-que-mentir_02",
+      "file": "logo_pra-que-mentir.png",
+      "category": "logo",
+      "role": "foreground",
+      "subject": "Logo principal Pra que Mentir — variante local",
+      "tags": [
+        "logo",
+        "pra-que-mentir",
+        "principal",
+        "identidade",
+        "marca"
+      ],
+      "sections": [
+        "hero",
+        "footer",
+        "divider"
+      ],
+      "alt": "Variante do logo principal do projeto Pra que Mentir sem numeração padrão",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "ref_disco-black-allen_01",
+      "file": "ref_disco-black-allen_01.png",
+      "category": "ref",
+      "role": "mid",
+      "subject": "Capa do álbum Black Allen — pesquisa musical do projeto",
+      "tags": [
+        "disco",
+        "black-allen",
+        "album",
+        "pesquisa",
+        "blog"
+      ],
+      "sections": [
+        "blog"
+      ],
+      "alt": "Capa do álbum Black Allen para o blog de pesquisa musical do projeto Pra que Mentir",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.1,
+      "priority": "normal"
+    },
+    {
+      "id": "ref_disco-colorido_01",
+      "file": "ref_disco-colorido_01.png",
+      "category": "ref",
+      "role": "mid",
+      "subject": "Disco colorido vintage — pesquisa musical do projeto",
+      "tags": [
+        "disco",
+        "colorido",
+        "vintage",
+        "pesquisa",
+        "blog"
+      ],
+      "sections": [
+        "blog"
+      ],
+      "alt": "Disco colorido vintage para o blog de pesquisa musical do projeto Pra que Mentir",
+      "transform": {
+        "rotate": 2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.1,
+      "priority": "normal"
+    },
+    {
+      "id": "ref_disco-copa7_01",
+      "file": "ref_disco-copa7_01.png",
+      "category": "ref",
+      "role": "mid",
+      "subject": "Disco Copa 7 — referência musical da pesquisa",
+      "tags": [
+        "disco",
+        "copa7",
+        "referencia",
+        "pesquisa",
+        "blog"
+      ],
+      "sections": [
+        "blog"
+      ],
+      "alt": "Disco Copa 7 como referência musical da pesquisa do blog do projeto Pra que Mentir",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.1,
+      "priority": "normal"
+    },
+    {
+      "id": "ref_disco-samba-antigo_01",
+      "file": "ref_disco-samba-antigo_01.png",
+      "category": "ref",
+      "role": "mid",
+      "subject": "Disco de samba vintage — referência musical histórica",
+      "tags": [
+        "disco",
+        "samba",
+        "vintage",
+        "historico",
+        "pesquisa"
+      ],
+      "sections": [
+        "blog"
+      ],
+      "alt": "Disco de samba vintage para o blog de pesquisa musical histórica do projeto",
+      "transform": {
+        "rotate": -2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.1,
+      "priority": "normal"
+    },
+    {
+      "id": "ref_disco-vinil-preto_01",
+      "file": "ref_disco-vinil-preto_01.png",
+      "category": "ref",
+      "role": "mid",
+      "subject": "Disco de vinil preto — referência de pesquisa musical",
+      "tags": [
+        "disco",
+        "vinil",
+        "preto",
+        "pesquisa",
+        "blog"
+      ],
+      "sections": [
+        "blog"
+      ],
+      "alt": "Disco de vinil preto como referência de pesquisa musical do blog do projeto",
+      "transform": {
+        "rotate": 1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.1,
+      "priority": "normal"
+    },
+    {
+      "id": "ref_disco-ze-keti_01",
+      "file": "ref_disco-ze-keti_01.png",
+      "category": "ref",
+      "role": "mid",
+      "subject": "Capa do álbum de Zé Keti — referência do samba brasileiro",
+      "tags": [
+        "disco",
+        "ze-keti",
+        "samba",
+        "pesquisa",
+        "blog"
+      ],
+      "sections": [
+        "blog"
+      ],
+      "alt": "Capa do álbum de Zé Keti como referência do samba brasileiro no blog de pesquisa do projeto",
+      "transform": {
+        "rotate": 1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.1,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-amassado-branco_01",
+      "file": "tex_papel-amassado-branco_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel amassado branco",
+      "tags": [
+        "papel",
+        "textura",
+        "branco",
+        "amassado",
+        "fundo"
+      ],
+      "sections": [
+        "cta"
+      ],
+      "alt": "Textura de papel amassado branco",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-amassado-cinza_01",
+      "file": "tex_papel-amassado-cinza_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel amassado cinza",
+      "tags": [
+        "papel",
+        "textura",
+        "cinza",
+        "amassado",
+        "overlay"
+      ],
+      "sections": [
+        "bandeiras"
+      ],
+      "alt": "Textura de papel amassado cinza para overlay",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-amassado-claro_01",
+      "file": "tex_papel-amassado-claro_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel amassado claro",
+      "tags": [
+        "papel",
+        "textura",
+        "fundo",
+        "claro",
+        "amassado"
+      ],
+      "sections": [
+        "projeto",
+        "bandeiras"
+      ],
+      "alt": "Paper texture background light crumpled",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-amassado-neutro_01",
+      "file": "tex_papel-amassado-neutro_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel amassado neutro bege",
+      "tags": [
+        "papel",
+        "textura",
+        "neutro",
+        "bege",
+        "fundo"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Textura de papel amassado em tom neutro bege",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-borda-direita_01",
+      "file": "tex_papel-borda-direita_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel borda rasgada direita",
+      "tags": [
+        "papel",
+        "textura",
+        "borda",
+        "rasgado",
+        "colagem"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Textura de papel com borda direita rasgada para colagem lateral",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-borda-esquerda_01",
+      "file": "tex_papel-borda-esquerda_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel borda rasgada esquerda",
+      "tags": [
+        "papel",
+        "textura",
+        "borda",
+        "rasgado",
+        "esquerda"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Textura de papel com borda esquerda rasgada para colagem lateral",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-borda-torn-leve_01",
+      "file": "tex_papel-borda-torn-leve_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel borda rasgada leve",
+      "tags": [
+        "papel",
+        "textura",
+        "borda",
+        "torn",
+        "transicao"
+      ],
+      "sections": [
+        "hero",
+        "divider"
+      ],
+      "alt": "Textura de papel com borda levemente rasgada, transição sutil",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-branco-grande_01",
+      "file": "tex_papel-branco-grande_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel branco grande",
+      "tags": [
+        "papel",
+        "textura",
+        "branco",
+        "grande",
+        "fundo"
+      ],
+      "sections": [
+        "blog"
+      ],
+      "alt": "Textura de papel branco grande, fundo neutro de seção",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-branco-neutro_01",
+      "file": "tex_papel-branco-neutro_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel branco neutro",
+      "tags": [
+        "papel",
+        "textura",
+        "branco",
+        "neutro",
+        "fundo"
+      ],
+      "sections": [
+        "blog"
+      ],
+      "alt": "Textura de papel branco neutro liso",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-desgastado-canto_01",
+      "file": "tex_papel-desgastado-canto_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel desgastado com cantos",
+      "tags": [
+        "papel",
+        "textura",
+        "desgastado",
+        "canto",
+        "juridico"
+      ],
+      "sections": [
+        "bandeiras"
+      ],
+      "alt": "Textura de papel desgastado com cantos dobrados, tom jurídico",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-dobrado_01",
+      "file": "tex_papel-dobrado_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel dobrado",
+      "tags": [
+        "papel",
+        "textura",
+        "dobrado",
+        "claro",
+        "manifesto"
+      ],
+      "sections": [
+        "bandeiras",
+        "cta"
+      ],
+      "alt": "Textura de papel dobrado claro, para seção manifesto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-manchado-sepia_01",
+      "file": "tex_papel-manchado-sepia_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel manchado sépia",
+      "tags": [
+        "papel",
+        "textura",
+        "sepia",
+        "manchado",
+        "historico"
+      ],
+      "sections": [
+        "projeto"
+      ],
+      "alt": "Textura de papel manchado em sépia para colagem histórica",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-manuscrito-cinza_01",
+      "file": "tex_papel-manuscrito-cinza_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel manuscrito cinza",
+      "tags": [
+        "papel",
+        "textura",
+        "manuscrito",
+        "cinza",
+        "juridico"
+      ],
+      "sections": [
+        "bandeiras"
+      ],
+      "alt": "Textura de papel manuscrito em tom cinza, fundo seção jurídica",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-neve_01",
+      "file": "tex_papel-neve_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel branco neve",
+      "tags": [
+        "papel",
+        "textura",
+        "branco",
+        "neve",
+        "limpo"
+      ],
+      "sections": [
+        "blog"
+      ],
+      "alt": "Textura de papel branco neve, fundo neutro limpo",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-ondulado_01",
+      "file": "tex_papel-ondulado_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel ondulado",
+      "tags": [
+        "papel",
+        "textura",
+        "ondulado",
+        "fundo",
+        "background"
+      ],
+      "sections": [
+        "cta"
+      ],
+      "alt": "Textura de papel ondulado para background de seção",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-rasgado-borda_01",
+      "file": "tex_papel-rasgado-borda_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel com borda rasgada",
+      "tags": [
+        "papel",
+        "textura",
+        "rasgado",
+        "borda",
+        "divisor"
+      ],
+      "sections": [
+        "bandeiras",
+        "hero"
+      ],
+      "alt": "Textura de papel com borda rasgada, para divisores de seção",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-rasgado-escuro_01",
+      "file": "tex_papel-rasgado-escuro_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel rasgado escuro",
+      "tags": [
+        "papel",
+        "textura",
+        "rasgado",
+        "escuro",
+        "transicao"
+      ],
+      "sections": [
+        "cta",
+        "bandeiras"
+      ],
+      "alt": "Textura de papel rasgado em tom escuro, para transições",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-rasgado-irregular_01",
+      "file": "tex_papel-rasgado-irregular_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel rasgado irregular",
+      "tags": [
+        "papel",
+        "textura",
+        "rasgado",
+        "irregular",
+        "borda"
+      ],
+      "sections": [
+        "hero",
+        "divider"
+      ],
+      "alt": "Textura de papel com rasgo irregular",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-rasgado-medio_01",
+      "file": "tex_papel-rasgado-medio_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel rasgado médio",
+      "tags": [
+        "papel",
+        "textura",
+        "rasgado",
+        "medio",
+        "borda"
+      ],
+      "sections": [
+        "divider"
+      ],
+      "alt": "Textura de papel com rasgo médio",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-textura-fina_01",
+      "file": "tex_papel-textura-fina_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel com textura fina",
+      "tags": [
+        "papel",
+        "textura",
+        "fina",
+        "grain",
+        "overlay"
+      ],
+      "sections": [
+        "hero",
+        "projeto"
+      ],
+      "alt": "Textura de papel com granulação fina, camada de grain",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "tex_papel-velho-liso_01",
+      "file": "tex_papel-velho-liso_01.png",
+      "category": "tex",
+      "role": "background",
+      "subject": "Papel velho liso creme",
+      "tags": [
+        "papel",
+        "textura",
+        "velho",
+        "creme",
+        "fundo"
+      ],
+      "sections": [
+        "hero",
+        "projeto",
+        "bandeiras"
+      ],
+      "alt": "Textura de papel velho liso em tom creme, fundo principal das faixas",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "multiply"
+      },
+      "parallax": 0.05,
+      "priority": "normal"
+    },
+    {
+      "id": "ui_balao-fala-oval_01",
+      "file": "ui_balao-fala-oval_01.png",
+      "category": "ui",
+      "role": "foreground",
+      "subject": "Balão de fala oval vazio — anotações sobre elementos",
+      "tags": [
+        "balao",
+        "fala",
+        "oval",
+        "anotacao",
+        "overlay"
+      ],
+      "sections": [
+        "hero"
+      ],
+      "alt": "Balão de fala oval vazio para anotações sobre elementos do herói do projeto",
+      "transform": {
+        "rotate": -2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "ui_balao-fala-vazio_01",
+      "file": "ui_balao-fala-vazio_01.png",
+      "category": "ui",
+      "role": "foreground",
+      "subject": "Balão de fala em branco — sobreposição sobre fotos e citações",
+      "tags": [
+        "balao",
+        "fala",
+        "vazio",
+        "citacao",
+        "overlay"
+      ],
+      "sections": [
+        "hero"
+      ],
+      "alt": "Balão de fala em branco para sobreposição sobre fotos e citações do herói do projeto",
+      "transform": {
+        "rotate": 2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "ui_circulo-vermelho_01",
+      "file": "ui_circulo-vermelho_01.png",
+      "category": "ui",
+      "role": "foreground",
+      "subject": "Círculo vermelho de marcação — destaque de elementos",
+      "tags": [
+        "circulo",
+        "vermelho",
+        "marcacao",
+        "destaque",
+        "recorte"
+      ],
+      "sections": [
+        "hero"
+      ],
+      "alt": "Círculo vermelho para destaque de elementos e recortes do herói do projeto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "ui_codigo-barras_01",
+      "file": "ui_codigo-barras_01.png",
+      "category": "ui",
+      "role": "foreground",
+      "subject": "Código de barras — elemento cyberpunk, o sistema como produto",
+      "tags": [
+        "codigo",
+        "barras",
+        "cyberpunk",
+        "sistema",
+        "produto"
+      ],
+      "sections": [
+        "bandeiras",
+        "hero"
+      ],
+      "alt": "Código de barras como elemento cyberpunk representando o sistema como produto na denúncia do projeto",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "ui_disco-voador-ufo_01",
+      "file": "ui_disco-voador-ufo_01.png",
+      "category": "ui",
+      "role": "foreground",
+      "subject": "Disco voador UFO estilizado — elemento irônico cyberpunk",
+      "tags": [
+        "disco",
+        "voador",
+        "ufo",
+        "ironico",
+        "cyberpunk"
+      ],
+      "sections": [
+        "hero",
+        "bandeiras"
+      ],
+      "alt": "Disco voador ou UFO estilizado como elemento irônico e cyberpunk do projeto de denúncia",
+      "transform": {
+        "rotate": 2,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "low"
+    },
+    {
+      "id": "ui_filmstrip-vazio_01",
+      "file": "ui_filmstrip-vazio_01.png",
+      "category": "ui",
+      "role": "foreground",
+      "subject": "Tira de filme vazia — divisor cinematográfico",
+      "tags": [
+        "filmstrip",
+        "filme",
+        "vazia",
+        "divisor",
+        "cinema"
+      ],
+      "sections": [
+        "divider"
+      ],
+      "alt": "Tira de filme vazia como divisor de faixa e elemento cinematográfico do projeto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "ui_icones-social_01",
+      "file": "ui_icones-social_01.png",
+      "category": "ui",
+      "role": "foreground",
+      "subject": "Ícones de redes sociais — Instagram e curtir",
+      "tags": [
+        "icones",
+        "social",
+        "instagram",
+        "curtir",
+        "canais"
+      ],
+      "sections": [
+        "canais"
+      ],
+      "alt": "Ícones de redes sociais como Instagram e curtir para a seção Canais do projeto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "ui_oculos-pixelado_01",
+      "file": "ui_oculos-pixelado_01.png",
+      "category": "ui",
+      "role": "foreground",
+      "subject": "Óculos pixelado em estilo meme — elemento irônico de denúncia",
+      "tags": [
+        "oculos",
+        "pixelado",
+        "meme",
+        "ironico",
+        "bets"
+      ],
+      "sections": [
+        "hero",
+        "bandeiras"
+      ],
+      "alt": "Óculos pixelado em estilo meme como elemento irônico na seção de denúncia às Bets do projeto",
+      "transform": {
+        "rotate": 3,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "ui_ondas-audio_01",
+      "file": "ui_ondas-audio_01.png",
+      "category": "ui",
+      "role": "foreground",
+      "subject": "Ondas de áudio ou waveform — divisores e seção canais",
+      "tags": [
+        "ondas",
+        "audio",
+        "waveform",
+        "divisor",
+        "canais"
+      ],
+      "sections": [
+        "divider",
+        "canais"
+      ],
+      "alt": "Ondas de áudio ou waveform para divisores de faixa e a seção de canais do projeto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "ui_player-video_01",
+      "file": "ui_player-video_01.png",
+      "category": "ui",
+      "role": "foreground",
+      "subject": "Ícone de player de vídeo — seção vídeo-clipe e canais YouTube",
+      "tags": [
+        "player",
+        "video",
+        "play",
+        "youtube",
+        "canais"
+      ],
+      "sections": [
+        "canais"
+      ],
+      "alt": "Ícone de player de vídeo com símbolo de play para a seção do vídeo-clipe e canais YouTube do projeto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "ui_poste-placa-direcao_01",
+      "file": "ui_poste-placa-direcao_01.png",
+      "category": "ui",
+      "role": "foreground",
+      "subject": "Poste com placas de direção — elemento narrativo qual caminho",
+      "tags": [
+        "poste",
+        "placa",
+        "direcao",
+        "narrativo",
+        "caminho"
+      ],
+      "sections": [
+        "bandeiras",
+        "hero"
+      ],
+      "alt": "Poste com placas de direção como elemento narrativo representando a escolha de qual caminho seguir no projeto",
+      "transform": {
+        "rotate": -1,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "ui_seta-direita-grande_01",
+      "file": "ui_seta-direita-grande_01.png",
+      "category": "ui",
+      "role": "foreground",
+      "subject": "Seta curva grande para a direita — CTA e direção",
+      "tags": [
+        "seta",
+        "direita",
+        "cta",
+        "direcao",
+        "navegacao"
+      ],
+      "sections": [
+        "cta"
+      ],
+      "alt": "Seta curva grande para a direita para CTA e elementos de direção do manifesto do projeto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "ui_setas-baixo_01",
+      "file": "ui_setas-baixo_01.png",
+      "category": "ui",
+      "role": "foreground",
+      "subject": "Setas apontando para baixo — navegação e role para baixo",
+      "tags": [
+        "setas",
+        "baixo",
+        "navegacao",
+        "scroll",
+        "ui"
+      ],
+      "sections": [
+        "hero"
+      ],
+      "alt": "Setas apontando para baixo para navegação e indicação de role para baixo no herói do projeto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    },
+    {
+      "id": "ui_setas-triplas-baixo_01",
+      "file": "ui_setas-triplas-baixo_01.png",
+      "category": "ui",
+      "role": "foreground",
+      "subject": "Três setas apontando para baixo — CTA e scroll",
+      "tags": [
+        "setas",
+        "triplas",
+        "baixo",
+        "cta",
+        "scroll"
+      ],
+      "sections": [
+        "hero",
+        "cta"
+      ],
+      "alt": "Três setas apontando para baixo para CTA de scroll e navegação do projeto",
+      "transform": {
+        "rotate": 0,
+        "sepia": 0,
+        "blend": "normal"
+      },
+      "parallax": 0.0,
+      "priority": "normal"
+    }
+  ]
+}
