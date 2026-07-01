@@ -69,4 +69,26 @@
       requestAnimationFrame(drift);
     })();
   });
+
+  /* ---------- Notas musicais serpenteantes atrás do colágio ---------- */
+  var notesHost = document.getElementById('collage-notes');
+  if (notesHost) {
+    var glyphs = ['♪', '♫', '♬', '♩'];
+    var colors = ['--dourado', '--neon', '--ciano', '--laranja', '--vermelho'];
+    var NOTE_COUNT = 10;
+    for (var n = 0; n < NOTE_COUNT; n++) {
+      var el = document.createElement('span');
+      el.className = 'note';
+      el.textContent = glyphs[Math.floor(Math.random() * glyphs.length)];
+      el.style.setProperty('--nx', (Math.random() * 92) + '%');
+      el.style.setProperty('--ns', (16 + Math.random() * 18).toFixed(0) + 'px');
+      el.style.setProperty('--nc', 'var(' + colors[Math.floor(Math.random() * colors.length)] + ')');
+      el.style.setProperty('--no', (0.25 + Math.random() * 0.35).toFixed(2));
+      el.style.setProperty('--n1', (14 + Math.random() * 22).toFixed(0) + 'px');
+      el.style.setProperty('--n2', (10 + Math.random() * 18).toFixed(0) + 'px');
+      el.style.setProperty('--nd', (7 + Math.random() * 7).toFixed(1) + 's');
+      el.style.setProperty('--ndl', (Math.random() * -12).toFixed(1) + 's');
+      notesHost.appendChild(el);
+    }
+  }
 })();

@@ -318,22 +318,53 @@ body::before{
   padding:3px 8px 7px;flex-shrink:0;
 }
 /* foto 1 — kride lavanderia, quadrada, maior, topo-esquerda */
-.f1{left:0;top:0;width:55%;transform:rotate(-2.5deg);z-index:2}
+.f1{left:0;top:0;width:55%;z-index:2;animation:floatF1 10s ease-in-out infinite}
 .f1 .big{color:var(--dourado)}
 /* foto 2 — dupla kride+marcos, landscape, topo-direita */
-.f2{right:0;top:10px;width:46%;transform:rotate(2deg);z-index:3;
-    background:linear-gradient(180deg,#1a1422,#2a2335);border-color:#1a1422}
+.f2{right:0;top:10px;width:46%;z-index:3;
+    background:linear-gradient(180deg,#1a1422,#2a2335);border-color:#1a1422;
+    animation:floatF2 12.5s ease-in-out infinite}
 .f2 .lbl{color:var(--ciano)}
 .f2 .big{color:var(--neon)}
 /* foto 3 — maquina lavanderia, landscape, meio-esquerda */
-.f3{left:6%;top:46%;width:44%;transform:rotate(-1deg);z-index:4}
+.f3{left:6%;top:46%;width:44%;z-index:4;animation:floatF3 14s ease-in-out infinite}
 .f3 img{filter:sepia(20%) contrast(1.05)}
 .f3 .lbl{font-size:9px}
 /* foto 4 — kride retrato, landscape 199×112, direita-baixo */
-.f4{right:2%;top:40%;width:50%;transform:rotate(3.5deg);z-index:5;
-    background:var(--vermelho);border-color:var(--vermelho)}
+.f4{right:2%;top:40%;width:50%;z-index:5;
+    background:var(--vermelho);border-color:var(--vermelho);
+    animation:floatF4 16.5s ease-in-out infinite}
 .f4 img{mix-blend-mode:multiply;filter:grayscale(20%)}
 .f4 .big{color:#fff;font-size:clamp(16px,2.2vw,26px)}
+
+/* flutuação suave — cada card numa direção própria, com um pico onde fica acima de todos */
+@keyframes floatF1{
+  0%,100%{transform:rotate(-2.5deg) translate(0,0);z-index:2}
+  22%{transform:rotate(-1deg) translate(12px,-14px);z-index:2}
+  50%{transform:rotate(-3.4deg) translate(-8px,10px);z-index:6}
+  78%{transform:rotate(-1.6deg) translate(6px,12px);z-index:3}
+}
+@keyframes floatF2{
+  0%,100%{transform:rotate(2deg) translate(0,0);z-index:3}
+  28%{transform:rotate(3.6deg) translate(-14px,10px);z-index:6}
+  55%{transform:rotate(.8deg) translate(8px,-10px);z-index:3}
+  80%{transform:rotate(2.6deg) translate(-6px,-14px);z-index:4}
+}
+@keyframes floatF3{
+  0%,100%{transform:rotate(-1deg) translate(0,0);z-index:4}
+  25%{transform:rotate(-2.4deg) translate(10px,12px);z-index:4}
+  52%{transform:rotate(.6deg) translate(-12px,-8px);z-index:6}
+  76%{transform:rotate(-1.8deg) translate(6px,10px);z-index:5}
+}
+@keyframes floatF4{
+  0%,100%{transform:rotate(3.5deg) translate(0,0);z-index:5}
+  30%{transform:rotate(1.8deg) translate(-10px,-12px);z-index:5}
+  58%{transform:rotate(4.8deg) translate(12px,8px);z-index:6}
+  84%{transform:rotate(2.6deg) translate(-8px,10px);z-index:2}
+}
+@media(prefers-reduced-motion: reduce){
+  .f1,.f2,.f3,.f4{animation:none}
+}
 /* carimbo flutuante */
 .collage-stamp{
   position:absolute;z-index:7;
@@ -341,6 +372,28 @@ body::before{
   color:var(--vermelho);border:2px solid var(--vermelho);padding:3px 9px;
   transform:rotate(-7deg);background:rgba(196,180,154,.92);
   box-shadow:2px 2px 0 rgba(0,0,0,.2);letter-spacing:.06em;
+}
+
+/* ── Notas musicais serpenteantes atrás do colágio ── */
+.collage-notes{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.collage-notes .note{
+  position:absolute;bottom:-10%;left:var(--nx,50%);
+  font-family:'Anton';font-size:var(--ns,26px);color:var(--nc,var(--dourado));
+  opacity:0;will-change:transform,opacity;
+  animation:noteRise var(--nd,9s) linear infinite;
+  animation-delay:var(--ndl,0s);
+}
+@keyframes noteRise{
+  0%{transform:translate(0,0) rotate(0deg);opacity:0}
+  10%{opacity:var(--no,.45)}
+  30%{transform:translate(var(--n1,22px),-35%) rotate(10deg)}
+  50%{transform:translate(calc(var(--n1,22px) * -1),-58%) rotate(-9deg)}
+  70%{transform:translate(var(--n2,16px),-80%) rotate(8deg)}
+  90%{opacity:var(--no,.45)}
+  100%{transform:translate(0,-108%) rotate(0deg);opacity:0}
+}
+@media(prefers-reduced-motion: reduce){
+  .collage-notes{display:none}
 }
 
 /* ----- TRIÂNGULO / BANDEIRAS ----- */
@@ -440,8 +493,10 @@ footer p{font-size:14px;line-height:1.7}
 .foot-col a{display:block;color:#bdae93;text-decoration:none;font-size:14px;padding:4px 0}
 .foot-col a:hover{color:var(--papel)}
 .tm{max-width:var(--max);margin:36px auto 0;border-top:1px solid #4a3f2a;padding-top:22px;
-  font-family:'Space Mono';font-size:11px;line-height:1.8;color:#8a7c5f;letter-spacing:.04em}
+  font-family:'Space Mono';font-size:11px;line-height:1.8;color:#8a7c5f;letter-spacing:.04em;text-align:center}
 .tm b{color:var(--ciano)}
+.tm a{color:var(--ciano);text-decoration:none}
+.tm a:hover{text-decoration:underline}
 
 /* ── Assets dinâmicos (assets-loader.js) ── */
 .section-bg{position:absolute;inset:0;z-index:0;background-size:cover;
