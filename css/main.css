@@ -207,10 +207,39 @@ body::before{
   max-width:min(100%,340px);
   max-height:clamp(320px,46vh,620px);
   image-rendering:pixelated;
-  animation:float 7s ease-in-out infinite;
-  will-change:transform;
+  animation:spirit-drift 10s linear infinite, spirit-blink 10s linear infinite;
+  will-change:transform,opacity;
 }
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+/* trajetória suave em forma de infinito distorcido (curva senoidal, sem cantos) */
+@keyframes spirit-drift{
+  0%{transform:translate(0,0) rotate(0deg)}
+  6.25%{transform:translate(5.7px,-8.4px) rotate(1.15deg)}
+  12.5%{transform:translate(8px,-15.6px) rotate(2.12deg)}
+  18.75%{transform:translate(5.7px,-20.3px) rotate(2.77deg)}
+  25%{transform:translate(0,-22px) rotate(3deg)}
+  31.25%{transform:translate(-5.7px,-20.3px) rotate(2.77deg)}
+  37.5%{transform:translate(-8px,-15.6px) rotate(2.12deg)}
+  43.75%{transform:translate(-5.7px,-8.4px) rotate(1.15deg)}
+  50%{transform:translate(0,0) rotate(0deg)}
+  56.25%{transform:translate(5.7px,8.4px) rotate(-1.15deg)}
+  62.5%{transform:translate(8px,15.6px) rotate(-2.12deg)}
+  68.75%{transform:translate(5.7px,20.3px) rotate(-2.77deg)}
+  75%{transform:translate(0,22px) rotate(-3deg)}
+  81.25%{transform:translate(-5.7px,20.3px) rotate(-2.77deg)}
+  87.5%{transform:translate(-8px,15.6px) rotate(-2.12deg)}
+  93.75%{transform:translate(-5.7px,8.4px) rotate(-1.15deg)}
+  100%{transform:translate(0,0) rotate(0deg)}
+}
+/* pisca 3x por loop, em intervalos igualmente distribuídos pela trajetória */
+@keyframes spirit-blink{
+  0%,15.42%{opacity:1}
+  15.52%,17.81%{opacity:0}
+  17.91%,48.75%{opacity:1}
+  48.85%,51.15%{opacity:0}
+  51.25%,82.08%{opacity:1}
+  82.18%,84.47%{opacity:0}
+  84.57%,100%{opacity:1}
+}
 .aura{animation:pulse 4s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:.5}50%{opacity:.95}}
 
